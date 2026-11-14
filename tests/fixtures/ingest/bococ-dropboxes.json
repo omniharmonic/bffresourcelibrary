@@ -1,0 +1,216 @@
+{
+ "displayFieldName": "Name",
+ "geometryType": "esriGeometryPoint",
+ "spatialReference": {
+  "wkid": 4326,
+  "latestWkid": 4326
+ },
+ "fields": [
+  {
+   "name": "ParcelNo",
+   "type": "esriFieldTypeString",
+   "alias": "Parcel Number",
+   "length": 12
+  },
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID"
+  },
+  {
+   "name": "Name",
+   "type": "esriFieldTypeString",
+   "alias": "Name",
+   "length": 1073741822
+  },
+  {
+   "name": "Address",
+   "type": "esriFieldTypeString",
+   "alias": "Address",
+   "length": 1073741822
+  },
+  {
+   "name": "Phone",
+   "type": "esriFieldTypeString",
+   "alias": "Phone",
+   "length": 13
+  },
+  {
+   "name": "Notes",
+   "type": "esriFieldTypeString",
+   "alias": "Notes",
+   "length": 250
+  },
+  {
+   "name": "URL",
+   "type": "esriFieldTypeString",
+   "alias": "URL",
+   "length": 100
+  },
+  {
+   "name": "SolidMed",
+   "type": "esriFieldTypeString",
+   "alias": "Solid Meds",
+   "length": 7
+  },
+  {
+   "name": "LiquidMed",
+   "type": "esriFieldTypeString",
+   "alias": "Liquid Meds",
+   "length": 7
+  },
+  {
+   "name": "Syringe",
+   "type": "esriFieldTypeString",
+   "alias": "Syringes",
+   "length": 7
+  },
+  {
+   "name": "GlobalID",
+   "type": "esriFieldTypeGlobalID",
+   "alias": "GlobalID",
+   "length": 38
+  },
+  {
+   "name": "created_user",
+   "type": "esriFieldTypeString",
+   "alias": "created_user",
+   "length": 255
+  },
+  {
+   "name": "created_date",
+   "type": "esriFieldTypeDate",
+   "alias": "created_date",
+   "length": 8
+  },
+  {
+   "name": "last_edited_user",
+   "type": "esriFieldTypeString",
+   "alias": "last_edited_user",
+   "length": 255
+  },
+  {
+   "name": "last_edited_date",
+   "type": "esriFieldTypeDate",
+   "alias": "last_edited_date",
+   "length": 8
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "ParcelNo": "146327022001",
+    "OBJECTID": 1,
+    "Name": "Boulder County Sheriff's Office",
+    "Address": "5600 Flatiron Parkway, Boulder, CO 80301",
+    "Phone": "303-441-3600",
+    "Notes": null,
+    "URL": null,
+    "SolidMed": "Y",
+    "LiquidMed": "N",
+    "Syringe": "N",
+    "GlobalID": "{037CE9BA-3A75-464C-92F5-8DA59F5AC452}",
+    "created_user": "HEALTH",
+    "created_date": 1794571105000,
+    "last_edited_user": "HEALTH",
+    "last_edited_date": 1794571105000
+   },
+   "geometry": {
+    "x": -105.22363467222576,
+    "y": 40.02274355963896
+   }
+  },
+  {
+   "attributes": {
+    "ParcelNo": "146327027003",
+    "OBJECTID": 3,
+    "Name": "Hazardous Materials Management Facility",
+    "Address": "1901 63rd St, Boulder, CO 80301",
+    "Phone": "720-564-2251",
+    "Notes": "Syringes accepted from everyone",
+    "URL": null,
+    "SolidMed": "N",
+    "LiquidMed": "Y",
+    "Syringe": "Y",
+    "GlobalID": "{E29AD5FC-C21A-4B0D-AD24-69756A72AC8F}",
+    "created_user": "HEALTH",
+    "created_date": 1794571105000,
+    "last_edited_user": "HEALTH",
+    "last_edited_date": 1794571105000
+   },
+   "geometry": {
+    "x": -105.20874904666553,
+    "y": 40.01759606391026
+   }
+  },
+  {
+   "attributes": {
+    "ParcelNo": "146330314008",
+    "OBJECTID": 5,
+    "Name": "Works Program - Boulder County AIDS Project",
+    "Address": "2118 14th St, Boulder, CO 80302",
+    "Phone": "303-444-6121",
+    "Notes": "Syringes accepted from Works clients",
+    "URL": null,
+    "SolidMed": "N",
+    "LiquidMed": "N",
+    "Syringe": "Y",
+    "GlobalID": "{6D2BBC74-3F39-4B96-AB00-D375EF2C4263}",
+    "created_user": "HEALTH",
+    "created_date": 1794571105000,
+    "last_edited_user": "HEALTH",
+    "last_edited_date": 1794571105000
+   },
+   "geometry": {
+    "x": -105.27756023866675,
+    "y": 40.019731572312764
+   }
+  },
+  {
+   "attributes": {
+    "ParcelNo": null,
+    "OBJECTID": 12,
+    "Name": "Genoa Pharmacy",
+    "Address": "975 North St.",
+    "Phone": "(303) 413-628",
+    "Notes": "Open 8:30am-5pm, M-F",
+    "URL": null,
+    "SolidMed": "Yes",
+    "LiquidMed": "Yes",
+    "Syringe": "No",
+    "GlobalID": "{5ED0A6E0-0F79-4DE0-B9DB-70A84C9FFFED}",
+    "created_user": "HEALTH",
+    "created_date": 1794571105000,
+    "last_edited_user": "HEALTH",
+    "last_edited_date": 1794571105000
+   },
+   "geometry": {
+    "x": -105.28399045477659,
+    "y": 40.02469871098024
+   }
+  },
+  {
+   "attributes": {
+    "ParcelNo": null,
+    "OBJECTID": 18,
+    "Name": "Walgreens",
+    "Address": "3348 28th Street Boulder, CO 80301",
+    "Phone": "303-447-1173",
+    "Notes": "Rx disposal box outside next to pharmacy",
+    "URL": null,
+    "SolidMed": "Y",
+    "LiquidMed": "Y",
+    "Syringe": "N",
+    "GlobalID": "{D968614B-AD8F-4650-ADC6-A1F976369D34}",
+    "created_user": "HEALTH",
+    "created_date": 1794571105000,
+    "last_edited_user": "HEALTH",
+    "last_edited_date": 1794571105000
+   },
+   "geometry": {
+    "x": -105.25717641276859,
+    "y": 40.034694839986464
+   }
+  }
+ ]
+}

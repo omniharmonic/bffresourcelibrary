@@ -1,0 +1,89 @@
+{
+ "displayFieldName": "Name",
+ "geometryType": "esriGeometryPoint",
+ "spatialReference": {
+  "wkid": 4326,
+  "latestWkid": 4326
+ },
+ "fields": [
+  {
+   "name": "ParcelNo",
+   "type": "esriFieldTypeString",
+   "alias": "Parcel Number",
+   "length": 12
+  },
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID"
+  },
+  {
+   "name": "Name",
+   "type": "esriFieldTypeString",
+   "alias": "Name",
+   "length": 1073741822
+  },
+  {
+   "name": "Address",
+   "type": "esriFieldTypeString",
+   "alias": "Address",
+   "length": 1073741822
+  },
+  {
+   "name": "Phone",
+   "type": "esriFieldTypeString",
+   "alias": "Phone",
+   "length": 13
+  },
+  {
+   "name": "Notes",
+   "type": "esriFieldTypeString",
+   "alias": "Notes",
+   "length": 150
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "ParcelNo": "146125130005",
+    "OBJECTID": 3,
+    "Name": "Mental Health Partners Pharmacy",
+    "Address": "975 North St, Boulder, CO 80304",
+    "Phone": "720-399-6026",
+    "Notes": "Call ahead to ensure availability"
+   },
+   "geometry": {
+    "x": -105.28405650658621,
+    "y": 40.02467959135964
+   }
+  },
+  {
+   "attributes": {
+    "ParcelNo": "146320301003",
+    "OBJECTID": 5,
+    "Name": "Walgreens",
+    "Address": "3348 28th St, Boulder, CO 80301",
+    "Phone": "303-447-1173",
+    "Notes": "Call ahead to ensure availability; intramuscular"
+   },
+   "geometry": {
+    "x": -105.25727142500585,
+    "y": 40.03520012825524
+   }
+  },
+  {
+   "attributes": {
+    "ParcelNo": "146329304001",
+    "OBJECTID": 6,
+    "Name": "Target",
+    "Address": "2800 Pearl St,  Boulder, CO 80301",
+    "Phone": "303-449-3400",
+    "Notes": "Call ahead to ensure availability; nasal"
+   },
+   "geometry": {
+    "x": -105.25602890221094,
+    "y": 40.02175532078883
+   }
+  }
+ ]
+}

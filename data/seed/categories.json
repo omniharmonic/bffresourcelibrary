@@ -1,0 +1,664 @@
+[
+  {
+    "slug": "free-meals",
+    "name": "Free Meals",
+    "dimension": "physical",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Hot meals you can get for free, no questions asked.",
+    "icon": "🍽️"
+  },
+  {
+    "slug": "first-aid",
+    "name": "First Aid",
+    "dimension": "physical",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Bandages and basic care for cuts, blisters, scrapes, sore feet, and small injuries.",
+    "icon": "🩹"
+  },
+  {
+    "slug": "hygiene-and-toiletries",
+    "name": "Hygiene & Toiletries",
+    "dimension": "physical",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Free soap, toothbrushes, deodorant, razors, wipes, and other personal care items.",
+    "icon": "🧼"
+  },
+  {
+    "slug": "harm-reduction",
+    "name": "Harm Reduction",
+    "dimension": "physical",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Narcan, clean needles, test strips, and safer-use supplies, with no judgment.",
+    "icon": "💉"
+  },
+  {
+    "slug": "menstrual-care",
+    "name": "Menstrual Care",
+    "dimension": "physical",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Free pads, tampons, and other period supplies.",
+    "icon": "🩸"
+  },
+  {
+    "slug": "food-pantries",
+    "name": "Food Pantries",
+    "dimension": "physical",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Free groceries and food boxes to take home, cook, or keep for later.",
+    "icon": "🥫"
+  },
+  {
+    "slug": "medical-care",
+    "name": "Medical Care",
+    "dimension": "physical",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Doctors, nurses, and clinics for when you are sick or hurt, even without insurance.",
+    "icon": "🩺"
+  },
+  {
+    "slug": "sud-treatment",
+    "name": "SUD Treatment",
+    "dimension": "physical",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Detox, rehab, and treatment programs to help you stop or cut back on drugs or alcohol.",
+    "icon": "🌱"
+  },
+  {
+    "slug": "drinking-water",
+    "name": "Drinking Water",
+    "dimension": "physical",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Free clean drinking water and places to fill up your water bottle.",
+    "icon": "💧"
+  },
+  {
+    "slug": "snap-enrollment",
+    "name": "SNAP Enrollment",
+    "dimension": "physical",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Help signing up for SNAP (food stamps or EBT card) to buy groceries.",
+    "icon": "🛒"
+  },
+  {
+    "slug": "dental-care",
+    "name": "Dental Care",
+    "dimension": "physical",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Free or low-cost dentists for tooth pain, cleanings, pulled teeth, and dentures.",
+    "icon": "🦷"
+  },
+  {
+    "slug": "vision-and-glasses",
+    "name": "Vision & Glasses",
+    "dimension": "physical",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Eye exams and free or cheap glasses, reading glasses, or contacts.",
+    "icon": "👓"
+  },
+  {
+    "slug": "sti-testing",
+    "name": "STI Testing",
+    "dimension": "physical",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Free, private testing and treatment for HIV, hepatitis C, and sexually transmitted infections.",
+    "icon": "🧪"
+  },
+  {
+    "slug": "medical-equipment",
+    "name": "Medical Equipment",
+    "dimension": "physical",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Wheelchairs, walkers, canes, crutches, CPAP, oxygen, and other medical gear.",
+    "icon": "🦽"
+  },
+  {
+    "slug": "medication-assisted-treatment-mat",
+    "name": "Medication-Assisted Treatment (MAT)",
+    "dimension": "physical",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Suboxone, methadone, and other medicine that eases withdrawal and helps you stay off opioids.",
+    "icon": "💊"
+  },
+  {
+    "slug": "advocacy",
+    "name": "Advocacy",
+    "dimension": "physical",
+    "tier": 3,
+    "alsoIn": [],
+    "description": "Someone on your side who speaks up for you when you are treated unfairly by a system.",
+    "icon": "📣"
+  },
+  {
+    "slug": "medicaid-enrollment",
+    "name": "Medicaid Enrollment",
+    "dimension": "physical",
+    "tier": 3,
+    "alsoIn": [],
+    "description": "Help signing up for Medicaid (Health First Colorado) so doctor visits and medicine are free.",
+    "icon": "🏥"
+  },
+  {
+    "slug": "outreach-social-events",
+    "name": "Outreach Social Events",
+    "dimension": "social",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Friendly outreach gatherings with food, supplies, and caring people, like Days in the Park.",
+    "icon": "🎉"
+  },
+  {
+    "slug": "free-community-activities",
+    "name": "Free Community Activities",
+    "dimension": "social",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Free fun things to do around town, like concerts, movies, art, sports, and events.",
+    "icon": "🎨"
+  },
+  {
+    "slug": "drop-in-spaces",
+    "name": "Drop-In Spaces",
+    "dimension": "social",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Indoor places to rest, warm up, cool down, and get coffee during the day, no appointment needed.",
+    "icon": "☕"
+  },
+  {
+    "slug": "youth-resources",
+    "name": "Youth Resources",
+    "dimension": "social",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Help for young people, about ages 12 to 24, including runaways, foster youth, and homeless youth.",
+    "icon": "🧒"
+  },
+  {
+    "slug": "lgbtqia-resources",
+    "name": "LGBTQIA+ Resources",
+    "dimension": "social",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Safe, affirming support for gay, lesbian, bi, trans, queer, and nonbinary people.",
+    "icon": "🌈"
+  },
+  {
+    "slug": "tribal-and-indigenous-resources",
+    "name": "Tribal & Indigenous Resources",
+    "dimension": "social",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Services for Native American, American Indian, and Indigenous people and tribal members.",
+    "icon": "🪶"
+  },
+  {
+    "slug": "veteran-resources",
+    "name": "Veteran Resources",
+    "dimension": "social",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Help for military veterans, including VA health care, benefits, and veteran housing.",
+    "icon": "🎖️"
+  },
+  {
+    "slug": "elder-and-senior-resources",
+    "name": "Elder & Senior Resources",
+    "dimension": "social",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Help for older adults, about age 60 and up, like senior centers, meals, and aging services.",
+    "icon": "👵"
+  },
+  {
+    "slug": "community-centers",
+    "name": "Community Centers",
+    "dimension": "social",
+    "tier": 3,
+    "alsoIn": [],
+    "description": "Neighborhood centers with programs, classes, showers, computers, and friendly people.",
+    "icon": "🏛️"
+  },
+  {
+    "slug": "support-and-peer-groups",
+    "name": "Support & Peer Groups",
+    "dimension": "social",
+    "tier": 3,
+    "alsoIn": [],
+    "description": "Groups where people with shared experiences support each other, like AA, NA, or grief groups.",
+    "icon": "🤝"
+  },
+  {
+    "slug": "emergency-financial-assistance",
+    "name": "Emergency Financial Assistance",
+    "dimension": "financial",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "One-time money help in an emergency, like rent, utility bills, deposits, or fees.",
+    "icon": "💵"
+  },
+  {
+    "slug": "benefits-enrollment",
+    "name": "Benefits Enrollment",
+    "dimension": "financial",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Help applying for government benefits like SSI, SSDI, disability, TANF, and Social Security.",
+    "icon": "📋"
+  },
+  {
+    "slug": "employment",
+    "name": "Employment",
+    "dimension": "financial",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Help finding a regular job, filling out applications, and getting hired.",
+    "icon": "💼"
+  },
+  {
+    "slug": "banking-and-financial-services",
+    "name": "Banking & Financial Services",
+    "dimension": "financial",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Help opening a bank account, cashing checks, and keeping your money safe.",
+    "icon": "🏦"
+  },
+  {
+    "slug": "legal-assistance",
+    "name": "Legal Assistance",
+    "dimension": "financial",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Free lawyers and legal help with tickets, warrants, court dates, evictions, and other legal problems.",
+    "icon": "⚖️"
+  },
+  {
+    "slug": "long-term-financial-planning",
+    "name": "Long-Term Financial Planning",
+    "dimension": "financial",
+    "tier": 3,
+    "alsoIn": [],
+    "description": "Learning to budget, save money, fix your credit, pay down debt, and plan ahead.",
+    "icon": "📈"
+  },
+  {
+    "slug": "trash-bags-and-disposal",
+    "name": "Trash Bags & Disposal",
+    "dimension": "environmental",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Free trash bags and places to throw away garbage and keep your camp clean.",
+    "icon": "🗑️"
+  },
+  {
+    "slug": "clothing-and-gear",
+    "name": "Clothing & Gear",
+    "dimension": "environmental",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Free clothes, shoes, socks, coats, gloves, and backpacks.",
+    "icon": "🧥"
+  },
+  {
+    "slug": "tents-and-sleeping-bags",
+    "name": "Tents & Sleeping Bags",
+    "dimension": "environmental",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Tents, sleeping bags, blankets, tarps, and gear to sleep outside safer and warmer.",
+    "icon": "⛺"
+  },
+  {
+    "slug": "showers",
+    "name": "Showers",
+    "dimension": "environmental",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Places to take a free hot shower.",
+    "icon": "🚿"
+  },
+  {
+    "slug": "bathrooms",
+    "name": "Bathrooms",
+    "dimension": "environmental",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Public restrooms and toilets you can use for free.",
+    "icon": "🚻"
+  },
+  {
+    "slug": "laundry",
+    "name": "Laundry",
+    "dimension": "environmental",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Places to wash and dry your clothes for free or cheap.",
+    "icon": "🧺"
+  },
+  {
+    "slug": "shelters",
+    "name": "Shelters",
+    "dimension": "environmental",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "A safe bed indoors tonight, including emergency, overnight, and severe weather shelters.",
+    "icon": "🛏️"
+  },
+  {
+    "slug": "storage",
+    "name": "Storage",
+    "dimension": "environmental",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Safe places to store your belongings, bags, and papers so they don't get lost or taken.",
+    "icon": "🧳"
+  },
+  {
+    "slug": "free-and-friendly-public-spaces",
+    "name": "Free & Friendly Public Spaces",
+    "dimension": "environmental",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Free public places where you're welcome to sit, rest, stay warm or cool, and use wifi.",
+    "icon": "🌳"
+  },
+  {
+    "slug": "safe-parking",
+    "name": "Safe Parking",
+    "dimension": "environmental",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Legal, safe places to park and sleep overnight in your car, van, or RV.",
+    "icon": "🚐"
+  },
+  {
+    "slug": "transportation-assistance",
+    "name": "Transportation Assistance",
+    "dimension": "environmental",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Free bus passes, ride vouchers, and tickets to get where you need to go.",
+    "icon": "🚌"
+  },
+  {
+    "slug": "bicycles",
+    "name": "Bicycles",
+    "dimension": "environmental",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Free or low-cost bikes to help you get around.",
+    "icon": "🚲"
+  },
+  {
+    "slug": "bike-repair",
+    "name": "Bike Repair",
+    "dimension": "environmental",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Help fixing your bike, like flat tires, brakes, chains, and wheels.",
+    "icon": "🔧"
+  },
+  {
+    "slug": "bike-locks",
+    "name": "Bike Locks",
+    "dimension": "environmental",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Free or cheap locks to keep your bike from getting stolen.",
+    "icon": "🔒"
+  },
+  {
+    "slug": "car-repair",
+    "name": "Car Repair",
+    "dimension": "environmental",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Help fixing your car so you can keep driving, working, or sleeping in it.",
+    "icon": "🚗"
+  },
+  {
+    "slug": "gas-money-fuel-assistance",
+    "name": "Gas Money / Fuel Assistance",
+    "dimension": "environmental",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Help paying for gas for your car, or fuel for heating or cooking.",
+    "icon": "⛽"
+  },
+  {
+    "slug": "housing",
+    "name": "Housing",
+    "dimension": "environmental",
+    "tier": 3,
+    "alsoIn": [],
+    "description": "Help getting a place to live long-term, like apartments, vouchers, Coordinated Entry, and rapid rehousing.",
+    "icon": "🏡"
+  },
+  {
+    "slug": "furniture",
+    "name": "Furniture",
+    "dimension": "environmental",
+    "tier": 3,
+    "alsoIn": [],
+    "description": "Free furniture and household items for when you move into a new place.",
+    "icon": "🛋️"
+  },
+  {
+    "slug": "outreach-workshops-and-activities",
+    "name": "Outreach Workshops & Activities",
+    "dimension": "intellectual",
+    "tier": 1,
+    "alsoIn": [
+      {
+        "dimension": "emotional",
+        "tier": 1
+      }
+    ],
+    "description": "Hands-on workshops and activities at outreach events, like art, writing, gardening, and skill shares.",
+    "icon": "🖍️"
+  },
+  {
+    "slug": "free-classes-and-workshops",
+    "name": "Free Classes & Workshops",
+    "dimension": "intellectual",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Free classes to learn new skills, like computers, English, cooking, money, or parenting.",
+    "icon": "📚"
+  },
+  {
+    "slug": "technology-access",
+    "name": "Technology Access",
+    "dimension": "intellectual",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Free computers, internet, Wi-Fi, printing, and help with email or online forms.",
+    "icon": "💻"
+  },
+  {
+    "slug": "device-charging",
+    "name": "Device Charging",
+    "dimension": "intellectual",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Places to charge your phone, laptop, wheelchair, or other devices.",
+    "icon": "🔌"
+  },
+  {
+    "slug": "phone-access",
+    "name": "Phone Access",
+    "dimension": "intellectual",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Free phones, phone service, and places to make a call.",
+    "icon": "📱"
+  },
+  {
+    "slug": "education-enrollment-assistance",
+    "name": "Education Enrollment Assistance",
+    "dimension": "intellectual",
+    "tier": 3,
+    "alsoIn": [],
+    "description": "Help going back to school: GED, college, financial aid, and signing up for programs.",
+    "icon": "🎓"
+  },
+  {
+    "slug": "identification-and-documents",
+    "name": "Identification & Documents",
+    "dimension": "occupational",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Help replacing your ID, birth certificate, Social Security card, and other important papers.",
+    "icon": "🪪"
+  },
+  {
+    "slug": "transportation",
+    "name": "Transportation",
+    "dimension": "occupational",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Ways to get to work, school, or appointments, like bus routes, schedules, and rides.",
+    "icon": "🚍"
+  },
+  {
+    "slug": "interview-readiness",
+    "name": "Interview Readiness",
+    "dimension": "occupational",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Help getting ready for a job interview, like clothes, practice, a resume, and a haircut.",
+    "icon": "👔"
+  },
+  {
+    "slug": "short-term-work-day-labor",
+    "name": "Short-Term Work / Day Labor",
+    "dimension": "occupational",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Same-day or short-term paid work, like day labor, temp jobs, and cash gigs.",
+    "icon": "🛠️"
+  },
+  {
+    "slug": "volunteer-opportunities",
+    "name": "Volunteer Opportunities",
+    "dimension": "occupational",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Ways to volunteer and give back, which can also build skills, references, and community service hours.",
+    "icon": "🙌"
+  },
+  {
+    "slug": "vocational-programs",
+    "name": "Vocational Programs",
+    "dimension": "occupational",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Job training programs that teach a trade or skill, like cooking, construction, driving, or forklift.",
+    "icon": "🧰"
+  },
+  {
+    "slug": "career-development",
+    "name": "Career Development",
+    "dimension": "occupational",
+    "tier": 3,
+    "alsoIn": [],
+    "description": "Long-term help building a career, like coaching, better-paying jobs, promotions, and work goals.",
+    "icon": "🪜"
+  },
+  {
+    "slug": "mental-health-crisis",
+    "name": "MENTAL HEALTH CRISIS",
+    "dimension": "emotional",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Urgent help right now if you feel unsafe, want to hurt yourself, overdose, or someone is in danger.",
+    "icon": "🆘"
+  },
+  {
+    "slug": "mental-health-support-by-outreach",
+    "name": "Mental Health Support by Outreach",
+    "dimension": "emotional",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Outreach workers who come to you to talk, check in, and connect you to mental health help.",
+    "icon": "🫂"
+  },
+  {
+    "slug": "mental-and-behavioral-health-care",
+    "name": "Mental & Behavioral Health Care",
+    "dimension": "emotional",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Counseling, therapy, psychiatry, and medication for mental health or substance use conditions.",
+    "icon": "🧠"
+  },
+  {
+    "slug": "online-mental-health-resources",
+    "name": "Online Mental Health Resources",
+    "dimension": "emotional",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Free apps, websites, chats, and text lines for mental health support on your phone.",
+    "icon": "🌐"
+  },
+  {
+    "slug": "ongoing-mental-health-care",
+    "name": "Ongoing Mental Health Care",
+    "dimension": "emotional",
+    "tier": 3,
+    "alsoIn": [],
+    "description": "Regular, long-term counseling, therapy, or psychiatric care with the same provider over time.",
+    "icon": "🌿"
+  },
+  {
+    "slug": "faith-based-outreach",
+    "name": "Faith-Based Outreach",
+    "dimension": "spiritual",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Churches and faith groups that come out with meals, supplies, prayer, and kindness.",
+    "icon": "⛪"
+  },
+  {
+    "slug": "spiritual-and-faith-communities",
+    "name": "Spiritual & Faith Communities",
+    "dimension": "spiritual",
+    "tier": 2,
+    "alsoIn": [],
+    "description": "Places of worship and faith communities to belong to, like churches, temples, mosques, and synagogues.",
+    "icon": "🕊️"
+  },
+  {
+    "slug": "spiritual-support",
+    "name": "Spiritual Support",
+    "dimension": "spiritual",
+    "tier": 3,
+    "alsoIn": [],
+    "description": "Someone to pray with or talk to about faith, grief, meaning, or hope, like a chaplain.",
+    "icon": "🙏"
+  },
+  {
+    "slug": "pets",
+    "name": "Pets",
+    "dimension": "environmental",
+    "tier": 1,
+    "alsoIn": [],
+    "description": "Food, vet care, supplies, and pet-friendly services for your dog, cat, or other animal.",
+    "icon": "🐕"
+  }
+]

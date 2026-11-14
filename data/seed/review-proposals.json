@@ -1,0 +1,873 @@
+{
+  "additions": [
+    {
+      "name": "Belongings retrieval after encampment cleanup (City of Boulder)",
+      "organization": "City of Boulder Public Space Reclamation",
+      "categories": [
+        "storage",
+        "identification-and-documents"
+      ],
+      "summary": "City hotline to schedule retrieval of personal belongings removed during an encampment cleanup.",
+      "access": "Call the hotline to schedule a retrieval: 303-441-1855.",
+      "phone": "303-441-1855",
+      "url": "",
+      "address": "",
+      "hoursText": "",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "Suggest proactively after a sweep — IDs, meds and documents may be recoverable. Hours, holding period and pickup location not published; ask when calling.",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf",
+      "sourceNote": "Re-checked 2026-11-14 against the All Roads Community Resource Guide PDF (\"Last updated 8/9/2026\"); values match memo 03. Number appears only in the street sheet; no city web page found for this line."
+    },
+    {
+      "name": "All Roads free bus (shelter ↔ downtown)",
+      "organization": "All Roads",
+      "categories": [
+        "transportation"
+      ],
+      "summary": "Free daily bus between the All Roads shelter (4869 N Broadway) and downtown Boulder (14th & Walnut).",
+      "access": "8:00 AM from the shelter to 14th & Walnut; 5:00 PM from 14th & Walnut back to the shelter.",
+      "phone": "303-442-4646",
+      "url": "https://www.allroadsboco.org/get-help",
+      "address": "4869 N Broadway, Boulder, CO 80304 / 14th & Walnut (RTD Downtown Boulder Station)",
+      "hoursText": "Daily (Mon–Sun): 8:00 AM shelter → downtown; 5:00 PM downtown → shelter",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "All Roads FAQ says \"four free buses, two each direction\" but lists only the 8 AM and 5 PM runs — confirm whether there are additional runs. RTD 204 and SKIP also terminate at the shelter.",
+      "sourceUrl": "https://www.allroadsboco.org/get-help",
+      "sourceNote": "Verified 2026-11-14: All Roads /get-help FAQ (8am shelter→downtown, 5:00 downtown→shelter) and Aug 2026 guide (\"Monday–Sunday Free Bus\")."
+    },
+    {
+      "name": "All Roads Day Services Center",
+      "organization": "All Roads",
+      "categories": [
+        "showers",
+        "laundry",
+        "drop-in-spaces",
+        "free-meals",
+        "phone-access",
+        "technology-access",
+        "device-charging"
+      ],
+      "summary": "Walk-up day services at the All Roads shelter: showers, laundry, phones, Wi-Fi, lunch, Coordinated Entry, diversion and case management.",
+      "access": "Walk up Mon–Fri 9 AM–2 PM at 4869 N Broadway. Lunch served 11:45 AM Mon–Fri.",
+      "phone": "303-442-4646",
+      "url": "https://bouldercolorado.gov/services/homelessness-services",
+      "address": "4869 N Broadway, Boulder, CO 80304",
+      "hoursText": "Mon–Fri 9:00 AM–2:00 PM; lunch 11:45 AM",
+      "eligibility": "Adults 18+ experiencing homelessness; Coordinated Entry is required for ongoing services.",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "Laundry pricing conflicts: City page says \"coin-operated washing machines and free drying\"; BFF field notes (r005) say washer free, dryer $1 — confirm on site. All Roads guide also lists lockers and mail. All Roads' own /day-services page has no hours.",
+      "sourceUrl": "https://bouldercolorado.gov/services/homelessness-services",
+      "sourceNote": "Verified 2026-11-14: City \"Where to Get Help\" (M–F 9–2, lunch 11:45, services list) and All Roads Aug 2026 guide (\"Walk-up Day Services (Monday–Friday): 9:00am–2:00pm\")."
+    },
+    {
+      "name": "Critical Weather sheltering at All Roads",
+      "organization": "City of Boulder / All Roads",
+      "categories": [
+        "shelters"
+      ],
+      "summary": "Life-safety overnight shelter on forecast critical-weather nights; extra beds at All Roads. Beds are limited and not guaranteed.",
+      "access": "Arrive at All Roads before 7 PM. Must go through Coordinated Entry (a grace night is provided if CE is closed).",
+      "phone": "303-579-4404",
+      "url": "https://bouldercolorado.gov/services/homelessness-services",
+      "address": "4869 N Broadway, Boulder, CO 80304",
+      "hoursText": "Activated on critical-weather nights; arrive before 7:00 PM",
+      "eligibility": "People experiencing homelessness screened through CE but not currently in a program; up to 90 critical-weather nights. Must be in good standing and follow shelter health and safety rules.",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "Criteria (NWS forecast): blizzard or wind warning with gusts >70 mph; OR predicted daytime low ≤20°F; OR ≥6 inches of snow. Don't promise a bed. Memo 03 notes about +20 beds and rec-center overflow when full (not on city page).",
+      "sourceUrl": "https://bouldercolorado.gov/services/homelessness-services",
+      "sourceNote": "Verified 2026-11-14: City \"Where to Get Help\" Critical Weather section (criteria, arrive before 7 PM, no bed guarantee, 90 nights, CE with grace night)."
+    },
+    {
+      "name": "City of Boulder Extreme Weather Shelter",
+      "organization": "City of Boulder (with Boulder County)",
+      "categories": [
+        "shelters"
+      ],
+      "summary": "Temporary 24-hour shelter the city may open during multi-night extreme cold. Location announced per activation.",
+      "access": "Watch City of Boulder news for activations; past activation used the Age Well wing of East Boulder Community Center, 5660 Sioux Dr.",
+      "phone": "",
+      "url": "https://bouldercolorado.gov/services/homelessness-services",
+      "address": "",
+      "hoursText": "Only when activated (decided ≥48 hours ahead from NWS forecasts)",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "Opens only when conditions are expected for ≥3 nights AND either a daily high ≤5°F with heavy precipitation/blizzard/heavy wind (30 mph sustained / 70 mph gusts) or a winter-weather watch/warning, OR a nightly low ≤0°F — and only if the city has resources. Location varies by activation.",
+      "sourceUrl": "https://bouldercolorado.gov/services/homelessness-services",
+      "sourceNote": "Verified 2026-11-14: City \"Where to Get Help\" Extreme Weather Shelter criteria; city news post https://bouldercolorado.gov/news/city-and-partners-open-extreme-weather-shelter (Jan 18–21 activation at East Boulder Community Center)."
+    },
+    {
+      "name": "St. Benedict Health & Healing Ministry — free Sunday clinics",
+      "organization": "St. Benedict Health & Healing Ministry",
+      "categories": [
+        "medical-care",
+        "first-aid"
+      ],
+      "summary": "Free volunteer-run walk-in clinics: triage, wound care, blood pressure/diabetes screening, foot care, vaccines when available, referrals. No documentation required.",
+      "access": "No appointment. Boulder: 1st Sunday 12–2 PM at St. John's Episcopal (1419 Pine); 2nd Sunday 12:30–2 PM at Trinity Lutheran (2200 Broadway); 4th Sunday 12–2 PM at First Congregational (1128 Pine).",
+      "phone": "303-669-2700",
+      "url": "https://stbenedicthealthandhealing.org/",
+      "address": "",
+      "hoursText": "1st Sun 12–2 PM St. John's; 2nd Sun 12:30–2 PM Trinity Lutheran; 4th Sun 12–2 PM First Congregational",
+      "eligibility": "Uninsured, underinsured or unhoused people; no documentation required.",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "Coincides with the Sundays-at-Noon church lunch rotation. Other sites (from St. Benedict page): Sister Carmen, Lafayette 1st/3rd/4th Wed 1–3 PM; OUR Center, Longmont, Thursdays 11 AM–1 PM; Josephine Commons, Lafayette, 3rd Tue 10:30–noon.",
+      "sourceUrl": "https://stbenedicthealthandhealing.org/free-clinics",
+      "sourceNote": "Verified 2026-11-14: stbenedicthealthandhealing.org/free-clinics (sites, days, times, no appointment) and phone on site; matches All Roads Aug 2026 guide days."
+    },
+    {
+      "name": "Clinica People's Clinic (primary care)",
+      "organization": "Clinica Family Health & Wellness",
+      "categories": [
+        "medical-care",
+        "medicaid-enrollment"
+      ],
+      "summary": "Primary care clinic in Boulder; pharmacy, flu vaccines, COVID testing, vaccinations 12+.",
+      "access": "2525 13th St, Boulder. Call 303-650-4460.",
+      "phone": "303-650-4460",
+      "url": "",
+      "address": "2525 13th St, Boulder, CO",
+      "hoursText": "Mon/Wed/Fri 8 AM–5 PM; Tue/Thu 8 AM–9 PM",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "Distinct from Clinica behavioral health (r032, 303-443-8500). Hours from street sheet only; confirm by phone.",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf",
+      "sourceNote": "Re-checked 2026-11-14 against the All Roads Community Resource Guide PDF (\"Last updated 8/9/2026\"); values match memo 03. clinica.org not re-fetched."
+    },
+    {
+      "name": "Salud Family Health — Longmont",
+      "organization": "Salud Family Health",
+      "categories": [
+        "medical-care"
+      ],
+      "summary": "Community health center primary care for all ages (no Boulder-city clinic found).",
+      "access": "220 E Rogers Rd, Longmont (bus 324). Call 303-776-3250.",
+      "phone": "303-776-3250",
+      "url": "",
+      "address": "220 E Rogers Rd, Longmont, CO",
+      "hoursText": "",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "",
+      "sourceUrl": "https://longmontcolorado.gov/human-services/resources-for-people-experiencing-homelessness/",
+      "sourceNote": "Verified 2026-11-14: City of Longmont resources page lists Salud Clinic, 220 E. Rogers Rd, 303-776-3250. saludclinic.org not fetched; hours unknown."
+    },
+    {
+      "name": "Dental Aid — Boulder clinic",
+      "organization": "Dental Aid",
+      "categories": [
+        "dental-care"
+      ],
+      "summary": "Nonprofit dental clinic for low-income and uninsured residents; accepts Medicaid.",
+      "access": "Call to book: Boulder 303-499-7072. Also Louisville (877 E South Boulder Rd, 303-665-8228) and Longmont (1715 Princess Dr, 303-682-2619).",
+      "phone": "303-499-7072",
+      "url": "https://www.dentalaid.org/",
+      "address": "4155 Darley Ave, Boulder, CO 80305",
+      "hoursText": "Boulder: Mon–Thu 8 AM–5 PM (lunch 1–2 PM); follows BVSD late starts/closures",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "Offers new-patient emergency exams. Replaces part of the r078 dental placeholder.",
+      "sourceUrl": "https://www.dentalaid.org/",
+      "sourceNote": "Verified 2026-11-14: dentalaid.org (addresses, phones, hours, Medicaid acceptance)."
+    },
+    {
+      "name": "Comfort Dental — Boulder (accepts Medicaid)",
+      "organization": "Comfort Dental",
+      "categories": [
+        "dental-care"
+      ],
+      "summary": "Private dental offices listed by All Roads as accepting Medicaid.",
+      "access": "4550 N Broadway, 303-848-2906; or 3400 Arapahoe, 303-444-2129. Confirm Medicaid acceptance when booking.",
+      "phone": "303-848-2906",
+      "url": "",
+      "address": "",
+      "hoursText": "",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "Two Boulder locations. Medicaid acceptance per All Roads guide — confirm per office.",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf",
+      "sourceNote": "Re-checked 2026-11-14 against the All Roads Community Resource Guide PDF (\"Last updated 8/9/2026\"); values match memo 03. Comfort Dental's own site not checked; hours unknown."
+    },
+    {
+      "name": "Homeless Solutions for Boulder County (HSBC) / Housing Helpline",
+      "organization": "Boulder County",
+      "categories": [
+        "housing"
+      ],
+      "summary": "County line for general housing and homelessness-system questions and HSBC coordination. Not the Coordinated Entry screening line.",
+      "access": "Call 303-441-1206 (leave a message) or email Homeless-Solutions@bouldercounty.gov.",
+      "phone": "303-441-1206",
+      "url": "https://bouldercounty.gov/departments/community-services/homeless/homeless-services/",
+      "address": "",
+      "hoursText": "",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "For CE screening use 303-579-4404 (Boulder) or 720-453-6096 (Longmont). Memo 03 also names EPRAS eviction prevention (303-441-3414) and LEAP (Nov–Apr) — not re-verified.",
+      "sourceUrl": "https://bouldercounty.gov/departments/community-services/homeless/homeless-services/",
+      "sourceNote": "Verified 2026-11-14: county Homeless Services page contact block (HSBC phone 303-441-1206, Homeless-Solutions@bouldercounty.gov). Memo's housinghelpline@ email not seen on that page."
+    },
+    {
+      "name": "Boulder County Housing & Human Services (benefits office)",
+      "organization": "Boulder County",
+      "categories": [
+        "snap-enrollment",
+        "medicaid-enrollment",
+        "benefits-enrollment",
+        "emergency-financial-assistance"
+      ],
+      "summary": "SNAP, Medicaid, cash and rental assistance (apply via PEAK or in person).",
+      "access": "3460 Broadway, Boulder or 515 Coffman St, Longmont. Call 303-441-1000.",
+      "phone": "303-441-1000",
+      "url": "https://bouldercounty.gov/",
+      "address": "3460 Broadway, Boulder, CO / 515 Coffman St, Longmont, CO",
+      "hoursText": "Mon–Fri 8:00 AM–4:30 PM",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf",
+      "sourceNote": "Re-checked 2026-11-14 against the All Roads Community Resource Guide PDF (\"Last updated 8/9/2026\"); values match memo 03. Longmont city page (https://longmontcolorado.gov/human-services/resources-for-people-experiencing-homelessness/) also lists 515 Coffman, Mon–Fri 8–4:30, 303-441-1000."
+    },
+    {
+      "name": "VA Homeless Outreach Coordinator",
+      "organization": "U.S. Department of Veterans Affairs",
+      "categories": [
+        "veteran-resources",
+        "housing"
+      ],
+      "summary": "VA homeless outreach for veterans experiencing homelessness.",
+      "access": "Call 720-362-0023.",
+      "phone": "720-362-0023",
+      "url": "",
+      "address": "",
+      "hoursText": "",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf",
+      "sourceNote": "Re-checked 2026-11-14 against the All Roads Community Resource Guide PDF (\"Last updated 8/9/2026\"); values match memo 03. VA site not checked; hours and eligibility details unknown."
+    },
+    {
+      "name": "Boulder Vet Center",
+      "organization": "U.S. Department of Veterans Affairs",
+      "categories": [
+        "veteran-resources",
+        "mental-and-behavioral-health-care"
+      ],
+      "summary": "VA Vet Center counseling and readjustment services for veterans.",
+      "access": "Call 303-440-7306.",
+      "phone": "303-440-7306",
+      "url": "",
+      "address": "",
+      "hoursText": "",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf",
+      "sourceNote": "Re-checked 2026-11-14 against the All Roads Community Resource Guide PDF (\"Last updated 8/9/2026\"); values match memo 03. Address and hours not verified."
+    },
+    {
+      "name": "Veterans Community Project — Longmont",
+      "organization": "Veterans Community Project",
+      "categories": [
+        "veteran-resources",
+        "housing",
+        "hygiene-and-toiletries",
+        "identification-and-documents"
+      ],
+      "summary": "For veterans experiencing homelessness: food, hygiene kits, housing referrals, case management, military documentation help, VA benefit referrals.",
+      "access": "Call 720-340-2916 for an appointment or current walk-in hours at the Outreach Center, 1228 Main St, Longmont.",
+      "phone": "720-340-2916",
+      "url": "https://www.vcp.org/",
+      "address": "1228 Main St, Longmont, CO",
+      "hoursText": "",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "",
+      "sourceUrl": "https://longmontcolorado.gov/human-services/resources-for-people-experiencing-homelessness/",
+      "sourceNote": "Verified 2026-11-14: City of Longmont resources page (services, 1228 Main St, 720-340-2916). vcp.org blocked our fetch (Cloudflare)."
+    },
+    {
+      "name": "HOPE Longmont — Outreach Center",
+      "organization": "HOPE for Longmont",
+      "categories": [
+        "drop-in-spaces",
+        "free-meals",
+        "clothing-and-gear",
+        "identification-and-documents",
+        "housing"
+      ],
+      "summary": "Walk-up center: lunch sacks, water, clothing, mail, health referrals, help locating vital documents, case management and Coordinated Entry.",
+      "access": "Walk up at 804 S Lincoln St, Longmont. Call first — sources disagree on days: HOPE site says Mon–Thu 12–4 PM; City of Longmont page and All Roads guide say Mon–Wed 12–4 PM.",
+      "phone": "720-494-4673",
+      "url": "https://hopeforlongmont.org/programs",
+      "address": "804 S Lincoln St, Longmont, CO 80501",
+      "hoursText": "Call first — sources disagree: Mon–Thu 12–4 PM (hopeforlongmont.org, 2026-11-14) vs Mon–Wed 12–4 PM (longmontcolorado.gov; All Roads guide 8/9/2026)",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "",
+      "sourceUrl": "https://hopeforlongmont.org/programs",
+      "sourceNote": "Verified 2026-11-14: hopeforlongmont.org/programs and homepage (Mon–Thu 12–4, 720-494-4673); conflict seen on https://longmontcolorado.gov/human-services/resources-for-people-experiencing-homelessness/ and All Roads Aug 2026 guide."
+    },
+    {
+      "name": "HOPE Longmont — Navigation Shelter",
+      "organization": "HOPE for Longmont",
+      "categories": [
+        "shelters",
+        "showers",
+        "laundry",
+        "storage",
+        "free-meals"
+      ],
+      "summary": "Nightly housing-focused shelter with meals, showers, laundry, personal storage and case management.",
+      "access": "Requires Coordinated Entry (Longmont CE 720-453-6096). Shelter line after 5 PM, 7 days: 720-453-6999.",
+      "phone": "720-453-6999",
+      "url": "https://hopeforlongmont.org/programs",
+      "address": "",
+      "hoursText": "",
+      "eligibility": "Individuals who qualify through Coordinated Entry.",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "Also helps with security deposits and move-in essentials when housing becomes available.",
+      "sourceUrl": "https://hopeforlongmont.org/programs",
+      "sourceNote": "Verified 2026-11-14: hopeforlongmont.org/programs (Navigation Shelter services, 720-453-6999 after 5 PM / 7 days)."
+    },
+    {
+      "name": "HOPE Longmont — Street Outreach / LTHERE",
+      "organization": "HOPE for Longmont",
+      "categories": [
+        "hygiene-and-toiletries",
+        "free-meals",
+        "housing"
+      ],
+      "summary": "Street outreach about 20 hours/week (peer support professional + licensed social worker): food, water, hygiene supplies, housing connection. LTHERE = Longmont Targeted Homeless Engagement & Referral Effort.",
+      "access": "Call 720-494-4673 to connect with HOPE staff.",
+      "phone": "720-494-4673",
+      "url": "https://hopeforlongmont.org/programs",
+      "address": "",
+      "hoursText": "",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "LTHERE contact per City of Longmont page: leah@hopeforlongmont.org. SafeLot (safe parking) is mentioned on the Longmont city page but not on HOPE's programs page — current status unverified, not added.",
+      "sourceUrl": "https://hopeforlongmont.org/programs",
+      "sourceNote": "Verified 2026-11-14: hopeforlongmont.org/programs (Street Outreach) and https://longmontcolorado.gov/human-services/resources-for-people-experiencing-homelessness/ (LTHERE)."
+    },
+    {
+      "name": "TGTHR Street Outreach (youth)",
+      "organization": "TGTHR",
+      "categories": [
+        "youth-resources",
+        "hygiene-and-toiletries",
+        "clothing-and-gear",
+        "housing"
+      ],
+      "summary": "Street outreach to unhoused young people: food, water, medical and hygiene supplies, clothing, case management.",
+      "access": "Contact via The Source drop-in, 3080 Broadway (303-447-1207), or TGTHR main line 303-447-1206.",
+      "phone": "303-447-1207",
+      "url": "https://www.tgthr.org/",
+      "address": "",
+      "hoursText": "",
+      "eligibility": "Young people (The Source serves ages 12–24; Longmont page says outreach for youth 25 and younger).",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "",
+      "sourceUrl": "https://www.tgthr.org/",
+      "sourceNote": "Verified 2026-11-14: tgthr.org (Outreach Team services; phones 303.447.1206 and The Source 303.447.1207). Outreach schedule not published."
+    },
+    {
+      "name": "Boulder Police Homeless Outreach Team (HOT)",
+      "organization": "City of Boulder Police Department",
+      "categories": [
+        "housing"
+      ],
+      "summary": "Two Boulder Police officers focused on engaging people experiencing homelessness in services and housing rather than enforcement.",
+      "access": "Via Boulder Police non-emergency 303-441-3333 or homelessoutreach@bouldercolorado.gov.",
+      "phone": "303-441-3333",
+      "url": "https://bouldercolorado.gov/services/homeless-outreach-team",
+      "address": "",
+      "hoursText": "",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "These are police officers — tell participants so they can choose. Useful context for the record's police/HOT field.",
+      "sourceUrl": "https://bouldercolorado.gov/services/homeless-outreach-team",
+      "sourceNote": "Verified 2026-11-14: bouldercolorado.gov Homeless Outreach Team page and BHCR page (\"two Boulder Police Department officers\")."
+    },
+    {
+      "name": "Safe Shelter of St. Vrain Valley",
+      "organization": "Safe Shelter of St. Vrain Valley",
+      "categories": [
+        "shelters",
+        "advocacy",
+        "legal-assistance"
+      ],
+      "summary": "Emergency shelter for domestic-violence survivors (Longmont); counseling and legal advocacy for adults and children; English and Spanish.",
+      "access": "24-hour crisis line 303-772-4422. Public office 303-772-0432.",
+      "phone": "303-772-4422",
+      "url": "",
+      "address": "",
+      "hoursText": "Crisis line 24/7",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf",
+      "sourceNote": "Re-checked 2026-11-14 against the All Roads Community Resource Guide PDF (\"Last updated 8/9/2026\"); values match memo 03."
+    },
+    {
+      "name": "MESA 24-hour Sexual Violence Hotline",
+      "organization": "Moving to End Sexual Assault (MESA)",
+      "categories": [
+        "mental-health-crisis",
+        "advocacy"
+      ],
+      "summary": "24-hour hotline for survivors of sexual violence.",
+      "access": "Call 303-442-7300 or text BRAVE to 20121.",
+      "phone": "303-442-7300",
+      "url": "",
+      "address": "",
+      "hoursText": "24/7",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf",
+      "sourceNote": "Re-checked 2026-11-14 against the All Roads Community Resource Guide PDF (\"Last updated 8/9/2026\"); values match memo 03."
+    },
+    {
+      "name": "Colorado Human Trafficking Hotline",
+      "organization": "",
+      "categories": [
+        "advocacy"
+      ],
+      "summary": "Statewide hotline for human-trafficking concerns.",
+      "access": "Call 866-455-5075.",
+      "phone": "866-455-5075",
+      "url": "",
+      "address": "",
+      "hoursText": "",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf",
+      "sourceNote": "Re-checked 2026-11-14 against the All Roads Community Resource Guide PDF (\"Last updated 8/9/2026\"); values match memo 03. Hours not stated in guide."
+    },
+    {
+      "name": "Immigrant Legal Center of Boulder County",
+      "organization": "Immigrant Legal Center of Boulder County",
+      "categories": [
+        "legal-assistance"
+      ],
+      "summary": "Nonprofit immigration legal services for Boulder County's immigrant population.",
+      "access": "948 North St, Suite 8, Boulder. Call 303-444-1522.",
+      "phone": "303-444-1522",
+      "url": "",
+      "address": "948 North St Suite 8, Boulder, CO",
+      "hoursText": "",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf",
+      "sourceNote": "Re-checked 2026-11-14 against the All Roads Community Resource Guide PDF (\"Last updated 8/9/2026\"); values match memo 03. Hours unknown."
+    },
+    {
+      "name": "Boulder County Mediation Resource Center",
+      "organization": "Boulder County",
+      "categories": [
+        "legal-assistance"
+      ],
+      "summary": "Dispute-resolution alternative to lawyers.",
+      "access": "Call 303-441-4364.",
+      "phone": "303-441-4364",
+      "url": "",
+      "address": "",
+      "hoursText": "",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf",
+      "sourceNote": "Re-checked 2026-11-14 against the All Roads Community Resource Guide PDF (\"Last updated 8/9/2026\"); values match memo 03. Hours unknown."
+    },
+    {
+      "name": "Colorado DMV — Boulder office",
+      "organization": "Colorado Division of Motor Vehicles",
+      "categories": [
+        "identification-and-documents"
+      ],
+      "summary": "State ID and driver license office.",
+      "access": "4800 Baseline Rd, Suite A102, Boulder. Appointment required. 720-295-2965.",
+      "phone": "720-295-2965",
+      "url": "",
+      "address": "4800 Baseline Rd Ste A102, Boulder, CO",
+      "hoursText": "",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "Appointment required.",
+      "fieldNotes": "",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf",
+      "sourceNote": "Re-checked 2026-11-14 against the All Roads Community Resource Guide PDF (\"Last updated 8/9/2026\"); values match memo 03. Hours not verified."
+    },
+    {
+      "name": "Social Security Administration — Louisville office",
+      "organization": "Social Security Administration",
+      "categories": [
+        "identification-and-documents",
+        "benefits-enrollment"
+      ],
+      "summary": "Social Security cards and benefits (SSI/SSDI).",
+      "access": "480 W Dahlia St, Louisville. Call 877-405-5872.",
+      "phone": "877-405-5872",
+      "url": "",
+      "address": "480 W Dahlia St, Louisville, CO 80027",
+      "hoursText": "",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf",
+      "sourceNote": "Re-checked 2026-11-14 against the All Roads Community Resource Guide PDF (\"Last updated 8/9/2026\"); values match memo 03. Also listed with 877-405-5872 on All Roads /get-help. Hours not verified."
+    },
+    {
+      "name": "Journey Church Longmont — meals and showers",
+      "organization": "Journey Church",
+      "categories": [
+        "free-meals",
+        "showers"
+      ],
+      "summary": "Evening meals and showers in Longmont.",
+      "access": "2000 Pike Rd, Longmont. Sun–Wed 5:30–7 PM.",
+      "phone": "",
+      "url": "",
+      "address": "2000 Pike Rd, Longmont, CO",
+      "hoursText": "Sun–Wed 5:30–7:00 PM",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf",
+      "sourceNote": "Re-checked 2026-11-14 against the All Roads Community Resource Guide PDF (\"Last updated 8/9/2026\"); values match memo 03. Street sheet is the only source found; confirm in field."
+    },
+    {
+      "name": "Longmont rec-center showers ($1)",
+      "organization": "City of Longmont",
+      "categories": [
+        "showers"
+      ],
+      "summary": "$1 public showers at three Longmont city facilities.",
+      "access": "Centennial Pool, 1201 Alpine St (303-651-8406): Wed 12–2 PM, no towels. Longmont Recreation Center, 310 Quail Rd (303-774-4800): Mon & Thu 12–4 PM. St. Vrain Memorial Building, 700 Longs Peak Ave (303-651-8404): Tue & Fri 12–3 PM.",
+      "phone": "",
+      "url": "",
+      "address": "",
+      "hoursText": "Centennial Pool Wed 12–2; Longmont Rec Mon & Thu 12–4; St. Vrain Memorial Tue & Fri 12–3",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "$1 per shower; towels not provided at Centennial Pool.",
+      "fieldNotes": "",
+      "sourceUrl": "https://longmontcolorado.gov/human-services/resources-for-people-experiencing-homelessness/",
+      "sourceNote": "Verified 2026-11-14: City of Longmont resources page \"Hygiene and Internet\" section (sites, times, phones, $1)."
+    },
+    {
+      "name": "OUR Center (Longmont)",
+      "organization": "OUR Center",
+      "categories": [
+        "free-meals",
+        "food-pantries",
+        "clothing-and-gear",
+        "emergency-financial-assistance"
+      ],
+      "summary": "Longmont hub: Community Cafe meals, Community Market groceries, same-day Resource Now appointments (utilities, finances, referrals).",
+      "access": "220 Collyer St, Longmont. 303-772-5529.",
+      "phone": "303-772-5529",
+      "url": "https://ourcenter.org/",
+      "address": "220 Collyer St, Longmont, CO",
+      "hoursText": "Building Mon–Fri 8–5 (Tue to 5:30; closes 1 PM 3rd Wed). Cafe: breakfast M–F 8–9 AM; lunch daily 11:30 AM–1 PM incl. weekends/holidays. Resource Now: Tue 9–11 AM, Thu 2–4 PM",
+      "eligibility": "All Roads guide: assists residents of St. Vrain Valley School District.",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "St. Benedict free clinic here Thursdays 11 AM–1 PM. Market hours vary by day (see site).",
+      "sourceUrl": "https://ourcenter.org/",
+      "sourceNote": "Verified 2026-11-14: ourcenter.org homepage hours and 303-772-5529; eligibility from All Roads Aug 2026 guide."
+    },
+    {
+      "name": "Mother House (Haven Ridge)",
+      "organization": "Haven Ridge",
+      "categories": [
+        "shelters",
+        "housing"
+      ],
+      "summary": "Maternity residential program for pregnant people and mothers with babies.",
+      "access": "Call Haven Ridge 303-447-9602.",
+      "phone": "303-447-9602",
+      "url": "https://havenridgeboulder.org/",
+      "address": "",
+      "hoursText": "",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf",
+      "sourceNote": "Re-checked 2026-11-14 against the All Roads Community Resource Guide PDF (\"Last updated 8/9/2026\"); values match memo 03. havenridgeboulder.org not re-fetched; intake process unknown."
+    },
+    {
+      "name": "Little Flower Maternity Home",
+      "organization": "Little Flower Maternity Home",
+      "categories": [
+        "shelters",
+        "housing"
+      ],
+      "summary": "Maternity residential program.",
+      "access": "Call 720-609-2934.",
+      "phone": "720-609-2934",
+      "url": "",
+      "address": "",
+      "hoursText": "",
+      "eligibility": "",
+      "petPolicy": "",
+      "rules": "",
+      "fieldNotes": "",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf",
+      "sourceNote": "Re-checked 2026-11-14 against the All Roads Community Resource Guide PDF (\"Last updated 8/9/2026\"); values match memo 03. No other source checked; eligibility and location unknown."
+    }
+  ],
+  "corrections": [
+    {
+      "resourceId": "r037",
+      "resourceName": "Boulder Behavioral Health Crisis Response / CARE",
+      "fields": {
+        "name": "Boulder Behavioral Health Crisis Response (BHCR)",
+        "summary": "City team of behavioral-health clinicians and case managers who co-respond with police or respond instead of police to behavioral-health crisis calls. Replaced CARE and CIRT (2021–2025).",
+        "access": "Request BHCR through 911 (emergency) or Boulder Police non-emergency 303-441-3333. Responds only during program hours (not published); you may get a different response. Program questions only: 303-709-4291 (not for crisis; not monitored weekends).",
+        "phone": "303-441-3333",
+        "url": "https://bouldercolorado.gov/services/behavioral-health-crisis-response",
+        "fieldNotes": "BFF requested CARE on a weekend in October 2026 and was told it was unavailable; do not promise non-police response. Responses can be co-response with police. Non-police alternatives: 988 (call/text) and the 24/7 Walk-in Crisis Center, 1107 W Century Dr, Louisville."
+      },
+      "reason": "CARE and CIRT ended in 2025 and were replaced by BHCR; record still uses the old program names. City page confirms request route, program line and that response depends on program hours and staffing.",
+      "sourceUrl": "https://bouldercolorado.gov/services/behavioral-health-crisis-response"
+    },
+    {
+      "resourceId": "v2_104",
+      "resourceName": "Saturday 4:00 PM — Food Not Bombs",
+      "fields": {
+        "name": "Saturday 3:00 PM (winter) / 4:00 PM (market season) — Food Not Bombs",
+        "access": "Saturdays: 3:00 PM in winter when the Farmers' Market is closed; 4:00 PM during Farmers' Market season. 13th & Canyon near the Central Park bandshell, under the library in permitting weather. Generally mobile/wagon-style mutual aid rather than table setup.",
+        "hoursText": "Sat 3:00 PM in winter (market closed); Sat 4:00 PM in Farmers' Market season"
+      },
+      "reason": "Time is seasonal: the All Roads street sheet says 3 PM in winter, so the 4 PM listing is wrong as of mid-November.",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf"
+    },
+    {
+      "resourceId": "v2_089",
+      "resourceName": "Monday 12:00–1:00 PM — Circle of Love",
+      "fields": {
+        "hoursText": "Mon 12:15 PM per All Roads guide (8/9/2026); BFF field notes say 12:00–1:00 PM — arrive by noon"
+      },
+      "reason": "Minor discrepancy: All Roads street sheet lists Circle of Love at 12:15 PM Mon/Wed at the Bandshell.",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf"
+    },
+    {
+      "resourceId": "v2_095",
+      "resourceName": "Wednesday 12:00–1:00 PM — Circle of Love",
+      "fields": {
+        "hoursText": "Wed 12:15 PM per All Roads guide (8/9/2026); BFF field notes say 12:00–1:00 PM — arrive by noon"
+      },
+      "reason": "Minor discrepancy: All Roads street sheet lists Circle of Love at 12:15 PM Mon/Wed at the Bandshell.",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf"
+    },
+    {
+      "resourceId": "r018",
+      "resourceName": "Deacon’s Closet / St. John’s Episcopal",
+      "fields": {
+        "access": "St. John’s Episcopal, 1419 Pine St (since 2026-07-23), Thursdays. Call first — sources disagree on time: All Roads guide (8/9/2026) says 9:30–10:30 AM; BFF field notes say about 2–3 PM.",
+        "hoursText": "Call first — sources disagree: Thu 9:30–10:30 AM (All Roads guide, 8/9/2026) vs Thu ~2–3 PM (BFF field notes)",
+        "fieldNotes": "Does not distribute sleeping bags. Sebastian Adams from Community Court may be available Thursday around 2 PM. Community Court line 303-441-1841 (voluntary; \"you will NOT be arrested\"). Focus ReEntry is there Thursdays. Various Boulder agencies may attend."
+      },
+      "reason": "Time conflict between the All Roads street sheet and BFF field notes; location is correct (moved to St. John's 2026-07-23).",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf"
+    },
+    {
+      "resourceId": "r062",
+      "resourceName": "Sebastian Adams / Community Court",
+      "fields": {
+        "access": "At Deacon’s Closet (St. John’s, 1419 Pine) on Thursdays — confirm time (street sheet says 9:30–10:30 AM; BFF has ~2 PM). Community Court program line 303-441-1841."
+      },
+      "reason": "Same Thursday time conflict as r018; All Roads guide lists a public Community Court line (303-441-1841) that can be published without exposing a personal number.",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf"
+    },
+    {
+      "resourceId": "r010",
+      "resourceName": "Bridge House Ready to Work",
+      "fields": {
+        "phone": "720-325-7431",
+        "url": "https://boulderbridgehouse.org/ready-to-work/",
+        "access": "4747 Table Mesa Dr, Boulder. Office Mon–Fri 9 AM–5 PM. Call 720-325-7431 for intake and eligibility.",
+        "hoursText": "Office Mon–Fri 9:00 AM–5:00 PM",
+        "fieldNotes": "Sobriety and participation requirements apply. Phone conflict: Bridge House site lists 720-325-7431; All Roads street sheet (8/9/2026) lists 720-386-9002 — try the other if one fails. Bridge House closed Community Table Kitchen on 2026-08-07 and Aurora Ready to Work on 2026-09-30; Boulder Ready to Work continues."
+      },
+      "reason": "Record lacks phone/address/hours; operator page (Hours & Locations) gives 720-325-7431, 4747 Table Mesa Dr, M–F 9–5, which conflicts with the street-sheet phone. Community Table Kitchen closure confirmed in Bridge House's operational update.",
+      "sourceUrl": "https://boulderbridgehouse.org/about/hours-location/"
+    },
+    {
+      "resourceId": "r005",
+      "resourceName": "All Roads",
+      "fields": {
+        "phone": "303-442-4646",
+        "url": "https://www.allroadsboco.org/",
+        "hoursText": "Day Services Mon–Fri 9 AM–2 PM (lunch 11:45). Overnight intake 5–7 PM per All Roads /get-help (street sheet says 4:30–7 PM). Coordinated Entry: see r007.",
+        "fieldNotes": "Laundry conflict: BFF says washer free, dryer $1; City page says coin-operated washers with free drying — confirm on site. About 24 lockers, difficult to obtain. AcuDetox Tuesdays 11 AM–noon. Free bus 8 AM to 14th & Walnut, 5 PM back. Resident message line 303-468-4324.",
+        "rules": "BFF field knowledge: Guests can request the sober dorm; placement is not guaranteed. Ask about availability and intake rules. All Roads limits stays to 10 days for people without Boulder County ties (effective 2026-05-04; paused for winter from about Nov 1 per memo 03 — confirm current status)."
+      },
+      "reason": "Record has no phone or hours; laundry pricing conflicts with the City page; the 10-day non-local stay limit (2026) is missing.",
+      "sourceUrl": "https://www.allroadsboco.org/get-help"
+    },
+    {
+      "resourceId": "r007",
+      "resourceName": "OneHome / Coordinated Entry",
+      "fields": {
+        "name": "Boulder County Coordinated Entry (HSBC)",
+        "phone": "303-579-4404",
+        "url": "https://bouldercounty.gov/departments/community-services/homeless/homeless-services/",
+        "access": "Call 303-579-4404 or walk up at All Roads, 4869 N Broadway. Longmont: 720-453-6096 or HOPE, 804 S Lincoln. Call at least 30 minutes before close. After hours: All Roads intake 5–7 PM for one night, or call 2-1-1.",
+        "hoursText": "Call first — sources disagree: M/W/Th/F 10–4, Tue 12–4 (Boulder County, page modified 2026-09-25); M–F 9–3 (City of Boulder and All Roads /get-help); M–F 9–2 (All Roads guide 8/9/2026)"
+      },
+      "reason": "Boulder County CE is run by HSBC, not OneHome (the Denver-metro system); record lacks the CE phone. Official sources give three different Boulder CE schedules, so print 'call first' rather than one time.",
+      "sourceUrl": "https://bouldercounty.gov/departments/community-services/homeless/homeless-services/"
+    },
+    {
+      "resourceId": "r065",
+      "resourceName": "HOPE Longmont",
+      "fields": {
+        "summary": "Longmont emergency weather shelter (overnight at ≤25°F or significant precipitation; day shelter at ≤15°F), Navigation Shelter via Coordinated Entry, Outreach Center and street outreach.",
+        "access": "Emergency shelter updates: 720-494-4673, or after 5 PM 720-453-6999. Longmont CE: 720-453-6096.",
+        "phone": "720-494-4673",
+        "url": "https://hopeforlongmont.org/",
+        "fieldNotes": "BFF previously heard a phone recording identifying a rotating church site; confirm whether that model continues and Boulder-residency eligibility. City of Longmont posts each severe-weather activation as a news item. Longmont CE hours conflict: HOPE site M–F 12–4; All Roads/county M–F 12–7 by phone; Longmont city page M–Th 12–4."
+      },
+      "reason": "Record has no phone or activation thresholds; HOPE programs page publishes both, plus CE hours that conflict with other sources.",
+      "sourceUrl": "https://hopeforlongmont.org/programs"
+    },
+    {
+      "resourceId": "r016",
+      "resourceName": "Community Food Share",
+      "fields": {
+        "access": "Onsite Feeding Families pantry at 650 S Taylor Ave, Louisville: Wed 9 AM–3 PM, Thu 12–6 PM, Fri 9 AM–3 PM (60+ special hours Thu 9–10 AM). Mobile pantries around the county — see calendar.",
+        "url": "https://communityfoodshare.org/get-food/",
+        "hoursText": "Onsite pantry Wed 9–3, Thu 12–6, Fri 9–3",
+        "rules": "Enrollment form requires photo ID and proof of address in Boulder or Broomfield County."
+      },
+      "reason": "Record lists it mainly for volunteering; memo 03 flags it as a pantry gap. The ID + proof-of-address rule matters for unhoused participants.",
+      "sourceUrl": "https://communityfoodshare.org/get-food/"
+    },
+    {
+      "resourceId": "r004",
+      "resourceName": "Harvest of Hope",
+      "fields": {
+        "phone": "720-382-1971",
+        "url": "https://hopepantry.org/",
+        "access": "4830 Pearl St, Boulder. Mon/Wed/Fri/Sat 9 AM–2 PM; Tue/Thu 9 AM–6:30 PM. No ID required; people without Boulder County residency or currently unhoused can still register (different program track).",
+        "hoursText": "Mon, Wed, Fri, Sat 9 AM–2 PM; Tue & Thu 9 AM–6:30 PM. Closed Nov 26–28, 2026",
+        "fieldNotes": "Pet food, not gear. Road construction near the pantry: site recommends Tue/Thu after 3 PM or Saturdays. Focus ReEntry there Wednesdays."
+      },
+      "reason": "Record has no hours, phone or address; operator page publishes all three plus the Thanksgiving closure.",
+      "sourceUrl": "https://hopepantry.org/services/"
+    },
+    {
+      "resourceId": "r012",
+      "resourceName": "TGTHR / The Source",
+      "fields": {
+        "phone": "303-447-1207",
+        "url": "https://www.tgthr.org/",
+        "hoursText": "Mon–Fri 11 AM–5 PM"
+      },
+      "reason": "Hours confirmed (county map, Longmont page, street sheet); phone missing from record. tgthr.org lists The Source at 303.447.1207.",
+      "sourceUrl": "https://www.tgthr.org/"
+    },
+    {
+      "resourceId": "r006",
+      "resourceName": "Focus ReEntry",
+      "fields": {
+        "phone": "720-662-2577",
+        "hoursText": "At Feet Forward (Tue), Harvest of Hope (Wed), All Roads (Mon & Wed), Deacon’s Closet (Thu) — times not published",
+        "fieldNotes": "Can receive phone deliveries for clients with arrangement; can assist with Coordinated Entry. Alternate line 720-662-2576; email outreachfocusreentry@gmail.com. Focus ReEntry's website has no content."
+      },
+      "reason": "Record has no phone; All Roads street sheet lists phones and weekly locations.",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf"
+    },
+    {
+      "resourceId": "r035",
+      "resourceName": "Louisville walk-in crisis center",
+      "fields": {
+        "name": "Clinica 24/7 Walk-in Crisis Center & Addiction Services (Louisville)",
+        "access": "1107 W Century Dr, Louisville, CO 80027. Open 24/7, walk in, or call/text 988.",
+        "hoursText": "24/7"
+      },
+      "reason": "24/7 status confirmed by the City BHCR page and the All Roads guide, so the 'verify 24/7' caveat can be dropped; operator name was missing.",
+      "sourceUrl": "https://bouldercolorado.gov/services/behavioral-health-crisis-response"
+    },
+    {
+      "resourceId": "r038",
+      "resourceName": "WellMind Connection / CAT",
+      "fields": {
+        "hoursText": "Call first — sources disagree: Mon–Fri 9–6 (county page) vs noon–4 (older bulletin)"
+      },
+      "reason": "Memo 03 found conflicting published hours; neither re-verified 2026-11-14.",
+      "sourceUrl": "https://wellmindconnection.org/"
+    },
+    {
+      "resourceId": "v2_086",
+      "resourceName": "The Lodge at Haven Ridge",
+      "fields": {
+        "fieldNotes": "BFF field knowledge: sobriety is not required if no substances are brought onsite and guests are not noticeably impaired. The Lodge reserves the right to test but typically does not unless a problem arises. Haven Ridge main line 303-447-9602; intake also by contact form on havenridgeboulder.org."
+      },
+      "reason": "Phone confirmed on All Roads guide; memo 03 recommends adding the Haven Ridge main line and contact-form route.",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf"
+    },
+    {
+      "resourceId": "r057",
+      "resourceName": "Via Mobility Services",
+      "fields": {
+        "access": "Call first — sources disagree on phone: 303-443-3043 (BFF) vs 303-447-2848 ext 1014 (All Roads guide, 8/9/2026). Confirm eligibility, routes and fares."
+      },
+      "reason": "Phone conflict; viamobility.org could not be fetched on 2026-11-14 (proxy 502), so which is current is unverified. Not changing phone until confirmed.",
+      "sourceUrl": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf"
+    },
+    {
+      "resourceId": "v2_085",
+      "resourceName": "Centro de los Trabajadores (formerly Centro Humanitario)",
+      "fields": {
+        "fieldNotes": "Do not promise walk-in same-day placement; conflicting addresses appear in public sources. Operator website (checked 2026-11-14) still lists (303) 292-4115 and PO Box 3190, Denver; a newer state guide lists 720-404-1935 — try that if the 303 number fails."
+      },
+      "reason": "Memo 03 suspected 303-292-4115 was stale, but the operator's own site still lists it on 2026-11-14; keep the phone and note the alternate.",
+      "sourceUrl": "https://centrodelostrabajadores.org/"
+    },
+    {
+      "resourceId": "r076",
+      "resourceName": "211 Colorado",
+      "fields": {
+        "phone": "211",
+        "access": "Dial 2-1-1 (free) or search online. Boulder County's fallback when Coordinated Entry is closed; CE screening still needed next open day."
+      },
+      "reason": "County Homeless Services page names 2-1-1 as the after-hours CE fallback; record lacks the phone.",
+      "sourceUrl": "https://bouldercounty.gov/departments/community-services/homeless/homeless-services/"
+    }
+  ]
+}

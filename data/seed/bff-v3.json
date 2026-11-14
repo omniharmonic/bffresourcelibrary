@@ -1,0 +1,2743 @@
+{
+  "dimensions": {
+    "Physical": [
+      [
+        "Free Meals",
+        "First Aid",
+        "Hygiene & Toiletries",
+        "Harm Reduction",
+        "Menstrual Care"
+      ],
+      [
+        "Food Pantries",
+        "Medical Care",
+        "SUD Treatment",
+        "Drinking Water",
+        "SNAP Enrollment",
+        "Dental Care",
+        "Vision & Glasses",
+        "STI Testing",
+        "Medical Equipment",
+        "Medication-Assisted Treatment (MAT)"
+      ],
+      [
+        "Advocacy",
+        "Medicaid Enrollment"
+      ]
+    ],
+    "Social": [
+      [
+        "Outreach Social Events"
+      ],
+      [
+        "Free Community Activities",
+        "Drop-In Spaces",
+        "Youth Resources",
+        "LGBTQIA+ Resources",
+        "Tribal & Indigenous Resources",
+        "Veteran Resources",
+        "Elder & Senior Resources"
+      ],
+      [
+        "Community Centers",
+        "Support & Peer Groups"
+      ]
+    ],
+    "Financial": [
+      [
+        "Emergency Financial Assistance"
+      ],
+      [
+        "Benefits Enrollment",
+        "Employment",
+        "Banking & Financial Services",
+        "Legal Assistance"
+      ],
+      [
+        "Long-Term Financial Planning"
+      ]
+    ],
+    "Environmental": [
+      [
+        "Trash Bags & Disposal",
+        "Clothing & Gear",
+        "Tents & Sleeping Bags",
+        "Showers",
+        "Bathrooms"
+      ],
+      [
+        "Laundry",
+        "Shelters",
+        "Storage",
+        "Free & Friendly Public Spaces",
+        "Safe Parking",
+        "Transportation Assistance",
+        "Bicycles",
+        "Bike Repair",
+        "Bike Locks",
+        "Car Repair",
+        "Gas Money / Fuel Assistance"
+      ],
+      [
+        "Housing",
+        "Furniture"
+      ]
+    ],
+    "Intellectual": [
+      [
+        "Outreach Workshops & Activities"
+      ],
+      [
+        "Free Classes & Workshops",
+        "Technology Access",
+        "Device Charging",
+        "Phone Access"
+      ],
+      [
+        "Education Enrollment Assistance"
+      ]
+    ],
+    "Occupational": [
+      [
+        "Identification & Documents",
+        "Transportation",
+        "Interview Readiness",
+        "Short-Term Work / Day Labor"
+      ],
+      [
+        "Volunteer Opportunities",
+        "Vocational Programs"
+      ],
+      [
+        "Career Development"
+      ]
+    ],
+    "Emotional": [
+      [
+        "MENTAL HEALTH CRISIS",
+        "Mental Health Support by Outreach",
+        "Outreach Workshops & Activities"
+      ],
+      [
+        "Mental & Behavioral Health Care",
+        "Online Mental Health Resources"
+      ],
+      [
+        "Ongoing Mental Health Care"
+      ]
+    ],
+    "Spiritual": [
+      [
+        "Faith-Based Outreach"
+      ],
+      [
+        "Spiritual & Faith Communities"
+      ],
+      [
+        "Spiritual Support"
+      ]
+    ]
+  },
+  "colors": {
+    "Physical": "#07508b",
+    "Social": "#5086a6",
+    "Financial": "#00abc3",
+    "Environmental": "#56a33f",
+    "Intellectual": "#f6b916",
+    "Occupational": "#fa791c",
+    "Emotional": "#db138a",
+    "Spiritual": "#6e328e"
+  },
+  "resources": [
+    {
+      "id": "r001",
+      "name": "Boulder Feet Forward (BFF)",
+      "categories": [
+        "First Aid",
+        "Hygiene & Toiletries",
+        "Harm Reduction",
+        "Laundry",
+        "Transportation",
+        "Advocacy",
+        "SNAP Enrollment",
+        "Medicaid Enrollment",
+        "Identification & Documents",
+        "Interview Readiness",
+        "Education Enrollment Assistance",
+        "Outreach Workshops & Activities",
+        "Outreach Social Events",
+        "Volunteer Opportunities",
+        "Housing",
+        "Medical Care",
+        "Pets",
+        "Menstrual Care",
+        "Bike Locks",
+        "Transportation Assistance"
+      ],
+      "summary": "Peer-led zero-barrier street outreach, basic needs, resource navigation, warm handoffs and case management.",
+      "access": "BFF Tuesdays 2:30–3:30 PM and Fridays 11:00 AM, southeast corner of Central Park, Boulder. Ask BFF staff for service-specific assistance.",
+      "notes": "Laundry vouchers and bus passes subject to availability; staff can assist with Coordinated Entry, benefits, education, and medical navigation. Tuesday pet supplies are managed by volunteer Lori, not Annie & Millie’s Place. Both events provide hygiene and toiletry supplies, with offerings varying by day. See individual event entries for exact times and conditions. Free menstrual products available at BFF events. Bike locks are sometimes available; ask staff, availability varies.",
+      "phone": "",
+      "url": "https://feetforwardboulder.org/",
+      "status": "BFF firsthand",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r002",
+      "name": "The Community Project (TCP)",
+      "categories": [
+        "Clothing & Gear",
+        "Tents & Sleeping Bags",
+        "Volunteer Opportunities",
+        "Interview Readiness",
+        "Technology Access",
+        "Device Charging"
+      ],
+      "summary": "Clothing and gear at BFF partner events; volunteering opportunities. Phone program after approximately 40 volunteer hours; free device charging at BFF Tuesday and Friday events.",
+      "access": "Find TCP alongside BFF Tuesday/Friday events.",
+      "notes": "Not a separate TCP event. Free phone after approximately 40 volunteer hours and monthly bus passes for volunteers; reference may be available after sustained volunteering. TCP does not distribute tents. TCP provides a free device-charging station during BFF Tuesday and Friday events.",
+      "phone": "",
+      "url": "",
+      "status": "BFF firsthand",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r003",
+      "name": "Annie & Millie’s Place",
+      "categories": [
+        "Pets",
+        "Faith-Based Outreach"
+      ],
+      "summary": "Pet food and gear at Deacon’s Closet; periodic volunteer veterinary clinics, vaccines, and often spay/neuter help.",
+      "access": "At Deacon’s Closet; contact through BFF until direct number approved.",
+      "notes": "Ask Andy permission before publishing his phone number. Developing long-term foster program and seeking volunteer homes.",
+      "phone": "",
+      "url": "",
+      "status": "BFF firsthand",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r004",
+      "name": "Harvest of Hope",
+      "categories": [
+        "Food Pantries",
+        "Pets",
+        "Volunteer Opportunities"
+      ],
+      "summary": "Food pantry and pet food; pet gear not provided.",
+      "access": "Pantry registration, no ID required according to BFF experience.",
+      "notes": "Pet food, not gear.",
+      "phone": "",
+      "url": "",
+      "status": "BFF firsthand",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r005",
+      "name": "All Roads",
+      "categories": [
+        "Shelters",
+        "Showers",
+        "Laundry",
+        "Storage",
+        "Housing",
+        "Identification & Documents",
+        "Technology Access",
+        "Medical Care",
+        "Free & Friendly Public Spaces"
+      ],
+      "summary": "General adult shelter, housing case management, showers, laundry and limited lockers.",
+      "access": "4869 N Broadway, Boulder; confirm service access on arrival.",
+      "notes": "Washer free; dryer $1. About 24 lockers, difficult to obtain. AcuDetox Tuesdays 11 AM–noon.",
+      "phone": "",
+      "url": "",
+      "status": "BFF firsthand",
+      "petAccess": "Ordinary pets allowed per BFF experience",
+      "verified": "",
+      "rules": "BFF field knowledge: Guests can request the sober dorm; placement is not guaranteed. Ask about availability and intake rules.",
+      "rulesUrl": "https://allroadsboco.org/faq/",
+      "preferred": false,
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r006",
+      "name": "Focus ReEntry",
+      "categories": [
+        "Housing",
+        "Identification & Documents",
+        "SNAP Enrollment",
+        "Medicaid Enrollment",
+        "Advocacy",
+        "Technology Access",
+        "Transportation"
+      ],
+      "summary": "Street-based case management, housing navigation, documents, and benefit support.",
+      "access": "Ask BFF for warm handoff.",
+      "notes": "Can receive phone deliveries for clients with arrangement; can assist with Coordinated Entry.",
+      "phone": "",
+      "url": "",
+      "status": "BFF firsthand",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r007",
+      "name": "OneHome / Coordinated Entry",
+      "categories": [
+        "Housing"
+      ],
+      "summary": "Coordinated housing assessment and matching, not a first-come-first-served waiting list.",
+      "access": "Ask BFF, Focus ReEntry or All Roads for an assessment.",
+      "notes": "Keep in touch with housing case manager and explore other pathways while waiting. Reliable contact and documents matter.",
+      "phone": "",
+      "url": "",
+      "status": "BFF firsthand",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r008",
+      "name": "EFAA",
+      "categories": [
+        "Food Pantries",
+        "Emergency Financial Assistance",
+        "Housing",
+        "Furniture"
+      ],
+      "summary": "Food assistance, housing stabilization and possible family furniture assistance.",
+      "access": "Contact EFAA to confirm eligibility and availability.",
+      "notes": "Pantry generally best for people with access to a kitchen; family furniture assistance requires verification.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r009",
+      "name": "Sister Carmen Community Center",
+      "categories": [
+        "Food Pantries",
+        "Emergency Financial Assistance",
+        "Transportation",
+        "Benefits Enrollment"
+      ],
+      "summary": "Lafayette-based food, financial and support services.",
+      "access": "Contact center for eligibility and current assistance.",
+      "notes": "",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r010",
+      "name": "Bridge House Ready to Work",
+      "categories": [
+        "Employment",
+        "Vocational Programs",
+        "Shelters"
+      ],
+      "summary": "Paid transitional employment with shelter and case-management requirements.",
+      "access": "Contact Ready to Work for intake and eligibility.",
+      "notes": "Sobriety and participation requirements apply.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "Ordinary pets not allowed per BFF experience; ESA accommodation policy unverified",
+      "verified": "",
+      "rules": "BFF field knowledge: Ready to Work conducts full-panel substance testing, including legal substances. A positive result is not necessarily automatic dismissal but will trigger a response. This is transitional housing/employment, not a general walk-in shelter.",
+      "rulesUrl": "https://boulderbridgehouse.org/ready-to-work/",
+      "preferred": false,
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r011",
+      "name": "Workforce Boulder County",
+      "categories": [
+        "Employment",
+        "Vocational Programs",
+        "Career Development",
+        "Interview Readiness",
+        "Technology Access"
+      ],
+      "summary": "Job search, workforce training, career planning, computers and printing.",
+      "access": "Contact workforce center; Connecting Colorado registration may be required.",
+      "notes": "May offer certifications and paid work experience depending on eligibility.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r012",
+      "name": "TGTHR / The Source",
+      "categories": [
+        "Youth Resources",
+        "Drop-In Spaces",
+        "Technology Access",
+        "Employment",
+        "Vocational Programs"
+      ],
+      "summary": "Youth drop-in and support services.",
+      "access": "3080 Broadway, Boulder; ages 12–24; weekdays approximately 11–5, verify.",
+      "notes": "Wi-Fi and youth-specific supports.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r013",
+      "name": "Boulder Public Library",
+      "categories": [
+        "Technology Access",
+        "Free Classes & Workshops",
+        "Free Community Activities",
+        "Bathrooms",
+        "Drinking Water",
+        "Free & Friendly Public Spaces",
+        "Education Enrollment Assistance",
+        "Interview Readiness",
+        "Device Charging",
+        "Phone Access",
+        "Menstrual Care"
+      ],
+      "summary": "Computers, Wi-Fi, printing, scanning, events, workshops, public space and bathrooms.",
+      "access": "Main and branch libraries; check hours and event calendar.",
+      "notes": "Reported $1 daily printing credit; outdoor water refill at Main. Verify seasonality. Free menstrual products in library bathrooms; free charging banks and a free courtesy phone. Ask library staff about access and any restrictions.",
+      "phone": "",
+      "url": "https://calendar.boulderlibrary.org/",
+      "status": "BFF firsthand + check current details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r014",
+      "name": "Boulder Food Rescue",
+      "categories": [
+        "Volunteer Opportunities",
+        "Faith-Based Outreach"
+      ],
+      "summary": "Community food distribution and volunteer opportunities.",
+      "access": "Contact organization for volunteer opportunities.",
+      "notes": "",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r015",
+      "name": "Growing Gardens",
+      "categories": [
+        "Volunteer Opportunities",
+        "Free Classes & Workshops"
+      ],
+      "summary": "Gardening and community volunteer or educational opportunities.",
+      "access": "Check current events and volunteer openings.",
+      "notes": "",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r016",
+      "name": "Community Food Share",
+      "categories": [
+        "Volunteer Opportunities",
+        "Food Pantries"
+      ],
+      "summary": "Food access network and volunteering.",
+      "access": "Check distribution partners and volunteer openings.",
+      "notes": "",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r017",
+      "name": "HomeAhead",
+      "categories": [
+        "Furniture",
+        "Volunteer Opportunities"
+      ],
+      "summary": "Low-cost furniture and household items for people setting up homes.",
+      "access": "3700 Baseline Road, Boulder; 720-880-0415.",
+      "notes": "BFF firsthand price: five pieces for $175. Furniture scholarship idea for partner group.",
+      "phone": "720-880-0415",
+      "url": "https://www.homeahead.org/",
+      "status": "BFF firsthand",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r018",
+      "name": "Deacon’s Closet / St. John’s Episcopal",
+      "categories": [
+        "Clothing & Gear",
+        "Faith-Based Outreach",
+        "Pets",
+        "Legal Assistance"
+      ],
+      "summary": "Clothing and community outreach; Annie & Millie’s Place brings pet supplies.",
+      "access": "St. John’s Episcopal, 1419 Pine St, Thursday approximately 2–3 PM.",
+      "notes": "Does not distribute sleeping bags. Sebastian Adams from Community Court may be available Thursday around 2 PM.",
+      "phone": "",
+      "url": "",
+      "status": "BFF firsthand",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r019",
+      "name": "SAFE Boulder",
+      "categories": [
+        "Tents & Sleeping Bags",
+        "Harm Reduction",
+        "Outreach Social Events"
+      ],
+      "summary": "Street outreach; strong option for donated tents and sleeping bags.",
+      "access": "Ask SAFE team about current availability.",
+      "notes": "Donation-dependent; clarify availability rather than promising.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r020",
+      "name": "Food Not Bombs",
+      "categories": [
+        "Tents & Sleeping Bags",
+        "Outreach Social Events"
+      ],
+      "summary": "Meal outreach and occasional tents or sleeping bags.",
+      "access": "Ask outreach organizers for current distribution details.",
+      "notes": "Donation-dependent.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r021",
+      "name": "FriendShip",
+      "categories": [
+        "Outreach Social Events",
+        "Clothing & Gear"
+      ],
+      "summary": "Community meal/outreach; may have sleeping bags when donated.",
+      "access": "Sunday event; confirm current location/time.",
+      "notes": "Not a reliable tent source.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r022",
+      "name": "Circle of Love",
+      "categories": [
+        "Outreach Social Events",
+        "Faith-Based Outreach"
+      ],
+      "summary": "Community meals, pet-friendly.",
+      "access": "Bandshell, Mondays and Wednesdays; verify current time.",
+      "notes": "",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "Pet-friendly per BFF experience",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r023",
+      "name": "Unity Table",
+      "categories": [
+        "Outreach Social Events",
+        "Legal Assistance",
+        "Faith-Based Outreach"
+      ],
+      "summary": "Meal and community gathering; periodic legal assistance.",
+      "access": "Friday at First Congregational, Broadway & Spruce, by rainbow fence. Monday legal-advice availability needs verification.",
+      "notes": "Verify Monday legal clinic schedule and scope.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r024",
+      "name": "Second Baptist Church",
+      "categories": [
+        "Faith-Based Outreach",
+        "Spiritual & Faith Communities",
+        "Spiritual Support"
+      ],
+      "summary": "Offers prayer and spiritual conversation at BFF Tuesday event.",
+      "access": "Present under its own permit at BFF event.",
+      "notes": "Participant-led; never prescribe religious practice.",
+      "phone": "",
+      "url": "",
+      "status": "BFF firsthand",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r025",
+      "name": "Unity",
+      "categories": [
+        "Faith-Based Outreach",
+        "Spiritual & Faith Communities",
+        "Spiritual Support"
+      ],
+      "summary": "Known local faith community or homelessness-outreach connection.",
+      "access": "Ask directly about current activities and spiritual support.",
+      "notes": "Specific outreach offerings need verification; list neutrally.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r026",
+      "name": "Grace Commons",
+      "categories": [
+        "Faith-Based Outreach",
+        "Spiritual & Faith Communities",
+        "Spiritual Support"
+      ],
+      "summary": "Known local faith community or homelessness-outreach connection.",
+      "access": "Ask directly about current activities and spiritual support.",
+      "notes": "Specific outreach offerings need verification; list neutrally.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r027",
+      "name": "Trinity Lutheran",
+      "categories": [
+        "Faith-Based Outreach",
+        "Spiritual & Faith Communities",
+        "Spiritual Support"
+      ],
+      "summary": "Known local faith community or homelessness-outreach connection.",
+      "access": "Ask directly about current activities and spiritual support.",
+      "notes": "Specific outreach offerings need verification; list neutrally.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r028",
+      "name": "St. John’s Episcopal",
+      "categories": [
+        "Faith-Based Outreach",
+        "Spiritual & Faith Communities",
+        "Spiritual Support"
+      ],
+      "summary": "Known local faith community or homelessness-outreach connection.",
+      "access": "Ask directly about current activities and spiritual support.",
+      "notes": "Specific outreach offerings need verification; list neutrally.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r029",
+      "name": "First United Methodist / Illuminators",
+      "categories": [
+        "Faith-Based Outreach",
+        "Spiritual & Faith Communities",
+        "Spiritual Support"
+      ],
+      "summary": "Known local faith community or homelessness-outreach connection.",
+      "access": "Ask directly about current activities and spiritual support.",
+      "notes": "Specific outreach offerings need verification; list neutrally.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r030",
+      "name": "Boulder County Public Health Works Program",
+      "categories": [
+        "Harm Reduction",
+        "First Aid"
+      ],
+      "summary": "Syringe access/exchange, safe disposal, naloxone and harm-reduction supplies.",
+      "access": "Check current Works Program sites and schedules.",
+      "notes": "",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r031",
+      "name": "Boulder County AIDS Project (BCAP) — STI Testing",
+      "categories": [
+        "STI Testing",
+        "Medical Care",
+        "First Aid"
+      ],
+      "summary": "Free HIV, hepatitis C and other STI testing; confirm test menu.",
+      "access": "Call 303-444-6121 ext. 119.",
+      "notes": "",
+      "phone": "303-444-6121 ext. 119",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r032",
+      "name": "Clinica (formerly Mental Health Partners)",
+      "categories": [
+        "Medical Care",
+        "Mental & Behavioral Health Care",
+        "Ongoing Mental Health Care",
+        "Medicaid Enrollment"
+      ],
+      "summary": "Primary and behavioral health care, outpatient therapy, psychiatry and medication management.",
+      "access": "Behavioral health new-client line 303-443-8500; confirm intake.",
+      "notes": "Some BFF participants report dissatisfaction with individual MHP providers. Offer help finding alternatives without generalizing about provider quality. ESA access policy unknown.",
+      "phone": "303-443-8500",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r033",
+      "name": "Della Cava Family Medical Pavilion / BCH",
+      "categories": [
+        "MENTAL HEALTH CRISIS",
+        "Mental & Behavioral Health Care",
+        "SUD Treatment"
+      ],
+      "summary": "Hospital-based psychiatric services, counseling, intensive outpatient and partial hospitalization programs, and inpatient care.",
+      "access": "Counseling appointments 303-415-4299; verify appropriate admission route.",
+      "notes": "PILLAR navigation for SUD/chronic pain: confirm current availability.",
+      "phone": "303-415-4299",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r034",
+      "name": "Centennial Peaks Hospital",
+      "categories": [
+        "MENTAL HEALTH CRISIS",
+        "Mental & Behavioral Health Care"
+      ],
+      "summary": "Psychiatric assessment and inpatient treatment.",
+      "access": "Call ahead to confirm assessment, eligibility and intake.",
+      "notes": "",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r035",
+      "name": "Louisville walk-in crisis center",
+      "categories": [
+        "MENTAL HEALTH CRISIS"
+      ],
+      "summary": "Walk-in behavioral health crisis assessment and stabilization.",
+      "access": "1107 W Century Drive, Louisville; verify 24/7 hours and intake before travel.",
+      "notes": "",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r036",
+      "name": "988 Suicide & Crisis Lifeline",
+      "categories": [
+        "MENTAL HEALTH CRISIS",
+        "Online Mental Health Resources"
+      ],
+      "summary": "24/7 crisis support by phone or text.",
+      "access": "Call or text 988.",
+      "notes": "",
+      "phone": "988",
+      "url": "https://988lifeline.org/",
+      "status": "Established national service",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r037",
+      "name": "Boulder Behavioral Health Crisis Response / CARE",
+      "categories": [
+        "MENTAL HEALTH CRISIS"
+      ],
+      "summary": "City crisis response; availability and police involvement depend on dispatch and staffing.",
+      "access": "For immediate danger call 911. Ask dispatch what response is available.",
+      "notes": "CIRT traditionally responds with police. BFF requested CARE on a weekend in October 2026 and was told it was unavailable; do not promise non-police response.",
+      "phone": "",
+      "url": "",
+      "status": "BFF firsthand + current operations to verify",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r038",
+      "name": "WellMind Connection / CAT",
+      "categories": [
+        "Mental Health Support by Outreach",
+        "MENTAL HEALTH CRISIS"
+      ],
+      "summary": "Community behavioral health navigation, mobile support and short-term assistance; not an emergency service.",
+      "access": "303-441-1300; ask whether team can meet someone living outside or attend outreach.",
+      "notes": "",
+      "phone": "303-441-1300",
+      "url": "https://wellmindconnection.org/",
+      "status": "Not yet BFF-tested",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r039",
+      "name": "Health First Colorado provider search / CCHA",
+      "categories": [
+        "Ongoing Mental Health Care",
+        "Online Mental Health Resources",
+        "Medical Care",
+        "Medicaid Enrollment"
+      ],
+      "summary": "Search covered primary and behavioral health providers.",
+      "access": "Search with participant and verify insurance, openings and access.",
+      "notes": "",
+      "phone": "",
+      "url": "https://www.healthfirstcolorado.gov/find-doctors/",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r040",
+      "name": "Zencare",
+      "categories": [
+        "Online Mental Health Resources",
+        "Ongoing Mental Health Care"
+      ],
+      "summary": "Therapist directory with location, specialty and insurance filters.",
+      "access": "Search together; confirm Medicaid acceptance and availability directly.",
+      "notes": "",
+      "phone": "",
+      "url": "https://zencare.co/us/colorado/therapists",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r041",
+      "name": "NAMI Boulder County",
+      "categories": [
+        "Support & Peer Groups",
+        "Online Mental Health Resources",
+        "Mental & Behavioral Health Care"
+      ],
+      "summary": "Peer mental-health support groups and education.",
+      "access": "Check current group schedules and eligibility.",
+      "notes": "",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r042",
+      "name": "Recovery Café Longmont / Boulder pop-up",
+      "categories": [
+        "Support & Peer Groups",
+        "Outreach Workshops & Activities",
+        "Outreach Social Events",
+        "Free Community Activities"
+      ],
+      "summary": "Peer recovery community, activities and groups.",
+      "access": "Boulder pop-up reportedly Wednesdays at 2650 Table Mesa, approximately 5–8 PM; verify.",
+      "notes": "Peer contact Harold 720-584-6999.",
+      "phone": "720-584-6999",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r043",
+      "name": "Sheridan Grove Recovery",
+      "categories": [
+        "SUD Treatment"
+      ],
+      "summary": "Medical detox and residential treatment; BFF has experienced quick pickup.",
+      "access": "Admissions 303-268-3036.",
+      "notes": "Chelsea Wood 248-760-8471 is a known contact; check permission before broad publication.",
+      "phone": "303-268-3036",
+      "url": "",
+      "status": "BFF firsthand",
+      "petAccess": "",
+      "verified": "",
+      "preferred": true,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r044",
+      "name": "Hazelbrook",
+      "categories": [
+        "SUD Treatment"
+      ],
+      "summary": "IOP and sober living; scholarships may be available.",
+      "access": "Online application: https://app.behavehealth.com/2PnjRP/forms/h-b-s-l",
+      "notes": "Pickup sometimes possible; clean test not required for intake per BFF experience; abstinence required during enrollment. Detox/MAT unverified.",
+      "phone": "",
+      "url": "https://app.behavehealth.com/2PnjRP/forms/h-b-s-l",
+      "status": "BFF firsthand",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r045",
+      "name": "Avenues Recovery",
+      "categories": [
+        "SUD Treatment"
+      ],
+      "summary": "Detox alternative; not BFF-vetted",
+      "access": "Call for intake, insurance and transportation.",
+      "notes": "",
+      "phone": "720-640-8080",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r046",
+      "name": "Redpoint",
+      "categories": [
+        "SUD Treatment"
+      ],
+      "summary": "IOP, verify access",
+      "access": "Call for intake, insurance and transportation.",
+      "notes": "",
+      "phone": "303-219-0973",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r047",
+      "name": "Tribe Recovery",
+      "categories": [
+        "SUD Treatment"
+      ],
+      "summary": "IOP, verify access",
+      "access": "Call for intake, insurance and transportation.",
+      "notes": "",
+      "phone": "720-608-7423",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r048",
+      "name": "True North",
+      "categories": [
+        "SUD Treatment"
+      ],
+      "summary": "IOP, verify access",
+      "access": "Call for intake, insurance and transportation.",
+      "notes": "",
+      "phone": "720-669-6793",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r049",
+      "name": "Denver Recovery Group — Boulder",
+      "categories": [
+        "SUD Treatment",
+        "Medication-Assisted Treatment (MAT)"
+      ],
+      "summary": "MAT; BFF confirmed new patient enrollment at Boulder clinic, no Denver trip",
+      "access": "Call for intake, insurance and transportation.",
+      "notes": "",
+      "phone": "720-536-5571",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r050",
+      "name": "Porch Light Health Longmont",
+      "categories": [
+        "SUD Treatment",
+        "Medication-Assisted Treatment (MAT)"
+      ],
+      "summary": "MAT; BFF not directly vetted",
+      "access": "Call for intake, insurance and transportation.",
+      "notes": "",
+      "phone": "866-394-6123",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r051",
+      "name": "BHG Longmont",
+      "categories": [
+        "SUD Treatment",
+        "Medication-Assisted Treatment (MAT)"
+      ],
+      "summary": "MAT; participant-reported",
+      "access": "Call for intake, insurance and transportation.",
+      "notes": "",
+      "phone": "303-245-0123",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r052",
+      "name": "Never Use Alone",
+      "categories": [
+        "Harm Reduction",
+        "SUD Treatment"
+      ],
+      "summary": "Overdose-prevention phone support for people using substances alone.",
+      "access": "See website for current number and protocol.",
+      "notes": "",
+      "phone": "",
+      "url": "https://neverusealone.com/",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r053",
+      "name": "AcuDetox at All Roads",
+      "categories": [
+        "SUD Treatment",
+        "Mental Health Support by Outreach"
+      ],
+      "summary": "Acupuncture-based recovery support.",
+      "access": "Tuesdays 11 AM–noon, All Roads, 4869 N Broadway; verify.",
+      "notes": "",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r054",
+      "name": "Boulder Elks medical equipment closet",
+      "categories": [
+        "Medical Equipment"
+      ],
+      "summary": "Loaner mobility equipment such as walkers and wheelchairs; availability varies.",
+      "access": "3975 28th St, Boulder; 303-442-5003; reportedly Tue/Thu 9:30–4.",
+      "notes": "Confirm nonmember access.",
+      "phone": "303-442-5003",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r055",
+      "name": "First United Methodist equipment closet",
+      "categories": [
+        "Medical Equipment"
+      ],
+      "summary": "Possible loaner medical equipment.",
+      "access": "1421 Spruce St, Boulder; 303-442-3770; confirm eligibility.",
+      "notes": "",
+      "phone": "303-442-3770",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r056",
+      "name": "Medicaid non-emergency medical transportation",
+      "categories": [
+        "Transportation",
+        "Medical Care",
+        "Advocacy"
+      ],
+      "summary": "Transportation to qualifying covered health appointments.",
+      "access": "Call 855-489-4999; request approximately two business days in advance.",
+      "notes": "BFF reports difficulty obtaining rides. Confirm 2027 provider transition.",
+      "phone": "855-489-4999",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r057",
+      "name": "Via Mobility Services",
+      "categories": [
+        "Transportation",
+        "Elder & Senior Resources"
+      ],
+      "summary": "Accessible transportation for eligible seniors and people with disabilities.",
+      "access": "303-443-3043; confirm eligibility, routes and fares.",
+      "notes": "",
+      "phone": "303-443-3043",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r058",
+      "name": "Cultivate VetsGo",
+      "categories": [
+        "Transportation",
+        "Veteran Resources",
+        "Elder & Senior Resources"
+      ],
+      "summary": "Volunteer rides for eligible veterans age 60+ in Boulder/Broomfield.",
+      "access": "Confirm program coverage and booking.",
+      "notes": "",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r059",
+      "name": "Assurance Wireless Lifeline",
+      "categories": [
+        "Technology Access"
+      ],
+      "summary": "Discounted/free phone service for eligible Medicaid/SNAP participants; device cost varies.",
+      "access": "Apply online; arrange safe physical delivery address.",
+      "notes": "BFF experience: device fee sometimes around $50. BFF or Focus may receive delivery by arrangement.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r060",
+      "name": "PCs for People Colorado",
+      "categories": [
+        "Technology Access"
+      ],
+      "summary": "Low-cost refurbished computers; eligibility and inventory vary.",
+      "access": "Check Denver location and online availability.",
+      "notes": "",
+      "phone": "",
+      "url": "https://www.pcsforpeople.org/locations/colorado/",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r061",
+      "name": "Boulder County Personal Finance Coaching",
+      "categories": [
+        "Long-Term Financial Planning",
+        "Banking & Financial Services"
+      ],
+      "summary": "Financial coaching and planning.",
+      "access": "720-564-2279.",
+      "notes": "",
+      "phone": "720-564-2279",
+      "url": "https://bouldercounty.gov/families/financial/personal-finance-coaching/",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r062",
+      "name": "Sebastian Adams / Community Court",
+      "categories": [
+        "Legal Assistance",
+        "Identification & Documents",
+        "Advocacy"
+      ],
+      "summary": "Court navigation and assistance with low-level legal issues and documents.",
+      "access": "Often at Deacon’s Closet Thursday around 2 PM; confirm.",
+      "notes": "Do not publish personal number without permission; BFF prefers him for secure original-document holding. Sebastian is a notary public and can provide outreach notarization by prior arrangement; this is separate from the DMV registered-affiant process.",
+      "phone": "",
+      "url": "",
+      "status": "BFF firsthand",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r063",
+      "name": "Bridge to Justice",
+      "categories": [
+        "Legal Assistance"
+      ],
+      "summary": "Reduced-fee legal services; fit and eligibility need checking.",
+      "access": "Contact to confirm services.",
+      "notes": "BFF has not seen reliable positive results.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r064",
+      "name": "SPAN",
+      "categories": [
+        "Legal Assistance",
+        "Shelters",
+        "Mental & Behavioral Health Care"
+      ],
+      "summary": "Domestic violence advocacy, safety planning and legal support.",
+      "access": "24-hour hotline 303-444-2424.",
+      "notes": "",
+      "phone": "303-444-2424",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r065",
+      "name": "HOPE Longmont",
+      "categories": [
+        "Shelters"
+      ],
+      "summary": "Housing navigation and weather-dependent emergency shelter.",
+      "access": "Call HOPE for current overnight location and walk-in rules.",
+      "notes": "BFF previously heard phone recording identifying rotating church site; confirm whether model continues and Boulder residency eligibility.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r066",
+      "name": "Boulder Housing Partners",
+      "categories": [
+        "Housing"
+      ],
+      "summary": "Affordable housing properties and periodic voucher lotteries.",
+      "access": "Monitor current waitlists and lotteries.",
+      "notes": "",
+      "phone": "",
+      "url": "https://boulderhousing.org/waitlists-lottery/",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r067",
+      "name": "Boulder Creative Housing group",
+      "categories": [
+        "Housing"
+      ],
+      "summary": "Informal roommate/housing opportunities; use normal safety and screening judgment.",
+      "access": "Browse group with participant.",
+      "notes": "",
+      "phone": "",
+      "url": "https://www.facebook.com/groups/393216030699308/",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r068",
+      "name": "Boulder County parks / public restrooms",
+      "categories": [
+        "Bathrooms",
+        "Free & Friendly Public Spaces",
+        "Drinking Water"
+      ],
+      "summary": "Potential public bathrooms and outdoor spaces.",
+      "access": "Pearl Street Mall, Eben G. Fine Park, Scott Carpenter Park, Mapleton Ballfields; check seasonal hours.",
+      "notes": "Access and water availability change seasonally.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r069",
+      "name": "Boulder Parks & Recreation / Open Space",
+      "categories": [
+        "Free Classes & Workshops",
+        "Free Community Activities",
+        "Free & Friendly Public Spaces"
+      ],
+      "summary": "Free events, guided hikes and recreational opportunities.",
+      "access": "For free recreation center passes, see a case manager for help applying. The application has an address requirement that can create barriers for people experiencing homelessness. For other activities, consult current calendars.",
+      "notes": "Do not document or publish informal application workarounds.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r070",
+      "name": "Dress for Success Denver",
+      "categories": [
+        "Interview Readiness",
+        "Clothing & Gear"
+      ],
+      "summary": "Professional clothing for women with qualifying referral.",
+      "access": "Check referral requirements and transport feasibility.",
+      "notes": "",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r071",
+      "name": "CommunityWorks Denver",
+      "categories": [
+        "Interview Readiness",
+        "Clothing & Gear"
+      ],
+      "summary": "Possible professional clothing support for men; Boulder eligibility unverified.",
+      "access": "Verify before referral.",
+      "notes": "",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r072",
+      "name": "Boulder County housing case managers",
+      "categories": [
+        "Housing",
+        "Career Development",
+        "Education Enrollment Assistance",
+        "Advocacy"
+      ],
+      "summary": "Individualized support after housing and for long-term goals.",
+      "access": "Work with existing care team; ask BFF to help connect.",
+      "notes": "Generic pathway, not a named agency.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r073",
+      "name": "Humane Society temporary pet placement",
+      "categories": [
+        "Pets"
+      ],
+      "summary": "Agency-referred temporary care for up to ten days when guardian is jailed, hospitalized or in treatment.",
+      "access": "BFF or Annie & Millie’s Place can refer.",
+      "notes": "BFF has personally used program; confirm current procedures.",
+      "phone": "",
+      "url": "",
+      "status": "BFF firsthand",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r074",
+      "name": "Annie & Millie’s Place foster initiative",
+      "categories": [
+        "Pets"
+      ],
+      "summary": "Longer-term foster care for extended treatment/incarceration is being developed.",
+      "access": "Not yet an established referral.",
+      "notes": "Bring to group: recruit volunteer foster homes.",
+      "phone": "",
+      "url": "",
+      "status": "In development",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r075",
+      "name": "QPR suicide-prevention training",
+      "categories": [
+        "MENTAL HEALTH CRISIS"
+      ],
+      "summary": "Optional suicide-prevention training for interested RNs.",
+      "access": "Find periodic free QPR courses.",
+      "notes": "Training reference, not a crisis service.",
+      "phone": "",
+      "url": "",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r076",
+      "name": "211 Colorado",
+      "categories": [
+        "Benefits Enrollment",
+        "Emergency Financial Assistance"
+      ],
+      "summary": "General resource search and referrals.",
+      "access": "Use as supplemental information source.",
+      "notes": "",
+      "phone": "",
+      "url": "https://www.211colorado.org/",
+      "status": "Field notes; verify details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r077",
+      "name": "Navigation starting point: Community Centers",
+      "categories": [
+        "Community Centers"
+      ],
+      "summary": "Category established; specific providers and access details still need to be added.",
+      "access": "Ask BFF/partner network or search with the participant.",
+      "notes": "Placeholder, not a verified service.",
+      "phone": "",
+      "url": "",
+      "status": "Needs resource research",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r078",
+      "name": "Navigation starting point: Dental Care",
+      "categories": [
+        "Dental Care"
+      ],
+      "summary": "Category established; specific providers and access details still need to be added.",
+      "access": "Ask BFF/partner network or search with the participant.",
+      "notes": "Placeholder, not a verified service.",
+      "phone": "",
+      "url": "",
+      "status": "Needs resource research",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r079",
+      "name": "Navigation starting point: LGBTQIA+ Resources",
+      "categories": [
+        "LGBTQIA+ Resources"
+      ],
+      "summary": "Category established; specific providers and access details still need to be added.",
+      "access": "Ask BFF/partner network or search with the participant.",
+      "notes": "Placeholder, not a verified service.",
+      "phone": "",
+      "url": "",
+      "status": "Needs resource research",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r080",
+      "name": "Navigation starting point: Safe Parking",
+      "categories": [
+        "Safe Parking"
+      ],
+      "summary": "Category established; specific providers and access details still need to be added.",
+      "access": "Ask BFF/partner network or search with the participant.",
+      "notes": "Placeholder, not a verified service.",
+      "phone": "",
+      "url": "",
+      "status": "Needs resource research",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r081",
+      "name": "Navigation starting point: Trash Bags & Disposal",
+      "categories": [
+        "Trash Bags & Disposal"
+      ],
+      "summary": "Category established; specific providers and access details still need to be added.",
+      "access": "Ask BFF/partner network or search with the participant.",
+      "notes": "Placeholder, not a verified service.",
+      "phone": "",
+      "url": "",
+      "status": "Needs resource research",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r082",
+      "name": "Navigation starting point: Tribal & Indigenous Resources",
+      "categories": [
+        "Tribal & Indigenous Resources"
+      ],
+      "summary": "Category established; specific providers and access details still need to be added.",
+      "access": "Ask BFF/partner network or search with the participant.",
+      "notes": "Placeholder, not a verified service.",
+      "phone": "",
+      "url": "",
+      "status": "Needs resource research",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "r083",
+      "name": "Navigation starting point: Vision & Glasses",
+      "categories": [
+        "Vision & Glasses"
+      ],
+      "summary": "Category established; specific providers and access details still need to be added.",
+      "access": "Ask BFF/partner network or search with the participant.",
+      "notes": "Placeholder, not a verified service.",
+      "phone": "",
+      "url": "",
+      "status": "Needs resource research",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "v2_084",
+      "name": "Rocky Mountain Equality (formerly Out Boulder County)",
+      "categories": [
+        "LGBTQIA+ Resources",
+        "Community Centers",
+        "Support & Peer Groups"
+      ],
+      "summary": "LGBTQIA+ community, advocacy, groups and youth programming.",
+      "access": "3340 Mitchell Lane, Boulder; confirm hours and program eligibility.",
+      "notes": "Formerly Out Boulder County; searchable under either name.",
+      "phone": "303-499-5777",
+      "url": "https://www.rmequality.org/",
+      "status": "Public information; recheck before referral",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "v2_085",
+      "name": "Centro de los Trabajadores (formerly Centro Humanitario)",
+      "categories": [
+        "Employment",
+        "Short-Term Work / Day Labor"
+      ],
+      "summary": "Denver day-labor connections, job-skills training, worker rights advocacy.",
+      "access": "Call 303-292-4115 to confirm worker intake location, hours, requirements, and available jobs.",
+      "notes": "Do not promise walk-in same-day placement; conflicting addresses appear in public sources.",
+      "phone": "303-292-4115",
+      "url": "https://centrodelostrabajadores.org/",
+      "status": "BFF field knowledge; confirm current details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "v2_086",
+      "name": "The Lodge at Haven Ridge",
+      "categories": [
+        "Shelters",
+        "Housing"
+      ],
+      "summary": "Shelter/program serving women and transgender individuals.",
+      "access": "Contact The Lodge to confirm eligibility, referral, intake, curfew and bed availability.",
+      "notes": "BFF field knowledge: sobriety is not required if no substances are brought onsite and guests are not noticeably impaired. The Lodge reserves the right to test but typically does not unless a problem arises.",
+      "phone": "720-579-1637",
+      "url": "",
+      "status": "BFF field knowledge; confirm current details",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "BFF field knowledge: No substances on site; not noticeably impaired. Testing reserved for problems rather than routine use. Confirm current policy with program.",
+      "rulesUrl": "https://havenridgeboulder.squarespace.com/lodge/",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "v2_087",
+      "name": "Boulder Public Library — device charging",
+      "categories": [
+        "Device Charging"
+      ],
+      "summary": "Free charging banks at the library.",
+      "access": "Ask library staff about the free charging banks and where they can be used.",
+      "notes": "Search terms: phone charging, charger, battery, electricity.",
+      "phone": "",
+      "url": "",
+      "status": "BFF field knowledge",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "v2_088",
+      "name": "Bike path public outlets (locations unconfirmed)",
+      "categories": [
+        "Technology Access"
+      ],
+      "summary": "Occasional publicly accessible outlets along bike paths.",
+      "access": "No reliable specific location documented.",
+      "notes": "Not a dependable referral until individual outlets are located and access confirmed.",
+      "phone": "",
+      "url": "",
+      "status": "Unverified locations",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "v2_089",
+      "name": "Monday 12:00–1:00 PM — Circle of Love",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events",
+        "Hygiene & Toiletries"
+      ],
+      "summary": "Homemade soup; non-PB&J sandwiches; non-apple fruit; often hard-boiled eggs; bottled water; often dessert",
+      "access": "Monday 12:00–1:00 PM. Bandshell — southeast/top corner of bleachers",
+      "notes": "Other offerings: Socks, underwear, hand warmers in cold weather; basic hygiene kits\nProviders: BFF usually present; no other case managers\nAccess / what to expect: Zero barrier; line expected; has not been observed to run out; food for others only after everyone in line is served\nPolice / HOT: Not typically present\nFollow-up: Volunteer coalition; offerings can vary somewhat week to week",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "Yes",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Monday",
+      "eventTime": "12:00–1:00 PM",
+      "police": "Not typically present",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v2_090",
+      "name": "Monday 4:30 PM — Unity Table — Trinity Lutheran",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events"
+      ],
+      "summary": "Good, warm, complete sit-down meal",
+      "access": "Monday 4:30 PM. Fellowship Hall, NW corner of Broadway & Pine, just past alley",
+      "notes": "Other offerings: Deacon’s Closet access historically possible but currently unconfirmed\nProviders: BFF present; rotating pro-bono legal advice expected starting Oct. 5\nAccess / what to expect: Patio gathering ~4:00; inside ~4:15; serve 4:30; first name collected but can be alias; seconds/to-go ~5:00; leftovers to library ~6:00; fellowship hall is not church proper; no religious programming\nPolice / HOT: No\nFollow-up: VERIFY legal program/specialty schedule; resolve Deacon’s Closet access",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "Yes",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Monday",
+      "eventTime": "4:30 PM",
+      "police": "No",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v2_091",
+      "name": "Tuesday 2:30–3:30 PM — Boulder Feet Forward",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events",
+        "Hygiene & Toiletries",
+        "First Aid"
+      ],
+      "summary": "Hot nutritious home-cooked meal; Grace Commons bagged meal for later; snacks/take-away food; coffee/lemonade/water",
+      "access": "Tuesday 2:30–3:30 PM. Central Park — southeast corner; people often gather/line up from ~2:00",
+      "notes": "Other offerings: À-la-carte hygiene & safer-sex supplies; clothing/gear via The Community Project; The Works harm reduction/wound care/Narcan; other variable supplies\nProviders: BFF; Outreach Court navigator present/callable; Focus ReEntry usually present/callable; recovery groups often attend\nAccess / what to expect: Large, busy/high-volume event; circular table line; first name only and can be alias; hot meal reliably runs out, often by ~3:15; meals for up to 3 others if names given; accessible\nPolice / HOT: Usually present\nFollow-up: Good fit for people wanting many resources; quieter Unity Table meal follows at 4:30",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "Yes",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Tuesday",
+      "eventTime": "2:30–3:30 PM",
+      "police": "Usually present",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v2_092",
+      "name": "Tuesday 4:30 PM — Unity Table — St. John’s",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events"
+      ],
+      "summary": "Bagged meal, often sandwich or foil-wrapped burrito + dessert + bottled water",
+      "access": "Tuesday 4:30 PM. Parking garage entrance faces 15th Street, not Pine; easy to miss because usually no line",
+      "notes": "Other offerings: Clothing, underwear, socks, period-care supplies by request from Adam\nProviders: BFF present\nAccess / what to expect: Usually <20 people; quiet/chill; no seating but welcome to stay; seconds ~5:00; pickup for a friend usually allowed; leftovers often remain/are left out, so worth checking late\nPolice / HOT: No\nFollow-up: By-request supplies create an asking barrier",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "Yes",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Tuesday",
+      "eventTime": "4:30 PM",
+      "police": "No",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v2_093",
+      "name": "Tuesday 6:00–7:30 PM — SAFE Boulder",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events",
+        "Tents & Sleeping Bags",
+        "Harm Reduction"
+      ],
+      "summary": "Variable/patchy food distributed from wagons; calories/food rather than reliably a complete meal",
+      "access": "Tuesday 6:00–7:30 PM. 1056 Boulder Canyon Drive parking lot, next to municipal building; look for the wagons",
+      "notes": "Other offerings: Highly variable, donation-dependent survival/camping supplies; worth checking for unusual camp gear, but nothing should be promised\nProviders: SAFE mutual-aid / police-accountability group\nAccess / what to expect: Wagon-based distribution; inventory varies. SAFE may observe/film police activity if police appear.\nPolice / HOT: No expected HOT presence; police absence cannot be guaranteed at a public event\nFollow-up: Shared SAFE profile; website + firsthand details",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "Yes",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Tuesday",
+      "eventTime": "6:00–7:30 PM",
+      "police": "No expected HOT presence; police absence cannot be guaranteed at a public event",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v2_094",
+      "name": "Wednesday 10:00 AM — Friends for Homeless Dignity",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events"
+      ],
+      "summary": "Homemade oatmeal with butter/maple syrup/brown sugar; fruit; often parfaits; breakfast burritos; coffee with cream/sugar; bottled water",
+      "access": "Wednesday 10:00 AM. Central Park — same southeast-corner location as BFF",
+      "notes": "Other offerings: No reliable additional supplies\nProviders: BFF present; Focus ReEntry sometimes present\nAccess / what to expect: Warm/welcoming volunteer environment\nPolice / HOT: Sometimes\nFollow-up: Occasional clothing pop-up is too unreliable to list",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "Yes",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Wednesday",
+      "eventTime": "10:00 AM",
+      "police": "Sometimes",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v2_095",
+      "name": "Wednesday 12:00–1:00 PM — Circle of Love",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events",
+        "Hygiene & Toiletries"
+      ],
+      "summary": "Same profile as Monday Circle of Love",
+      "access": "Wednesday 12:00–1:00 PM. Bandshell — southeast/top corner of bleachers",
+      "notes": "Other offerings: Same profile as Monday Circle of Love\nProviders: BFF usually present; no other case managers\nAccess / what to expect: Same access profile as Monday\nPolice / HOT: Not typically present\nFollow-up: Same resource profile as Monday",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "Yes",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Wednesday",
+      "eventTime": "12:00–1:00 PM",
+      "police": "Not typically present",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v2_096",
+      "name": "Wednesday 4:30 PM — Unity Table — St. John’s",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events"
+      ],
+      "summary": "Same meal profile as Tuesday St. John’s",
+      "access": "Wednesday 4:30 PM. Parking garage entrance faces 15th Street, not Pine",
+      "notes": "Other offerings: Adam’s by-request supplies\nProviders: BFF not onsite, but Adam can contact BFF\nAccess / what to expect: Same quiet/small access profile as Tuesday\nPolice / HOT: No\nFollow-up: Otherwise just food",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "Yes",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Wednesday",
+      "eventTime": "4:30 PM",
+      "police": "No",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v2_097",
+      "name": "Wednesday 5:30–7:30 PM — SAFE Boulder",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events",
+        "Tents & Sleeping Bags",
+        "Harm Reduction"
+      ],
+      "summary": "Variable/patchy food distributed from wagons; calories/food rather than reliably a complete meal",
+      "access": "Wednesday 5:30–7:30 PM. Parking lot on northeast side of Broadway & Marine; look for the wagons",
+      "notes": "Other offerings: Highly variable, donation-dependent survival/camping supplies; worth checking for unusual camp gear, but nothing should be promised\nProviders: SAFE mutual-aid / police-accountability group\nAccess / what to expect: Wagon-based distribution; inventory varies. SAFE may observe/film police activity if police appear.\nPolice / HOT: No expected HOT presence; police absence cannot be guaranteed at a public event\nFollow-up: Shared SAFE profile; formal venue/address should be verified",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "Yes",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Wednesday",
+      "eventTime": "5:30–7:30 PM",
+      "police": "No expected HOT presence; police absence cannot be guaranteed at a public event",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v2_098",
+      "name": "Thursday 11:30 AM — Thursday Group / Community Sandwich Outreach",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events"
+      ],
+      "summary": "PB&J sandwiches; BFF donated pastries",
+      "access": "Thursday 11:30 AM. Prefer library parking lot; mobile distribution follows",
+      "notes": "Other offerings: Opportunity to help make sandwiches Wednesday night and distribute Thursday\nProviders: BFF present with usual navigation/support; bus passes/laundry vouchers as available\nAccess / what to expect: For-us/by-us community effort; talk to Adam at Wednesday St. John’s to join sandwich-making\nPolice / HOT: No expected event police presence\nFollow-up: Cross-reference: Volunteer Opportunities",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "Yes",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Thursday",
+      "eventTime": "11:30 AM",
+      "police": "No expected event police presence",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v2_099",
+      "name": "Thursday 4:30 PM — Unity Table — St. John’s",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events"
+      ],
+      "summary": "Good sit-down meal",
+      "access": "Thursday 4:30 PM. Inside church proper",
+      "notes": "Other offerings: None reliable\nProviders: No other regular services; Adam is continuity\nAccess / what to expect: Gather beforehand; doors ~4:15; serve 4:30; name collected but alias okay; seconds/to-go ~5:00; leftovers left in parking garage; church setting may matter for religious trauma\nPolice / HOT: No\nFollow-up: Pets theoretically restricted but Adam often allows if not disruptive",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "Conditional",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Thursday",
+      "eventTime": "4:30 PM",
+      "police": "No",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v2_100",
+      "name": "Thursday 6:00–7:30 PM — SAFE Boulder",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events",
+        "Tents & Sleeping Bags",
+        "Harm Reduction"
+      ],
+      "summary": "Variable/patchy food distributed from wagons; calories/food rather than reliably a complete meal",
+      "access": "Thursday 6:00–7:30 PM. Parking lot on northeast side of Broadway & Marine; look for the wagons",
+      "notes": "Other offerings: Highly variable, donation-dependent survival/camping supplies; worth checking for unusual camp gear, but nothing should be promised\nProviders: SAFE mutual-aid / police-accountability group\nAccess / what to expect: Wagon-based distribution; inventory varies. SAFE may observe/film police activity if police appear.\nPolice / HOT: No expected HOT presence; police absence cannot be guaranteed at a public event\nFollow-up: Shared SAFE profile",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "Yes",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Thursday",
+      "eventTime": "6:00–7:30 PM",
+      "police": "No expected HOT presence; police absence cannot be guaranteed at a public event",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v2_101",
+      "name": "Friday 11:00 AM — BFF / The Community Project",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events",
+        "Hygiene & Toiletries",
+        "First Aid"
+      ],
+      "summary": "BFF egg-and-cheese breakfast sandwiches; snacks/other food; usually seconds; does not typically run out",
+      "access": "Friday 11:00 AM. Central Park — southeast corner",
+      "notes": "Other offerings: BFF hygiene; Community Project clothing/gear; The Works; Miss Susan coffee bar + small comfort/recreation items\nProviders: BFF present; other providers generally not onsite but BFF can often contact/bring them; flows into workshops/drop-in case management\nAccess / what to expect: Same circular-table system as Tuesday; first name can be alias; food for others allowed if names provided\nPolice / HOT: Not usually\nFollow-up: Miss Susan’s coffee table asks for no cussing",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "Yes",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Friday",
+      "eventTime": "11:00 AM",
+      "police": "Not usually",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v2_102",
+      "name": "Friday 1:00 PM — Larry & Volunteers (formerly Streetscape)",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events"
+      ],
+      "summary": "Simple hot/heated meal such as nachos or ravioli; Larry’s cookies; water",
+      "access": "Friday 1:00 PM. 30th & Mapleton — NE corner of parking lot behind Mike’s Bikes",
+      "notes": "Other offerings: Patchy/unreliable socks, clothing, gear, hygiene; canopy/shade\nProviders: Larry is a peer with lived experience; RN planned\nAccess / what to expect: Small/chill, ~20 max; currently only listed east-side meal; name required\nPolice / HOT: No\nFollow-up: ACTION: better resource & publicize event; verify future name requirement",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "Yes",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Friday",
+      "eventTime": "1:00 PM",
+      "police": "No",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v2_103",
+      "name": "Friday 4:30 PM — Unity Table — First Congregational",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events"
+      ],
+      "summary": "Good sit-down meal",
+      "access": "Friday 4:30 PM. Parking lot at Broadway & Spruce near rainbow fence; stairs present",
+      "notes": "Other offerings: None reliable\nProviders: No other regular services; Adam is continuity\nAccess / what to expect: Inside church proper; doors ~4:15; serve 4:30; name collected but alias okay; seconds/to-go ~5:00; leftovers moved outside/parking area\nPolice / HOT: No\nFollow-up: ACTION: verify physical accessibility",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "Conditional",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Friday",
+      "eventTime": "4:30 PM",
+      "police": "No",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v2_104",
+      "name": "Saturday 4:00 PM — Food Not Bombs",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events"
+      ],
+      "summary": "Food",
+      "access": "Saturday 4:00 PM. Bandshell; generally mobile/wagon-style mutual aid rather than table setup",
+      "notes": "Other offerings: Variable gear/supplies\nProviders: No regular services identified; RN planned\nAccess / what to expect: Mutual-aid network; exact reliable offerings/access details need verification\nPolice / HOT: TBD\nFollow-up: ACTION: check directly with Food Not Bombs",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "TBD",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Saturday",
+      "eventTime": "4:00 PM",
+      "police": "TBD",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v2_105",
+      "name": "Sunday 12:00 PM — Rotating Church Lunches",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events"
+      ],
+      "summary": "Lunch",
+      "access": "Sunday 12:00 PM. 1st St John’s Episcopal; 2nd Trinity Lutheran; 3rd First United Methodist; 4th First Congregational; 5th All Souls/Pine Street Church",
+      "notes": "Other offerings: TBD\nProviders: TBD\nAccess / what to expect: Need to determine whether churches share one profile or require separate records\nPolice / HOT: TBD\nFollow-up: ACTION: investigate each church using standard event questions",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "TBD",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Sunday",
+      "eventTime": "12:00 PM",
+      "police": "TBD",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v2_106",
+      "name": "Sunday 5:00 PM — Colorado FriendShip",
+      "categories": [
+        "Free Meals",
+        "Outreach Social Events"
+      ],
+      "summary": "Hot meal, often hot dogs + sides; usually some nonperishable/take-with snacks",
+      "access": "Sunday 5:00 PM. Justice Center parking lot — northwestern section",
+      "notes": "Other offerings: Trailer access: clothing, coats, hygiene items\nProviders: No other regular services\nAccess / what to expect: Counts attendance but no names; other quantity/seconds/late-arrival rules unknown\nPolice / HOT: No\nFollow-up: ACTION: email Liz re runout, seconds, meals for others, leftovers/late pickup",
+      "phone": "",
+      "url": "",
+      "status": "BFF event field notes; check for schedule changes",
+      "petAccess": "Yes",
+      "verified": "",
+      "preferred": false,
+      "eventDay": "Sunday",
+      "eventTime": "5:00 PM",
+      "police": "No",
+      "rules": "",
+      "rulesUrl": ""
+    },
+    {
+      "id": "v3_menstrual_bff",
+      "name": "BFF events — free menstrual supplies",
+      "categories": [
+        "Menstrual Care"
+      ],
+      "summary": "Free menstrual products available at BFF outreach events.",
+      "access": "Ask BFF staff at Tuesday or Friday outreach events.",
+      "notes": "Cross-reference the BFF event listing for times and location.",
+      "phone": "",
+      "url": "",
+      "status": "BFF firsthand / working entry",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "v3_community_cycles",
+      "name": "Community Cycles — bicycles and repairs",
+      "categories": [
+        "Bicycles",
+        "Bike Repair",
+        "Transportation Assistance"
+      ],
+      "summary": "Potential help obtaining a bicycle or getting one repaired.",
+      "access": "Contact Community Cycles to ask about current programs, eligibility, costs and availability.",
+      "notes": "Free bicycles or repairs are not guaranteed.",
+      "phone": "",
+      "url": "https://communitycycles.org/",
+      "status": "Potential resource; specific program details not yet confirmed",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "v3_bff_locks",
+      "name": "BFF — bike locks when available",
+      "categories": [
+        "Bike Locks",
+        "Transportation Assistance"
+      ],
+      "summary": "BFF sometimes has bike locks; availability varies.",
+      "access": "Ask BFF staff at an outreach event.",
+      "notes": "No guarantee of stock.",
+      "phone": "",
+      "url": "",
+      "status": "BFF firsthand / working entry",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "v3_rec_pass",
+      "name": "Free recreation center passes — case manager assistance",
+      "categories": [
+        "Free & Friendly Public Spaces"
+      ],
+      "summary": "Free recreation center passes may be available; application requires case manager assistance.",
+      "access": "See a case manager for help applying.",
+      "notes": "Physical-address requirement can create a barrier. Do not publish informal workarounds.",
+      "phone": "",
+      "url": "",
+      "status": "BFF firsthand",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    },
+    {
+      "id": "v3_imagine",
+      "name": "Imagine! — Housing Support & Stability Services",
+      "categories": [
+        "Housing",
+        "Employment"
+      ],
+      "summary": "Housing stability and navigation support for people with intellectual or developmental disabilities; ask about related employment supports.",
+      "access": "Check program eligibility and referral process directly with Imagine!.",
+      "notes": "Employment services and referral criteria should be confirmed before promising a placement. See Disability & Accessibility Support decision tree.",
+      "phone": "",
+      "url": "https://imaginecolorado.org/housing-support-stability-services-boulder-county/",
+      "status": "Program to confirm",
+      "petAccess": "",
+      "verified": "",
+      "preferred": false,
+      "rules": "",
+      "rulesUrl": "",
+      "eventTime": "",
+      "eventDay": "",
+      "police": ""
+    }
+  ],
+  "version": "3.0",
+  "gaps": [
+    {
+      "title": "Reliable free secure storage",
+      "ideas": "Explore donated lockers or partner-site storage.",
+      "owner": "",
+      "status": "Not started"
+    },
+    {
+      "title": "Legal overnight safe parking",
+      "ideas": "Ask Other Adam about church lots and realistic partners.",
+      "owner": "",
+      "status": "Not started"
+    },
+    {
+      "title": "Longer-term pet fostering",
+      "ideas": "Recruit volunteer foster homes with Annie & Millie’s Place.",
+      "owner": "",
+      "status": "Not started"
+    },
+    {
+      "title": "Move-in furniture funding",
+      "ideas": "Explore HomeAhead scholarships and ARC/Walmart gift cards.",
+      "owner": "",
+      "status": "Not started"
+    },
+    {
+      "title": "Low-barrier showers beyond All Roads",
+      "ideas": "Identify another free accessible shower option.",
+      "owner": "",
+      "status": "Not started"
+    },
+    {
+      "title": "Boulder day-labor center",
+      "ideas": "No confirmed nonprofit center; investigate alternatives and possible partners.",
+      "owner": "",
+      "status": "Not started"
+    },
+    {
+      "title": "Volunteer car-repair assistance",
+      "ideas": "Other Adam to explore recruiting mechanics willing to donate a few hours. No confirmed public mechanic referral yet.",
+      "owner": "Other Adam (to ask)",
+      "status": "Not started"
+    }
+  ],
+  "followups": [
+    {
+      "title": "Verify shelter rules and practical application",
+      "ideas": "Ask knowledgeable staff at All Roads, The Lodge and Ready to Work about testing, curfews, pets, intake and exceptions.",
+      "owner": "",
+      "status": "Not started"
+    },
+    {
+      "title": "Verify Denver day labor intake",
+      "ideas": "Confirm Centro de los Trabajadores location, hours, ID requirements, payment and walk-in procedure.",
+      "owner": "",
+      "status": "Not started"
+    },
+    {
+      "title": "Verify public device charging locations",
+      "ideas": "Identify specific outlets along the bike path and any restrictions.",
+      "owner": "",
+      "status": "Not started"
+    },
+    {
+      "title": "Behavioral health and shelter checks",
+      "ideas": "Check WellMind/CAT outdoor response, CARE weekend availability, HOPE Longmont intake, replacement for Naropa sliding-scale counseling.",
+      "owner": "",
+      "status": "Not started"
+    },
+    {
+      "title": "Resource-specific accessibility notes",
+      "ideas": "Confirm pet policies, mobility access, late arrivals and actual on-the-ground rules as learned.",
+      "owner": "",
+      "status": "Not started"
+    },
+    {
+      "title": "Confirm menstrual supplies at BCAP",
+      "ideas": "Ask BCAP whether free menstrual products are available and how to access them. Do not list as confirmed until checked.",
+      "owner": "",
+      "status": "Not started"
+    }
+  ]
+}

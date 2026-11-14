@@ -1,0 +1,721 @@
+{
+  "medical": {
+    "title": "When First Aid Isn’t Enough",
+    "nodes": {
+      "start": {
+        "q": "Is there an immediate threat to life or safety?",
+        "opts": [
+          [
+            "Yes — emergency",
+            "emergency"
+          ],
+          [
+            "No / uncertain",
+            "firstaid"
+          ]
+        ]
+      },
+      "emergency": {
+        "q": "Immediate emergency",
+        "text": "Call 911 for immediate danger or life-threatening symptoms. Do not ask volunteers to diagnose or manage emergencies alone.",
+        "links": [
+          "Medical Care",
+          "MENTAL HEALTH CRISIS"
+        ]
+      },
+      "firstaid": {
+        "q": "Can basic first aid reasonably address the concern?",
+        "opts": [
+          [
+            "Yes",
+            "aid"
+          ],
+          [
+            "No / not sure",
+            "timing"
+          ]
+        ]
+      },
+      "aid": {
+        "q": "Physical 1 → First Aid",
+        "text": "Offer appropriate first-aid resources within training and supplies. Reassess if symptoms worsen or the person wants further care.",
+        "links": [
+          "First Aid"
+        ]
+      },
+      "timing": {
+        "q": "WHEN: Is this a prompt new concern or an ongoing issue?",
+        "opts": [
+          [
+            "Prompt / acute",
+            "acute"
+          ],
+          [
+            "Ongoing / chronic",
+            "ongoing"
+          ]
+        ]
+      },
+      "acute": {
+        "q": "WHERE: Find appropriate medical evaluation",
+        "text": "Consider urgent care or hospital based on urgency; confirm access. Ask what the person wants and whether they already have a provider.",
+        "opts": [
+          [
+            "Continue: HOW will they get there?",
+            "transport"
+          ]
+        ],
+        "links": [
+          "Medical Care"
+        ]
+      },
+      "ongoing": {
+        "q": "WHERE: Connect or reconnect with a provider",
+        "text": "Explore existing primary care and specialist access; do not assume Clinica is the only option.",
+        "opts": [
+          [
+            "Continue: HOW will they get there?",
+            "transport"
+          ]
+        ],
+        "links": [
+          "Medical Care"
+        ]
+      },
+      "transport": {
+        "q": "HOW: Can they get to the appointment?",
+        "text": "Consider walking, bus passes, accompaniment, or Medicaid NEMT for eligible appointments. BFF has experienced NEMT difficulties; confirm the ride.",
+        "opts": [
+          [
+            "Continue: ADVOCACY",
+            "advocacy"
+          ]
+        ],
+        "links": [
+          "Transportation"
+        ]
+      },
+      "advocacy": {
+        "q": "ADVOCACY: Would they like help navigating care?",
+        "text": "Ask permission before calling, scheduling, accompanying, or speaking for them. Volunteers may arrange a public-place follow-up; no promise of an advocate.",
+        "opts": [
+          [
+            "Continue: WHO FOLLOWS UP",
+            "followup"
+          ]
+        ],
+        "links": [
+          "Advocacy"
+        ]
+      },
+      "followup": {
+        "q": "WHO FOLLOWS UP?",
+        "text": "Agree on a realistic next step, a contact method, and who will check back. For ongoing complexity, connect to a case manager.",
+        "links": [
+          "Medical Care",
+          "Advocacy"
+        ]
+      }
+    }
+  },
+  "housing": {
+    "title": "Housing & Shelter",
+    "nodes": {
+      "start": {
+        "q": "Is the person currently housed?",
+        "opts": [
+          [
+            "Yes, but at risk",
+            "prevention"
+          ],
+          [
+            "No",
+            "unhoused"
+          ]
+        ]
+      },
+      "prevention": {
+        "q": "Prevent housing loss",
+        "text": "Explore urgent rental assistance, benefits and employment support. Preserve existing housing if possible.",
+        "links": [
+          "Emergency Financial Assistance",
+          "Benefits Enrollment",
+          "Employment"
+        ]
+      },
+      "unhoused": {
+        "q": "What is the immediate goal?",
+        "opts": [
+          [
+            "Shelter tonight",
+            "shelter"
+          ],
+          [
+            "Longer-term housing",
+            "longterm"
+          ]
+        ]
+      },
+      "shelter": {
+        "q": "Shelter access",
+        "text": "Check current access rules, pet needs, transport and alternatives; never promise a bed.",
+        "links": [
+          "Shelters",
+          "Pets",
+          "Transportation"
+        ]
+      },
+      "longterm": {
+        "q": "Housing navigation",
+        "text": "Connect to Coordinated Entry and a housing case manager, and explore independent pathways in parallel.",
+        "links": [
+          "Housing",
+          "Identification & Documents",
+          "Pets"
+        ]
+      }
+    }
+  },
+  "employment": {
+    "title": "Employment & Career",
+    "nodes": {
+      "start": {
+        "q": "What kind of help does the person want?",
+        "opts": [
+          [
+            "Find work soon",
+            "jobs"
+          ],
+          [
+            "Training / different career",
+            "training"
+          ],
+          [
+            "Barriers to working",
+            "barriers"
+          ]
+        ]
+      },
+      "jobs": {
+        "q": "Finding employment",
+        "text": "Ask about prior experience, interests, and what is preventing a return to work.",
+        "links": [
+          "Employment",
+          "Interview Readiness"
+        ]
+      },
+      "training": {
+        "q": "Training and long-term plans",
+        "text": "Career development resources exist, including after housing. Help search without promising a particular program.",
+        "links": [
+          "Vocational Programs",
+          "Career Development",
+          "Education Enrollment Assistance"
+        ]
+      },
+      "barriers": {
+        "q": "Remove practical barriers",
+        "text": "Ask which barrier matters to this person rather than assuming.",
+        "links": [
+          "Identification & Documents",
+          "Transportation",
+          "Legal Assistance",
+          "Interview Readiness"
+        ]
+      }
+    }
+  },
+  "mental": {
+    "title": "Mental Health Support",
+    "nodes": {
+      "start": {
+        "q": "What kind of help is the person requesting?",
+        "opts": [
+          [
+            "Immediate crisis",
+            "crisis"
+          ],
+          [
+            "Community-based support",
+            "outreach"
+          ],
+          [
+            "Find or change a therapist",
+            "therapy"
+          ]
+        ]
+      },
+      "crisis": {
+        "q": "Crisis response",
+        "text": "988 and emergency options. CIRT may involve police; CARE/non-police response cannot be promised. For immediate danger call 911.",
+        "links": [
+          "MENTAL HEALTH CRISIS"
+        ]
+      },
+      "outreach": {
+        "q": "Outreach support",
+        "text": "WellMind/CAT is a possible resource; confirm current availability and whether they will meet outside.",
+        "links": [
+          "Mental Health Support by Outreach"
+        ]
+      },
+      "therapy": {
+        "q": "Finding a therapist",
+        "text": "A good fit may take several tries. Help search covered providers; do not pressure someone to remain with a provider they dislike.",
+        "links": [
+          "Ongoing Mental Health Care",
+          "Online Mental Health Resources"
+        ]
+      }
+    }
+  },
+  "sud": {
+    "title": "Substance Use Support",
+    "nodes": {
+      "start": {
+        "q": "What does the person want right now?",
+        "opts": [
+          [
+            "Safer use / harm reduction",
+            "safer"
+          ],
+          [
+            "Detox or treatment",
+            "treatment"
+          ],
+          [
+            "Peer recovery connection",
+            "peer"
+          ]
+        ]
+      },
+      "safer": {
+        "q": "Harm reduction",
+        "text": "Respect participant goals; offer safer-use resources without pressuring treatment.",
+        "links": [
+          "Harm Reduction"
+        ]
+      },
+      "treatment": {
+        "q": "Treatment navigation",
+        "text": "Ask whether they want detox, residential, IOP or MAT. Confirm intake and transport before making promises.",
+        "links": [
+          "SUD Treatment",
+          "Transportation"
+        ]
+      },
+      "peer": {
+        "q": "Recovery connection",
+        "text": "Offer peer support and follow-up if requested.",
+        "links": [
+          "Support & Peer Groups",
+          "SUD Treatment"
+        ]
+      }
+    }
+  },
+  "vital": {
+    "title": "Vital Documents: ID, Birth Certificate, Social Security Card",
+    "nodes": {
+      "start": {
+        "q": "Which document is needed?",
+        "opts": [
+          [
+            "Colorado ID",
+            "idcheck"
+          ],
+          [
+            "Birth certificate",
+            "bccheck"
+          ],
+          [
+            "Social Security card",
+            "sscheck"
+          ]
+        ]
+      },
+      "idcheck": {
+        "q": "Is someone already working on getting the ID?",
+        "opts": [
+          [
+            "Yes — find out who",
+            "already"
+          ],
+          [
+            "No",
+            "idprior"
+          ]
+        ]
+      },
+      "bccheck": {
+        "q": "Is someone already working on the birth certificate?",
+        "opts": [
+          [
+            "Yes — find out who",
+            "already"
+          ],
+          [
+            "No",
+            "bc"
+          ]
+        ]
+      },
+      "sscheck": {
+        "q": "Is someone already working on the Social Security card?",
+        "opts": [
+          [
+            "Yes — find out who",
+            "already"
+          ],
+          [
+            "No",
+            "ss"
+          ]
+        ]
+      },
+      "already": {
+        "q": "Coordinate; do not duplicate applications",
+        "text": "Ask who is helping. With participant permission, contact that person or agency to learn what has happened and what comes next. Multiple birth certificate orders through different agencies can create problems.",
+        "opts": [
+          [
+            "Process is stalled",
+            "stalled"
+          ],
+          [
+            "Need a different immediate solution",
+            "goal"
+          ]
+        ],
+        "links": [
+          "Identification & Documents"
+        ]
+      },
+      "idprior": {
+        "q": "Have you had a Colorado ID before?",
+        "opts": [
+          [
+            "Yes",
+            "replacement"
+          ],
+          [
+            "No / uncertain",
+            "firstid"
+          ]
+        ]
+      },
+      "replacement": {
+        "q": "Colorado ID replacement",
+        "text": "A fingerprint-based replacement may be possible for a prior Colorado ID. An appointment is generally needed. Focus is BFF’s preferred referral; All Roads or BFF can help. Confirm DMV requirements for the individual.",
+        "opts": [
+          [
+            "The process stalled",
+            "stalled"
+          ],
+          [
+            "Why is the ID needed now?",
+            "goal"
+          ]
+        ],
+        "links": [
+          "Identification & Documents"
+        ]
+      },
+      "firstid": {
+        "q": "First Colorado ID: establish identity",
+        "text": "A birth certificate and Affidavit of Identity may be part of the process, with additional DMV requirements such as address evidence. Sebastian and Trisha at Focus are registered DMV identity affiants and BFF contacts for this path. RNs explain the steps and connect to Focus rather than doing complex identity work themselves.",
+        "opts": [
+          [
+            "Missing documents / cannot prove identity",
+            "stalled"
+          ],
+          [
+            "Why is the ID needed now?",
+            "goal"
+          ]
+        ],
+        "links": [
+          "Identification & Documents"
+        ]
+      },
+      "bc": {
+        "q": "Birth certificate assistance",
+        "text": "Connect to Focus or another case manager to check eligibility, application requirements, fees and state of birth. First check that no one else has already applied.",
+        "opts": [
+          [
+            "Process stalled",
+            "stalled"
+          ],
+          [
+            "Why needed now?",
+            "goal"
+          ]
+        ],
+        "links": [
+          "Identification & Documents"
+        ]
+      },
+      "ss": {
+        "q": "Social Security card assistance",
+        "text": "Connect to Focus, BFF or All Roads for help with Social Security replacement procedures and identity evidence. Confirm current SSA requirements; do not promise an outcome.",
+        "opts": [
+          [
+            "Process stalled",
+            "stalled"
+          ],
+          [
+            "Why needed now?",
+            "goal"
+          ]
+        ],
+        "links": [
+          "Identification & Documents"
+        ]
+      },
+      "stalled": {
+        "q": "Stalled or insufficient identity evidence?",
+        "text": "Ask what happened and who has been helping. Colorado DMV has an Exceptions Processing procedure for complex cases. Refer to a case manager (Focus preferred) rather than trying to solve a complicated identity dispute as a volunteer. Official information: https://dmv.colorado.gov/exceptions-processing-application-process",
+        "opts": [
+          [
+            "Explore immediate goal / workaround",
+            "goal"
+          ]
+        ],
+        "links": [
+          "Identification & Documents",
+          "Legal Assistance"
+        ]
+      },
+      "goal": {
+        "q": "Why was this document needed right now?",
+        "text": "Can the immediate goal be met another way while the document process continues? Ask the relevant provider about alternative identification or exception procedures for treatment, medical care, benefits, work or housing. Do not promise an exception. Agree who follows up.",
+        "links": [
+          "Medical Care",
+          "Benefits Enrollment",
+          "Employment",
+          "Housing",
+          "Advocacy"
+        ]
+      }
+    }
+  },
+  "disability": {
+    "title": "Disability & Accessibility Support",
+    "nodes": {
+      "start": {
+        "q": "Is someone already helping with this?",
+        "opts": [
+          [
+            "Yes — coordinate with them",
+            "existing"
+          ],
+          [
+            "No / unsure",
+            "need"
+          ]
+        ]
+      },
+      "existing": {
+        "q": "Avoid duplicate work",
+        "text": "With the person’s permission, ask which case manager or provider is involved, what has been tried, and what help they want next.",
+        "opts": [
+          [
+            "Identify the immediate need",
+            "need"
+          ]
+        ]
+      },
+      "need": {
+        "q": "What does the person want help with?",
+        "opts": [
+          [
+            "Access barrier (mobility, transportation, forms)",
+            "access"
+          ],
+          [
+            "Benefits / SSI / SSDI / Medicaid",
+            "benefits"
+          ],
+          [
+            "Housing or independent living",
+            "housing"
+          ],
+          [
+            "Employment or vocational support",
+            "work"
+          ],
+          [
+            "Advocacy or ongoing help",
+            "advocacy"
+          ]
+        ]
+      },
+      "access": {
+        "q": "Remove the immediate barrier",
+        "text": "Ask what would make the service usable; help with practical barriers or connect to a specialist. Do not assume diagnosis or eligibility.",
+        "links": [
+          "Transportation Assistance",
+          "Medical Equipment",
+          "Advocacy"
+        ]
+      },
+      "benefits": {
+        "q": "Benefits assistance",
+        "text": "Connect to a case manager or qualified benefits navigator; check for existing applications first.",
+        "links": [
+          "Benefits Enrollment",
+          "Medicaid Enrollment",
+          "Advocacy"
+        ]
+      },
+      "housing": {
+        "q": "Housing and independent living",
+        "text": "Ask about existing supports and specific accessibility needs. Imagine! may be relevant for developmental disability services; verify eligibility.",
+        "links": [
+          "Housing",
+          "Shelters"
+        ]
+      },
+      "work": {
+        "q": "Employment support",
+        "text": "Ask what kind of work the person wants and what accommodations would help. Connect to specialized vocational services as appropriate.",
+        "links": [
+          "Employment",
+          "Vocational Programs"
+        ]
+      },
+      "advocacy": {
+        "q": "Ongoing support and advocacy",
+        "text": "Identify the requested support and connect to a relevant specialist or case manager.",
+        "links": [
+          "Advocacy",
+          "Medical Care"
+        ]
+      }
+    }
+  },
+  "camping": {
+    "title": "Got a Camping Ticket?",
+    "nodes": {
+      "start": {
+        "q": "Does the person have the ticket or citation?",
+        "opts": [
+          [
+            "Yes",
+            "details"
+          ],
+          [
+            "No / lost",
+            "missing"
+          ]
+        ]
+      },
+      "details": {
+        "q": "Check the printed citation",
+        "text": "Read the court, date, deadline, citation number and instructions on the actual ticket. Do not guess deadlines or promise dismissal. Ask if a case manager or attorney is already involved.",
+        "opts": [
+          [
+            "Need help understanding or responding",
+            "legal"
+          ],
+          [
+            "Immediate housing or shelter needs",
+            "housing"
+          ]
+        ]
+      },
+      "missing": {
+        "q": "Missing the ticket?",
+        "text": "Connect to a case manager or legal navigator to identify the issuing agency and retrieve case information. Avoid guessing the court or deadline.",
+        "links": [
+          "Legal Assistance",
+          "Advocacy"
+        ]
+      },
+      "legal": {
+        "q": "Connect to legal help",
+        "text": "With permission, help the person reach an appropriate legal aid or court-navigation contact. Preserve the citation and any paperwork.",
+        "links": [
+          "Legal Assistance",
+          "Advocacy"
+        ]
+      },
+      "housing": {
+        "q": "Address immediate needs",
+        "text": "Ask what practical support is needed now, separately from the legal process.",
+        "links": [
+          "Shelters",
+          "Tents & Sleeping Bags",
+          "Advocacy"
+        ]
+      }
+    }
+  },
+  "property": {
+    "title": "Had Your Stuff Taken?",
+    "nodes": {
+      "start": {
+        "q": "What happened to the belongings?",
+        "opts": [
+          [
+            "Taken during an enforcement or cleanup",
+            "official"
+          ],
+          [
+            "Stolen / unknown",
+            "unknown"
+          ],
+          [
+            "Unsure",
+            "unknown"
+          ]
+        ]
+      },
+      "official": {
+        "q": "Record what is known",
+        "text": "Ask when and where it happened, which agency or crew was present, and whether a notice or receipt was provided. Do not promise items can be recovered.",
+        "opts": [
+          [
+            "Need help locating or recovering belongings",
+            "recover"
+          ],
+          [
+            "Urgent replacement needs",
+            "replace"
+          ]
+        ]
+      },
+      "unknown": {
+        "q": "Clarify immediate needs",
+        "text": "Ask about the last known location and whether there is documentation. Refer to an advocate or case manager for next steps.",
+        "opts": [
+          [
+            "Need help locating belongings",
+            "recover"
+          ],
+          [
+            "Urgent replacement needs",
+            "replace"
+          ]
+        ]
+      },
+      "recover": {
+        "q": "Get assistance with the recovery process",
+        "text": "A case manager or legal advocate can help identify the appropriate agency, property process, and any applicable deadlines. Confirm current Boulder procedures before giving specific instructions.",
+        "links": [
+          "Legal Assistance",
+          "Advocacy"
+        ]
+      },
+      "replace": {
+        "q": "Replace urgent essentials",
+        "text": "Prioritize medications, identification, weather protection and other immediate needs; coordinate with existing providers.",
+        "links": [
+          "Clothing & Gear",
+          "Tents & Sleeping Bags",
+          "Identification & Documents",
+          "Medical Care"
+        ]
+      }
+    }
+  }
+}

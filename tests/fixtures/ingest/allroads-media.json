@@ -1,0 +1,54 @@
+[
+ {
+  "id": 987499099,
+  "date": "2026-10-09T10:08:28",
+  "date_gmt": "2026-10-09T16:08:28",
+  "modified_gmt": "2026-10-09T16:08:28",
+  "slug": "august-2026-resource-guide-sp-2",
+  "link": "https://allroadsboco.org/august-2026-resource-guide-sp-2/",
+  "title": {
+   "rendered": "August 2026 Resource Guide SP"
+  },
+  "mime_type": "application/pdf",
+  "source_url": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-SP-1.pdf"
+ },
+ {
+  "id": 987499098,
+  "date": "2026-10-09T10:08:24",
+  "date_gmt": "2026-10-09T16:08:24",
+  "modified_gmt": "2026-10-09T16:08:24",
+  "slug": "august-2026-resource-guide-eng-2",
+  "link": "https://allroadsboco.org/august-2026-resource-guide-eng-2/",
+  "title": {
+   "rendered": "August 2026 Resource Guide ENG"
+  },
+  "mime_type": "application/pdf",
+  "source_url": "https://allroadsboco.org/wp-content/uploads/2026/10/August-2026-Resource-Guide-ENG-1.pdf"
+ },
+ {
+  "id": 987498052,
+  "date": "2026-07-07T09:54:29",
+  "date_gmt": "2026-07-07T15:54:29",
+  "modified_gmt": "2026-07-07T15:54:29",
+  "slug": "july-2026-resource-guide-sp",
+  "link": "https://allroadsboco.org/july-2026-resource-guide-sp/",
+  "title": {
+   "rendered": "July 2026 Resource Guide SP"
+  },
+  "mime_type": "application/pdf",
+  "source_url": "https://allroadsboco.org/wp-content/uploads/2026/07/July-2026-Resource-Guide-SP.pdf"
+ },
+ {
+  "id": 987498051,
+  "date": "2026-07-07T09:54:26",
+  "date_gmt": "2026-07-07T15:54:26",
+  "modified_gmt": "2026-07-07T15:54:26",
+  "slug": "july-2026-resource-guide-eng",
+  "link": "https://allroadsboco.org/july-2026-resource-guide-eng/",
+  "title": {
+   "rendered": "July 2026 Resource Guide ENG"
+  },
+  "mime_type": "application/pdf",
+  "source_url": "https://allroadsboco.org/wp-content/uploads/2026/07/July-2026-Resource-Guide-ENG.pdf"
+ }
+]
