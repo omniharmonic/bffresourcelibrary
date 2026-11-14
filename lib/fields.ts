@@ -4,7 +4,7 @@ export const SERVICE_FIELDS = [
   { key: "organization", label: "Organization", long: false },
   { key: "summary", label: "What it is (one or two sentences)", long: true },
   { key: "access", label: "How to access / where to go", long: true },
-  { key: "hoursText", label: "Hours (e.g. “Mon–Fri 9am–3pm”, “Tuesdays 2:30–3:30 PM”)", long: false },
+  { key: "hoursText", label: "Hours", long: false },
   { key: "address", label: "Address or meeting spot", long: false },
   { key: "phone", label: "Phone", long: false },
   { key: "url", label: "Website", long: false },

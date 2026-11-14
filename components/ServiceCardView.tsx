@@ -3,6 +3,7 @@
 import Link from "next/link";
 import type { ServiceCard } from "@/lib/dto";
 import { usePlan } from "./PlanProvider";
+import { GlanceBlock } from "./GlanceBlock";
 
 export function telHref(phone: string) {
   const digits = phone.replace(/[^\d+]/g, "");
@@ -24,7 +25,6 @@ export function ServiceCardView({ s, volunteer, showAdd = true }: { s: ServiceCa
   const plan = usePlan();
   const inPlan = plan.has(s.id);
   const verified = s.verifiedAt ? new Date(s.verifiedAt) : null;
-  const quick = s.details.filter((d) => ["walkIn", "cost", "idRequired"].includes(d.key));
   return (
     <article className={`svc${inPlan ? " in-plan" : ""}`}>
       <div className="svc-top">
@@ -37,18 +37,12 @@ export function ServiceCardView({ s, volunteer, showAdd = true }: { s: ServiceCa
             )}
             {volunteer ? <Link href={`/services/${s.id}`}>{s.name}</Link> : s.name}
           </h3>
-          <div className="facts">
-            <span className={`status ${s.open.state}`}>{s.open.label}</span>
-            {s.status === "unverified" && <span className="status unverified">Not yet reviewed</span>}
-            {s.status === "temporary" && <span className="status later-today">Pop-up</span>}
-            {s.schedule && <span className="fact">🕑 {s.schedule}</span>}
-            {s.petPolicy && <span className="fact">🐾 {s.petPolicy.length > 28 ? "Pets: see notes" : s.petPolicy}</span>}
-            {quick.map((d) => (
-              <span className="fact" key={d.key}>
-                {d.key === "walkIn" ? (d.value === "yes" ? "🚶 Walk-ins OK" : "📅 Call first") : d.key === "idRequired" ? (d.value === "yes" ? "🪪 ID needed" : "🪪 No ID needed") : `💲 ${d.value.length > 22 ? d.value.slice(0, 20) + "…" : d.value}`}
-              </span>
-            ))}
-          </div>
+          {(s.status === "unverified" || s.status === "temporary") && (
+            <div className="facts">
+              {s.status === "unverified" && <span className="status unverified">Not yet reviewed</span>}
+              {s.status === "temporary" && <span className="status later-today">Pop-up</span>}
+            </div>
+          )}
         </div>
         {showAdd && (
           <button
@@ -61,21 +55,8 @@ export function ServiceCardView({ s, volunteer, showAdd = true }: { s: ServiceCa
           </button>
         )}
       </div>
+      <GlanceBlock g={s.glance} />
       {s.summary && <p className="svc-summary">{s.summary}</p>}
-      {(s.phone || s.address) && (
-        <div className="svc-actions">
-          {s.phone && (
-            <a className="btn" href={telHref(s.phone)}>
-              📞 {s.phone}
-            </a>
-          )}
-          {s.address && (
-            <a className="btn" href={mapHref(s.address)} target="_blank" rel="noreferrer">
-              📍 Directions
-            </a>
-          )}
-        </div>
-      )}
       {s.reasons && s.reasons.length > 0 && <div className="why">Matched: {s.reasons.join(" · ")}</div>}
       <details className="more">
         <summary>What to expect</summary>

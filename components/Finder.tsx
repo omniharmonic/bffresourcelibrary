@@ -32,6 +32,7 @@ export function Finder({ mode, chips, rubric, aiOn }: { mode: "volunteer" | "par
   const [error, setError] = useState<string | null>(null);
   const [pending, start] = useTransition();
   const resultsRef = useRef<HTMLDivElement>(null);
+  const [showRubric, setShowRubric] = useState(false);
 
   const scrollToResults = () => setTimeout(() => resultsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 60);
 
@@ -217,18 +218,25 @@ export function Finder({ mode, chips, rubric, aiOn }: { mode: "volunteer" | "par
 
       {rubric && (
         <section style={{ marginTop: 36 }}>
-          <h2>Browse by wellness dimension</h2>
-          <p className="muted small">Libby’s Eight Dimensions rubric · {Object.values(TIER_LABEL).map((t) => t.title).join(" → ")}</p>
-          <div className="rubric">
-            {rubric.map((d) => {
-              const n = d.tiers.reduce((a, t) => a + t.cats.length, 0);
-              return (
-                <details className="dim" key={d.slug}>
-                  <summary>
+          <div className="section-head">
+            <div>
+              <h2 style={{ marginBottom: 2 }}>Browse by wellness dimension</h2>
+              <p className="muted small" style={{ margin: 0 }}>
+                Libby’s Eight Dimensions rubric · {Object.values(TIER_LABEL).map((t) => t.title).join(" → ")}
+              </p>
+            </div>
+            <button type="button" className="btn btn-sm" aria-expanded={showRubric} onClick={() => setShowRubric((v) => !v)}>
+              {showRubric ? "Hide dimensions" : "Show all dimensions"}
+            </button>
+          </div>
+          {showRubric && (
+            <div className="rubric">
+              {rubric.map((d) => (
+                <div className="dim" key={d.slug}>
+                  <div className="dim-head">
                     <span className="dim-dot" style={{ background: d.color }} aria-hidden />
                     {d.name}
-                    <span className="dim-count">{n}</span>
-                  </summary>
+                  </div>
                   <div className="dim-body">
                     {d.tiers.map((t) =>
                       t.cats.length ? (
@@ -243,10 +251,10 @@ export function Finder({ mode, chips, rubric, aiOn }: { mode: "volunteer" | "par
                       ) : null,
                     )}
                   </div>
-                </details>
-              );
-            })}
-          </div>
+                </div>
+              ))}
+            </div>
+          )}
         </section>
       )}
     </div>

@@ -4,8 +4,9 @@ import QRCode from "qrcode";
 import { getPlanByToken } from "@/lib/plans";
 import { getCatalog } from "@/lib/catalog";
 import { getCurrentUser } from "@/lib/session";
-import { scheduleSummary } from "@/lib/hours";
 import { TierHead } from "@/components/TierHead";
+import { GlanceBlock } from "@/components/GlanceBlock";
+import { glance } from "@/lib/glance";
 import type { ScheduleSpan } from "@/lib/db/schema";
 import { PlanActions } from "@/components/PlanActions";
 
@@ -63,17 +64,24 @@ export default async function SharedPlan({ params, searchParams }: { params: Pro
             <section key={t} style={{ marginTop: 18 }} className={`tier-${t}`}>
               <TierHead tier={t} />
               {items.map(({ it, s }) => {
-                const sched = scheduleSummary(s!.schedule as ScheduleSpan[] | null);
                 return (
                   <div className="item" key={it.id}>
                     <h3>
                       {s!.preferred ? "★ " : ""}
                       {s!.name}
                     </h3>
-                    {s!.phone && <div className="phone">☎ {s!.phone}</div>}
-                    {(sched || s!.hoursText) && <div>🕑 {sched || s!.hoursText}</div>}
-                    {s!.address && <div>📍 {s!.address}</div>}
-                    {s!.access && <div>{s!.access}</div>}
+                    <GlanceBlock
+                      print={layout === "receipt"}
+                      g={glance({
+                        address: s!.address,
+                        access: s!.access,
+                        hoursText: s!.hoursText,
+                        schedule: s!.schedule as ScheduleSpan[] | null,
+                        phone: s!.phone,
+                        details: s!.details as Record<string, unknown> | null,
+                      })}
+                    />
+                    {s!.access && <div className="item-access">{s!.access}</div>}
                     {s!.fieldNotes && <div style={{ color: "#333" }}>What to expect: {s!.fieldNotes}</div>}
                     {s!.petPolicy && <div>🐾 Pets: {s!.petPolicy}</div>}
                     {s!.rules && <div>Rules: {s!.rules}</div>}

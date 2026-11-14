@@ -225,6 +225,12 @@ async function main() {
     const firstCard = await admin.$(".tier .svc");
     return (await firstCard.textContent()).includes("★") || "no preferred in first tier (data-dependent)";
   });
+  await step("Every result card starts with an at-a-glance When / Where block", async () => {
+    const [cards, glances] = [(await admin.$$(".svc")).length, (await admin.$$(".svc .glance")).length];
+    if (!cards || cards !== glances) throw new Error(`${glances}/${cards}`);
+    const whereKnown = await admin.$$eval(".svc .glance", (els) => els.filter((e) => !e.textContent.includes("Ask / see notes")).length);
+    return `${whereKnown}/${cards} with a location`;
+  });
   await step("Quick chip alone returns results", async () => {
     await admin.goto(BASE + "/navigator");
     await admin.click('.need:has-text("Laundry")');
@@ -247,8 +253,8 @@ async function main() {
   });
   await step("Wellness rubric: 8 dimensions, browsing a category lists services", async () => {
     await admin.goto(BASE + "/navigator");
-    const dims = await admin.$$eval(".dim > summary", (e) => e.map((x) => x.textContent));
-    await admin.$$eval("details.dim", (els) => els.forEach((d) => (d.open = true)));
+    await admin.click('button:has-text("Show all dimensions")');
+    const dims = await admin.$$eval(".dim-head", (e) => e.map((x) => x.textContent));
     await admin.click('.dim .chip:has-text("Showers")');
     await admin.waitForSelector(".tier .svc", { timeout: 20000 });
     return dims.length === 8 ? `${dims.length} dimensions` : false;
@@ -334,6 +340,12 @@ async function main() {
     const qr = await admin.$(".plan-doc .qr svg");
     const missing = [["navigator", t.includes("E2E Sam")], ["item note", t.includes(`${RUN} bring your citation`)], ["plan note", t.includes("Start with the shower.")], ["988", t.includes("988")], ["QR", !!qr]].filter(([, ok]) => !ok).map(([k]) => k);
     if (missing.length) throw new Error("missing " + missing.join(", "));
+    return true;
+  });
+  await step("Printed plan items lead with When / Where / Call", async () => {
+    const items = (await admin.$$(".plan-doc .item")).length;
+    const glances = (await admin.$$(".plan-doc .item .glance")).length;
+    if (!items || items !== glances) throw new Error(`${glances}/${items}`);
     return true;
   });
   await step("Nickname hidden on plan unless opted in (owner sees private note)", async () => {
@@ -423,7 +435,8 @@ async function main() {
     await admin.fill("#hoursText", "Mon-Fri 9am-5pm");
     await admin.fill("#phone", "303-555-0100");
     await admin.fill("#petPolicy", "Dogs OK");
-    await admin.check('input[name=categories][value="food-pantries"]');
+    await admin.fill("#cat-search", "food pantr");
+    await admin.click('.catpick-opt:has-text("Food Pantries")');
     await admin.click('button:has-text("Save")');
     await admin.waitForURL("**/services/s_**", { timeout: 30000 });
     svcId = new URL(admin.url()).pathname.split("/")[2];
@@ -442,6 +455,7 @@ async function main() {
   });
   await step("Lock 'Phone' field", async () => {
     await admin.waitForLoadState("networkidle");
+    await admin.locator("summary", { hasText: "Where this info came from" }).click();
     await admin.locator("summary", { hasText: "Lock fields" }).click();
     await admin.check('input[name=locked][value="phone"]');
     await admin.click('button:has-text("Save locks")');
@@ -510,9 +524,10 @@ async function main() {
   await step("Volunteer proposes a brand-new service", async () => {
     await vol.goto(BASE + "/services/new");
     await vol.fill("#name", `${RUN} Volunteer-added Shower`);
-    await vol.check('input[name=categories][value="showers"]');
+    await vol.fill("#cat-search", "shower");
+    await vol.click('.catpick-opt:has-text("Showers")');
     await vol.click('button:has-text("Send for review")');
-    await vol.waitForURL("**msg=proposed**");
+    await vol.waitForURL("**/suggestions?msg=new**");
     const rows = await sql(`select id from change_requests where kind='create' and status='pending' and payload->'fields'->>'name' = $1`, [`${RUN} Volunteer-added Shower`]);
     return rows.length === 1;
   });
@@ -540,6 +555,51 @@ async function main() {
     const rows = await sql(`select id from services where name=$1`, [`${RUN} Volunteer-added Shower`]);
     const [cr] = await sql(`select status, review_note from change_requests where payload->'fields'->>'name'=$1`, [`${RUN} Volunteer-added Shower`]);
     return rows.length === 0 && cr.status === "rejected" && cr.review_note === "Duplicate";
+  });
+  await step("Service page leads with 'Is this still right?' task buttons", async () => {
+    await vol.goto(`${BASE}/services/${svcId}`);
+    const tasks = await vol.$$eval(".task", (els) => els.map((e) => e.textContent));
+    if (tasks.length !== 6) throw new Error(`${tasks.length} task buttons`);
+    return true;
+  });
+  await step("Focused 'Hours changed' task sends only hours (categories untouched)", async () => {
+    await vol.goto(`${BASE}/services/${svcId}/edit?task=hours`);
+    if (await vol.$("#name")) throw new Error("full form shown instead of focused task");
+    await vol.fill("#hoursText", "Mon-Fri 10am-4pm");
+    await vol.click('.chip:has-text("I called them")');
+    await vol.click('button:has-text("Send for review")');
+    await vol.waitForURL("**msg=proposed**");
+    const [cr] = await sql(`select payload, summary from change_requests where service_id=$1 and source='volunteer' order by id desc limit 1`, [svcId]);
+    const keys = Object.keys(cr.payload.fields ?? {});
+    if (cr.payload.categories) throw new Error("categories included");
+    if (keys.join() !== "hoursText") throw new Error("fields: " + keys.join());
+    if (!/I called them/.test(cr.summary ?? "")) throw new Error("summary: " + cr.summary);
+    return true;
+  });
+  await step("'Add a field note' appends with name and date", async () => {
+    await vol.goto(`${BASE}/services/${svcId}/edit?task=note`);
+    await vol.fill("#addNote", `${RUN} bring water`);
+    await vol.click('button:has-text("Send for review")');
+    await vol.waitForURL("**msg=proposed**");
+    const [cr] = await sql(`select payload from change_requests where service_id=$1 and source='volunteer' order by id desc limit 1`, [svcId]);
+    const n = cr.payload.fields.fieldNotes;
+    if (!(n.includes(`${RUN} line forms at 8:45`) && n.includes(`${RUN} bring water (E2E`))) throw new Error(n);
+    return true;
+  });
+  await step("'It's closed' creates an archive request", async () => {
+    await vol.goto(`${BASE}/services/${svcId}/edit?task=closed`);
+    await vol.check('input[name="closedKind"][value="closed"]');
+    await vol.click('button:has-text("Send for review")');
+    await vol.waitForURL("**msg=proposed**");
+    const [cr] = await sql(`select kind, payload from change_requests where service_id=$1 and source='volunteer' order by id desc limit 1`, [svcId]);
+    return cr.kind === "archive" && cr.payload.status === "inactive";
+  });
+  await step("My suggestions lists them with status", async () => {
+    await vol.goto(BASE + "/suggestions");
+    const t = await vol.textContent(".list");
+    const n = (await vol.$$(".list li")).length;
+    if (n < 4 || !t.includes("Waiting for review") || !t.includes("Approved")) throw new Error(`${n} items`);
+    return `${n} suggestions`;
   });
   await step("Volunteer can save plans and sees only their own", async () => {
     await vol.goto(BASE + "/plans");

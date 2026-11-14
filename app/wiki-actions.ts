@@ -31,8 +31,11 @@ function readPayload(fd: FormData, current?: Record<string, unknown> & { categor
     if (next === null ? prev !== undefined : JSON.stringify(next) !== JSON.stringify(prev)) details[f.key] = next;
   }
   if (Object.keys(details).length) payload.details = details;
-  const cats = fd.getAll("categories").map(String);
-  if (!current || [...cats].sort().join() !== [...(current.categories ?? [])].sort().join()) payload.categories = cats;
+  // Only the full form carries categories; focused task forms must never wipe them.
+  if (fd.get("task") === "all" || fd.has("categories")) {
+    const cats = fd.getAll("categories").map(String);
+    if (!current || [...cats].sort().join() !== [...(current.categories ?? [])].sort().join()) payload.categories = cats;
+  }
   const status = String(fd.get("status") ?? "");
   if (status && status !== current?.status) payload.status = status;
   const preferred = fd.get("preferred") === "on";
@@ -56,9 +59,28 @@ export async function proposeService(fd: FormData) {
   const current = serviceId ? c.serviceMap.get(serviceId) : undefined;
   const payload = readPayload(fd, current as never);
   const why = String(fd.get("why") ?? "").slice(0, 500);
+  const today = new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/Denver" });
+  const who = (u.displayName || u.name || "a volunteer").split(" ")[0];
+
+  // "Add a field note" appends — it never replaces what other volunteers wrote.
+  const addNote = String(fd.get("addNote") ?? "").trim().slice(0, 2000);
+  if (addNote && current) {
+    const prev = current.fieldNotes?.trim();
+    payload.fields = { ...(payload.fields ?? {}), fieldNotes: `${prev ? prev + "\n\n" : ""}${addNote} (${who}, ${today})` };
+  }
+
+  // "It's closed": hide it from search; closed-for-good becomes an archive request.
+  const closedKind = String(fd.get("closedKind") ?? "");
+  let archive = fd.get("archive") === "on";
+  if (closedKind && current) {
+    payload.status = "inactive";
+    const line = closedKind === "closed" ? `Reported closed (${who}, ${today}).` : `Reported paused / temporarily closed (${who}, ${today}).`;
+    payload.fields = { ...(payload.fields ?? {}), fieldNotes: `${current.fieldNotes?.trim() ? current.fieldNotes.trim() + "\n\n" : ""}${line}` };
+    archive = closedKind === "closed";
+  }
   if (!serviceId && !payload.fields?.name) throw new Error("Name is required");
   if (serviceId && isEmpty(payload)) redirect(`/services/${serviceId}?msg=nochange`);
-  const kind = serviceId ? (fd.get("archive") === "on" ? "archive" : "update") : "create";
+  const kind = serviceId ? (archive ? "archive" : "update") : "create";
   if (u.role === "admin") {
     const id = await applyServiceChange({ kind, serviceId, payload, actor: `admin:${u.id}`, status: "active" });
     await createChangeRequest({ kind, serviceId: id, payload: payload as never, summary: why || "Admin edit", source: "admin", proposedBy: u.id }).then((cr) =>
@@ -68,7 +90,8 @@ export async function proposeService(fd: FormData) {
     redirect(`/services/${id}?msg=saved`);
   }
   await createChangeRequest({ kind, serviceId, payload: payload as never, summary: why || undefined, source: "volunteer", proposedBy: u.id });
-  redirect(serviceId ? `/services/${serviceId}?msg=proposed` : `/services?msg=proposed`);
+  revalidatePath("/suggestions");
+  redirect(serviceId ? `/services/${serviceId}?msg=proposed` : `/suggestions?msg=new`);
 }
 
 export async function verifyServiceAction(fd: FormData) {

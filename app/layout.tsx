@@ -35,7 +35,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     ...(volunteer ? [{ href: "/navigator", label: "Find help" }] : settings.participant_mode ? [{ href: "/help", label: "Find help" }] : []),
     ...(volunteer ? [{ href: "/trees", label: "Decision trees" }, { href: "/services", label: "Services" }] : []),
     ...(user ? [{ href: "/plans", label: "My plans" }] : []),
-    ...(volunteer ? [{ href: "/gaps", label: "Gaps" }] : []),
+    ...(volunteer ? [{ href: "/suggestions", label: "My suggestions" }, { href: "/gaps", label: "Gaps" }] : []),
     ...(admin ? [{ href: "/admin", label: "Admin", badge: pending }] : []),
     user ? { href: "/account", label: "Account" } : { href: "/login", label: "Sign in" },
   ];
