@@ -1,4 +1,5 @@
 import { SERVICE_FIELDS } from "@/lib/fields";
+import { DETAIL_FIELDS, formatDetail } from "@/lib/details";
 import type { Service, Catalog } from "@/lib/catalog";
 import { proposeService } from "@/app/wiki-actions";
 
@@ -21,6 +22,30 @@ export function ServiceForm({ s, c, admin }: { s?: Service; c: Catalog; admin: b
           )}
         </div>
       ))}
+      <fieldset className="field" style={{ border: "1px solid var(--border)", borderRadius: 12, padding: 12 }}>
+        <legend style={{ fontWeight: 700 }}>Before you go</legend>
+        <p className="hint" style={{ marginTop: 0 }}>Only fill in what you know for sure. Leave blank if unsure.</p>
+        {DETAIL_FIELDS.map((f) => {
+          const cur = (s?.details as Record<string, unknown> | null | undefined)?.[f.key];
+          const id = `detail-${f.key}`;
+          return (
+            <div className="field" key={f.key}>
+              <label htmlFor={id}>
+                {f.label} <span className="hint">{f.help}</span>
+              </label>
+              {f.kind === "boolean" ? (
+                <select id={id} name={`detail.${f.key}`} defaultValue={cur === true ? "yes" : cur === false ? "no" : ""}>
+                  <option value="">Not sure</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              ) : (
+                <input id={id} name={`detail.${f.key}`} type="text" defaultValue={formatDetail(f.key, cur)} placeholder={f.kind === "list" ? "Separate with commas" : ""} />
+              )}
+            </div>
+          );
+        })}
+      </fieldset>
       <fieldset className="field" style={{ border: "1px solid var(--border)", borderRadius: 12, padding: 12 }}>
         <legend style={{ fontWeight: 700 }}>Categories</legend>
         {c.dimensions.map((d) => (

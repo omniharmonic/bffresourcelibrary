@@ -5,6 +5,8 @@ import { getDb, schema } from "@/lib/db";
 import { getCatalog } from "@/lib/catalog";
 import { getSettings, aiAvailable } from "@/lib/settings";
 import { FIELD_LABEL } from "@/lib/fields";
+import { Evidence, labelFor, detailDisplay, type EvidenceItem, type EnrichPage } from "@/components/Evidence";
+import { servicesNeedingFieldCheck } from "@/lib/enrich/verify-queue";
 import { reviewAction, setUserRoleAction, settingsAction, bulkReviewAction } from "@/app/wiki-actions";
 
 export const metadata = { title: "Admin" };
@@ -13,6 +15,7 @@ const TABS = [
   ["review", "Review queue"],
   ["people", "Volunteers"],
   ["settings", "Settings"],
+  ["checks", "Field checks"],
   ["sources", "Data sources"],
 ] as const;
 
@@ -41,6 +44,7 @@ export default async function Admin({ searchParams }: { searchParams: Promise<{ 
       {tab === "review" && <Review src={src} />}
       {tab === "people" && <People />}
       {tab === "settings" && <SettingsTab />}
+      {tab === "checks" && <Checks />}
       {tab === "sources" && <Sources />}
     </>
   );
@@ -83,7 +87,7 @@ export default async function Admin({ searchParams }: { searchParams: Promise<{ 
         )}
         {rows.slice(0, 60).map((r) => {
           const svc = r.serviceId ? c.serviceMap.get(r.serviceId) : undefined;
-          const p = r.payload as { fields?: Record<string, unknown>; categories?: string[]; status?: string; preferred?: boolean; url?: string; key?: string };
+          const p = r.payload as { fields?: Record<string, unknown>; details?: Record<string, unknown>; categories?: string[]; status?: string; preferred?: boolean; url?: string; key?: string; evidence?: Record<string, EvidenceItem>; page?: EnrichPage; conflicts?: unknown[] };
           return (
             <article className="card" key={r.id} style={{ marginBottom: 14 }}>
               <div className="eyebrow">
@@ -98,12 +102,12 @@ export default async function Admin({ searchParams }: { searchParams: Promise<{ 
               {r.kind === "notice" && p.url && (
                 <p>
                   <a href={p.url} target="_blank" rel="noreferrer">
-                    Open the document
+                    {r.source.startsWith("enrich:") ? "Open the provider’s page" : "Open the document"}
                   </a>{" "}
-                  — check it against our records, then mark this done.
+                  — compare it with our record, then mark this done.
                 </p>
               )}
-              {(p.fields || p.categories || p.status !== undefined || p.preferred !== undefined) && (
+              {(p.fields || p.details || p.categories || p.status !== undefined || p.preferred !== undefined) && (
                 <div className="diff" style={{ margin: "8px 0" }}>
                   {Object.entries(p.fields ?? {}).map(([k, v]) => (
                     <FieldRow key={k} label={FIELD_LABEL[k] ?? k} old={svc ? (svc as Record<string, unknown>)[k] : undefined} next={v} isCreate={!svc} />
@@ -116,10 +120,20 @@ export default async function Admin({ searchParams }: { searchParams: Promise<{ 
                       isCreate={!svc}
                     />
                   )}
+                  {Object.entries(p.details ?? {}).map(([k, v]) => (
+                    <FieldRow
+                      key={"d-" + k}
+                      label={labelFor(k)}
+                      old={svc ? detailDisplay(k, (svc.details as Record<string, unknown> | null)?.[k]) : undefined}
+                      next={detailDisplay(k, v)}
+                      isCreate={!svc}
+                    />
+                  ))}
                   {p.status !== undefined && <FieldRow label="Status" old={svc?.status} next={p.status} isCreate={!svc} />}
                   {p.preferred !== undefined && <FieldRow label="BFF preferred" old={svc?.preferred ? "yes" : "no"} next={p.preferred ? "yes" : "no"} isCreate={!svc} />}
                 </div>
               )}
+              {(p.evidence || p.page) && <Evidence evidence={p.evidence ?? {}} page={p.page} conflicts={p.conflicts} />}
               <form action={reviewAction} className="btn-row" style={{ marginTop: 8 }}>
                 <input type="hidden" name="id" value={r.id} />
                 <input type="text" name="note" placeholder="Note (optional)" style={{ flex: 1, minWidth: 180 }} aria-label="Review note" />
@@ -236,6 +250,29 @@ export default async function Admin({ searchParams }: { searchParams: Promise<{ 
     );
   }
 
+  async function Checks() {
+    const items = await servicesNeedingFieldCheck({ limit: 25 });
+    return (
+      <section className="panel">
+        <h2>Needs a field check</h2>
+        <p className="muted small">
+          The services people rely on most that haven’t been checked in person lately, or are missing key facts. A quick call or visit,
+          then “I checked this today”, keeps the navigator trustworthy.
+        </p>
+        <ol className="list" style={{ paddingLeft: 0 }}>
+          {items.map((i) => (
+            <li key={i.serviceId}>
+              <Link href={`/services/${i.serviceId}`} style={{ fontWeight: 700 }}>
+                {i.name}
+              </Link>
+              <div className="small muted">{i.reason}</div>
+            </li>
+          ))}
+        </ol>
+      </section>
+    );
+  }
+
   async function Sources() {
     const runs = await db.select().from(schema.ingestRuns).orderBy(desc(schema.ingestRuns.startedAt)).limit(40);
     return (
@@ -278,7 +315,13 @@ function FieldRow({ label, old, next, isCreate }: { label: string; old: unknown;
   return (
     <>
       <b>{label}</b>
-      {isCreate ? <span className="muted">new</span> : <span className="old">{show(old)}</span>}
+      {isCreate ? (
+        <span className="muted">new</span>
+      ) : old === null || old === undefined || old === "" || old === "—" ? (
+        <span className="muted small">(empty)</span>
+      ) : (
+        <span className="old">{show(old)}</span>
+      )}
       <span className="new">{show(next)}</span>
     </>
   );

@@ -6,6 +6,7 @@ import { eq } from "drizzle-orm";
 import { requireRole } from "@/lib/session";
 import { getCatalog } from "@/lib/catalog";
 import { SERVICE_FIELDS } from "@/lib/fields";
+import { DETAIL_FIELDS, coerceDetail } from "@/lib/details";
 import { applyServiceChange, createChangeRequest, approveChangeRequest, rejectChangeRequest, markVerified, setLockedFields, type ChangePayload } from "@/lib/services";
 import { setSetting } from "@/lib/settings";
 import { getDb, schema } from "@/lib/db";
@@ -19,6 +20,17 @@ function readPayload(fd: FormData, current?: Record<string, unknown> & { categor
     if (!current || v !== cur) fields[f.key] = v || null;
   }
   const payload: ChangePayload = { fields };
+  const curDetails = (current?.details ?? {}) as Record<string, unknown>;
+  const details: Record<string, unknown> = {};
+  for (const f of DETAIL_FIELDS) {
+    const name = `detail.${f.key}`;
+    if (!fd.has(name)) continue;
+    const next = coerceDetail(f.key, String(fd.get(name) ?? ""));
+    const prev = curDetails[f.key];
+    if (next === undefined) continue;
+    if (next === null ? prev !== undefined : JSON.stringify(next) !== JSON.stringify(prev)) details[f.key] = next;
+  }
+  if (Object.keys(details).length) payload.details = details;
   const cats = fd.getAll("categories").map(String);
   if (!current || [...cats].sort().join() !== [...(current.categories ?? [])].sort().join()) payload.categories = cats;
   const status = String(fd.get("status") ?? "");
@@ -35,7 +47,7 @@ function readPayload(fd: FormData, current?: Record<string, unknown> & { categor
 }
 
 const isEmpty = (p: ChangePayload) =>
-  !Object.keys(p.fields ?? {}).length && !p.categories && p.status === undefined && p.preferred === undefined && p.startsAt === undefined && p.endsAt === undefined;
+  !Object.keys(p.fields ?? {}).length && !Object.keys(p.details ?? {}).length && !p.categories && p.status === undefined && p.preferred === undefined && p.startsAt === undefined && p.endsAt === undefined;
 
 export async function proposeService(fd: FormData) {
   const u = await requireRole("volunteer");

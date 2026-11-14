@@ -24,8 +24,7 @@ export function ServiceCardView({ s, volunteer, showAdd = true }: { s: ServiceCa
   const plan = usePlan();
   const inPlan = plan.has(s.id);
   const verified = s.verifiedAt ? new Date(s.verifiedAt) : null;
-  const details = (s as ServiceCard & { details?: Record<string, unknown> }).details ?? {};
-  const detailEntries = Object.entries(details).filter(([, v]) => v !== null && v !== "" && !(Array.isArray(v) && !v.length));
+  const quick = s.details.filter((d) => ["walkIn", "cost", "idRequired"].includes(d.key));
   return (
     <article className={`svc${inPlan ? " in-plan" : ""}`}>
       <div className="svc-top">
@@ -44,6 +43,11 @@ export function ServiceCardView({ s, volunteer, showAdd = true }: { s: ServiceCa
             {s.status === "temporary" && <span className="status later-today">Pop-up</span>}
             {s.schedule && <span className="fact">🕑 {s.schedule}</span>}
             {s.petPolicy && <span className="fact">🐾 {s.petPolicy.length > 28 ? "Pets: see notes" : s.petPolicy}</span>}
+            {quick.map((d) => (
+              <span className="fact" key={d.key}>
+                {d.key === "walkIn" ? (d.value === "yes" ? "🚶 Walk-ins OK" : "📅 Call first") : d.key === "idRequired" ? (d.value === "yes" ? "🪪 ID needed" : "🪪 No ID needed") : `💲 ${d.value.length > 22 ? d.value.slice(0, 20) + "…" : d.value}`}
+              </span>
+            ))}
           </div>
         </div>
         {showAdd && (
@@ -87,9 +91,9 @@ export function ServiceCardView({ s, volunteer, showAdd = true }: { s: ServiceCa
           )}
           {s.fieldNotes && <Row label="Field notes">{s.fieldNotes}</Row>}
           {s.eligibility && <Row label="Who can go">{s.eligibility}</Row>}
-          {detailEntries.map(([k, v]) => (
-            <Row key={k} label={k.replace(/([A-Z])/g, " $1").replace(/^./, (c) => c.toUpperCase())}>
-              {Array.isArray(v) ? v.join(", ") : typeof v === "boolean" ? (v ? "Yes" : "No") : String(v)}
+          {s.details.map((d) => (
+            <Row key={d.key} label={d.label}>
+              {d.value === "yes" ? "Yes" : d.value === "no" ? "No" : d.value}
             </Row>
           ))}
           {s.petPolicy && <Row label="Pets">{s.petPolicy}</Row>}

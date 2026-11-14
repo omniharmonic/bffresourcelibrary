@@ -1,6 +1,7 @@
 import type { Service, Catalog } from "./catalog";
 import { openStatus, scheduleSummary } from "./hours";
 import type { ScheduleSpan } from "./db/schema";
+import { DETAIL_FIELDS, formatDetail } from "./details";
 
 /** What the browser gets for a service. Internal notes only for volunteers. */
 export type ServiceCard = {
@@ -30,6 +31,8 @@ export type ServiceCard = {
   tier: number;
   reasons?: string[];
   endsAt: string | null;
+  /** "Before you go" facts, labelled and formatted, in DETAIL_FIELDS order. */
+  details: { key: string; label: string; value: string }[];
 };
 
 export function toCard(s: Service, c: Catalog, opts: { volunteer: boolean; tier?: number; reasons?: string[]; now?: Date }): ServiceCard {
@@ -61,5 +64,8 @@ export function toCard(s: Service, c: Catalog, opts: { volunteer: boolean; tier?
     tier: opts.tier ?? (cats.length ? Math.min(...cats.map((x) => x.tier)) : 2),
     reasons: opts.reasons,
     endsAt: s.endsAt ? new Date(s.endsAt).toISOString() : null,
+    details: DETAIL_FIELDS.map((f) => ({ key: f.key, label: f.label, value: formatDetail(f.key, (s.details as Record<string, unknown> | null)?.[f.key]) })).filter(
+      (d) => d.value,
+    ),
   };
 }

@@ -162,6 +162,31 @@ printf '%s' 'BFF Navigator <navigator@boulderevents.directory>' | vercel env add
 
 ---
 
+## 5b. Voice transcription key (optional, recommended)
+
+**Why:** the mic button first uses the browser's built-in speech recognition. That works in Chrome, Safari and Firefox, but **Chromium forks such as Dia, Arc and Brave expose the API without a working speech service**. The app detects this and switches to recording, then sends the audio to `/api/transcribe`. That fallback needs **one** of these keys. Without one, those browsers are told to use the keyboard's dictation key instead.
+
+| Variable | Provider | Notes |
+|---|---|---|
+| `DEEPGRAM_API_KEY` | Deepgram (`nova-3`, auto-detects English/Spanish) | Preferred: fast, accurate in noisy outdoor audio. Create the key at console.deepgram.com with **Member** scope. |
+| `OPENAI_API_KEY` | OpenAI (`gpt-4o-mini-transcribe` by default; override with `OPENAI_TRANSCRIBE_MODEL`) | Used only if no Deepgram key is set. |
+
+Use the key that came from the provider's console (`$TMPDIR/stt_key` holds it here). Store it the same way as the others:
+
+```bash
+setenv DEEPGRAM_API_KEY production < "$TMPDIR/stt_key" && rm -f "$TMPDIR/stt_key"
+```
+
+**Verify after redeploy:**
+
+```bash
+curl -s https://bffresourcelibrary.vercel.app/api/transcribe
+```
+
+This should return `{"available":true}`. Then, in Dia, tap the mic, speak, and tap again: the text appears after a second or two.
+
+**Privacy:** audio goes to the provider for transcription and is not stored by the app. It's only sent when browser speech isn't available. Recordings are capped at 60 seconds.
+
 ## 6. Redeploy and verify
 
 Environment variables only take effect on a **new** deployment.
