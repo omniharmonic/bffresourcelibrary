@@ -71,6 +71,13 @@ npm test
 BASE_URL=https://your-deployment DATABASE_URL=postgres://... node tests/e2e/e2e.mjs
 ```
 
+## Live
+
+- **App:** https://bffresourcelibrary.vercel.app (custom domain `navigator.boulderfeetforward.org` pending DNS)
+- **Database:** Neon project `bff-navigator` (US East)
+- **Admins:** Benjamin and Libby (set in the database; also add both to `ADMIN_EMAILS` in Vercel)
+- **Verified:** 103/103 end-to-end checks against the live site on 2026-11-14
+
 ## Deploy (Vercel + Neon)
 
 1. Create a Neon project and copy its pooled connection string.
