@@ -6,11 +6,13 @@ import Link from "next/link";
 import { usePlan } from "./PlanProvider";
 import { getCards, savePlanAction } from "@/app/actions";
 import type { ServiceCard } from "@/lib/dto";
-import { TIER_LABEL } from "@/lib/fields";
+import { TierHead } from "./TierHead";
+import { useStartNewPlan } from "./PlanBar";
 
 export function PlanEditor({ signedIn, volunteer, navigatorName }: { signedIn: boolean; volunteer: boolean; navigatorName?: string }) {
   const plan = usePlan();
   const router = useRouter();
+  const startNew = useStartNewPlan();
   const [cards, setCards] = useState<Record<string, ServiceCard>>({});
   // Plan details live in the (localStorage-backed) basket so a reload or a dropped connection doesn't lose them.
   const tags = plan.basket.tags ?? "";
@@ -69,18 +71,16 @@ export function PlanEditor({ signedIn, volunteer, navigatorName }: { signedIn: b
         const items = plan.basket.items.filter((i) => i.tier === t);
         if (!items.length) return null;
         return (
-          <section className="tier" key={t}>
-            <div className={`tier-head tier-${t}`}>
-              <span className="tier-num">{t}</span>
-              <h2>{TIER_LABEL[t].title}</h2>
-              <span className="muted">{TIER_LABEL[t].blurb}</span>
-            </div>
+          <section className={`tier tier-${t}`} key={t}>
+            <TierHead tier={t} />
             {items.map((i) => {
               const c = cards[i.serviceId];
               return (
                 <div className="svc" key={i.serviceId}>
                   <div className="svc-top">
-                    <h3>{i.name}</h3>
+                    <div className="svc-title">
+                      <h3>{i.name}</h3>
+                    </div>
                     <button className="btn btn-sm btn-danger" onClick={() => plan.remove(i.serviceId)} aria-label={`Remove ${i.name}`}>
                       Remove
                     </button>
@@ -88,8 +88,8 @@ export function PlanEditor({ signedIn, volunteer, navigatorName }: { signedIn: b
                   {c && (
                     <div className="facts">
                       <span className={`status ${c.open.state}`}>{c.open.label}</span>
-                      {c.schedule && <span>🕑 {c.schedule}</span>}
-                      {c.phone && <span>📞 {c.phone}</span>}
+                      {c.schedule && <span className="fact">🕑 {c.schedule}</span>}
+                      {c.phone && <span className="fact">📞 {c.phone}</span>}
                     </div>
                   )}
                   <div className="grid2" style={{ marginTop: 8 }}>
@@ -159,8 +159,8 @@ export function PlanEditor({ signedIn, volunteer, navigatorName }: { signedIn: b
           <button className="btn btn-primary" onClick={save} disabled={pending}>
             {pending ? "Saving…" : signedIn ? "Save plan & get link" : "Make my plan"}
           </button>
-          <button className="btn btn-ghost" onClick={() => confirm("Clear this plan?") && plan.clear()}>
-            Clear
+          <button className="btn btn-ghost" onClick={startNew}>
+            Start a new plan
           </button>
         </div>
         {!signedIn && (

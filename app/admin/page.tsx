@@ -29,7 +29,7 @@ export default async function Admin({ searchParams }: { searchParams: Promise<{ 
 
   return (
     <>
-      <h1 style={{ fontSize: "clamp(28px,6vw,42px)" }}>Admin</h1>
+      <h1 className="page-title">Admin</h1>
       <nav className="tabs" aria-label="Admin sections">
         {TABS.map(([k, label]) => (
           <Link key={k} href={`/admin?tab=${k}`} className="chip" aria-pressed={tab === k}>

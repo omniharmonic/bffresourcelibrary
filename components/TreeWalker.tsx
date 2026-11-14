@@ -25,13 +25,20 @@ export function TreeWalker({ nodes, linkMap }: { nodes: Record<string, TreeNode>
   return (
     <div>
       <div className="panel">
+        <div className="tree-progress" aria-hidden>
+          {Array.from({ length: Math.max(path.length, 3) }, (_, i) => (
+            <span key={i} className={i < path.length ? "done" : ""} />
+          ))}
+        </div>
+        <div className="eyebrow">Step {path.length}</div>
         <div className="tree-q">{n.q}</div>
         {n.text && <p style={{ marginTop: 10, whiteSpace: "pre-line" }}>{n.text}</p>}
         {n.opts && (
           <div className="tree-opts">
             {n.opts.map(([label, to]) => (
               <button key={to + label} className="btn" onClick={() => go(to)}>
-                {label} →
+                <span>{label}</span>
+                <span aria-hidden>→</span>
               </button>
             ))}
           </div>

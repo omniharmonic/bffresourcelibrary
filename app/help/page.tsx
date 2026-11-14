@@ -30,7 +30,7 @@ export default async function Help() {
   }
   return (
     <>
-      <h1 style={{ fontSize: "clamp(28px,6vw,42px)" }}>What do you need?</h1>
+      <h1 className="page-title">What do you need?</h1>
       <p className="muted">Free and private. You don’t need an account. Nothing you type is shared with police or the city.</p>
       <Finder mode="participant" chips={chipsFor(c)} aiOn={settings.ai_assist && aiAvailable()} />
     </>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import "./globals.css";
 import { PlanProvider } from "@/components/PlanProvider";
 import { PlanBar } from "@/components/PlanBar";
+import { SiteNav, type NavItem } from "@/components/SiteNav";
 import { getCurrentUser, hasRole } from "@/lib/session";
 import { getSettings } from "@/lib/settings";
 import { getDb, schema } from "@/lib/db";
@@ -30,6 +31,14 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const volunteer = hasRole(user, "volunteer");
   const admin = hasRole(user, "admin");
   const pending = admin ? await pendingCount() : 0;
+  const nav: NavItem[] = [
+    ...(volunteer ? [{ href: "/navigator", label: "Find help" }] : settings.participant_mode ? [{ href: "/help", label: "Find help" }] : []),
+    ...(volunteer ? [{ href: "/trees", label: "Decision trees" }, { href: "/services", label: "Services" }] : []),
+    ...(user ? [{ href: "/plans", label: "My plans" }] : []),
+    ...(volunteer ? [{ href: "/gaps", label: "Gaps" }] : []),
+    ...(admin ? [{ href: "/admin", label: "Admin", badge: pending }] : []),
+    user ? { href: "/account", label: "Account" } : { href: "/login", label: "Sign in" },
+  ];
   return (
     <html lang="en">
       <head>
@@ -44,29 +53,21 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <PlanProvider>
           <header className="site-header">
             <div className="wrap">
-              <Link href="/" className="brand">
+              <Link href="/" className="brand" aria-label="BFF Navigator home">
                 <span className="brand-mark" aria-hidden>
-                  👣
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <ellipse cx="8" cy="15" rx="3.2" ry="4.6" />
+                    <circle cx="5.6" cy="8.4" r="1.2" /><circle cx="8" cy="7.4" r="1.25" /><circle cx="10.4" cy="8.2" r="1.15" />
+                    <ellipse cx="16.2" cy="11" rx="3" ry="4.3" />
+                    <circle cx="13.9" cy="4.7" r="1.1" /><circle cx="16.2" cy="3.8" r="1.15" /><circle cx="18.5" cy="4.6" r="1.05" />
+                  </svg>
                 </span>
                 <span>
-                  BFF Navigator
+                  <span className="brand-name">BFF Navigator</span>
                   <small>Boulder Feet Forward</small>
                 </span>
               </Link>
-              <nav className="nav" aria-label="Main">
-                {volunteer && <Link href="/navigator">Find help</Link>}
-                {!volunteer && settings.participant_mode && <Link href="/help">Find help</Link>}
-                {volunteer && <Link href="/trees">Decision trees</Link>}
-                {volunteer && <Link href="/services">Services</Link>}
-                {user && <Link href="/plans">My plans</Link>}
-                {volunteer && <Link href="/gaps">Gaps</Link>}
-                {admin && (
-                  <Link href="/admin">
-                    Admin{pending ? <span className="badge">{pending}</span> : null}
-                  </Link>
-                )}
-                {user ? <Link href="/account">Account</Link> : <Link href="/login">Sign in</Link>}
-              </nav>
+              <SiteNav items={nav} />
             </div>
           </header>
           <main>
@@ -74,8 +75,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           </main>
           <footer className="site-footer">
             <div className="wrap">
-              Built with and for Boulder Feet Forward by Benjamin Life (@omniharmonic). Information changes — call ahead when you can. Service
-              data includes City of Boulder, Boulder County and SAMHSA open data.
+              <p style={{ margin: 0 }}>
+                In crisis? Call or text <a href="tel:988">988</a> any time · Emergency <a href="tel:911">911</a>
+              </p>
+              <p style={{ margin: "6px 0 0" }}>
+                Built with and for Boulder Feet Forward by Benjamin Life (@omniharmonic). Hours change — call ahead when you can. Includes City of
+                Boulder, Boulder County and SAMHSA open data.
+              </p>
             </div>
           </footer>
           <PlanBar />

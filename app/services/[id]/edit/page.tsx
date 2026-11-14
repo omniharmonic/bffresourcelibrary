@@ -15,7 +15,7 @@ export default async function EditService({ params }: { params: Promise<{ id: st
       <p>
         <Link href={`/services/${id}`}>← {s.name}</Link>
       </p>
-      <h1 style={{ fontSize: 34 }}>{hasRole(u, "admin") ? "Edit" : "Suggest an edit"}</h1>
+      <h1 className="page-title">{hasRole(u, "admin") ? "Edit" : "Suggest an edit"}</h1>
       <ServiceForm s={s} c={c} admin={hasRole(u, "admin")} />
     </div>
   );

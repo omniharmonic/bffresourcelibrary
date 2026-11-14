@@ -19,7 +19,7 @@ export default async function Services({ searchParams }: { searchParams: Promise
   return (
     <>
       <div className="btn-row" style={{ justifyContent: "space-between" }}>
-        <h1 style={{ fontSize: "clamp(28px,6vw,42px)", margin: 0 }}>Services</h1>
+        <h1 className="page-title" style={{ margin: 0 }}>Services</h1>
         <Link className="btn btn-primary" href="/services/new">
           + Add a service
         </Link>

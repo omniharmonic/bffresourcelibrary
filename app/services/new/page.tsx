@@ -9,7 +9,7 @@ export default async function NewService() {
   const c = await getCatalog();
   return (
     <div className="narrow">
-      <h1 style={{ fontSize: 34 }}>Add a service</h1>
+      <h1 className="page-title">Add a service</h1>
       <ServiceForm c={c} admin={hasRole(u, "admin")} />
     </div>
   );

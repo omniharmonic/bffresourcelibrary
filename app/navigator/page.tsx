@@ -11,7 +11,7 @@ export default async function Navigator() {
   const [c, settings] = await Promise.all([getCatalog(), getSettings()]);
   return (
     <>
-      <h1 style={{ fontSize: "clamp(28px,6vw,42px)" }}>Find help</h1>
+      <h1 className="page-title">Find help</h1>
       <Finder mode="volunteer" chips={chipsFor(c)} rubric={rubricFor(c)} aiOn={settings.ai_assist && aiAvailable()} />
     </>
   );

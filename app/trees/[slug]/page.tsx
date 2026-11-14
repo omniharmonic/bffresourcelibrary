@@ -20,7 +20,7 @@ export default async function Tree({ params }: { params: Promise<{ slug: string 
       <p>
         <Link href="/trees">← All decision trees</Link>
       </p>
-      <h1 style={{ fontSize: 34 }}>{t.title}</h1>
+      <h1 className="page-title">{t.title}</h1>
       <TreeWalker nodes={t.nodes} linkMap={linkMap} />
     </div>
   );

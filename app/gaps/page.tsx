@@ -38,7 +38,7 @@ export default async function Gaps() {
   const gaps = await getDb().select().from(schema.gaps).orderBy(asc(schema.gaps.id));
   return (
     <>
-      <h1 style={{ fontSize: "clamp(28px,6vw,42px)" }}>Gaps & follow-ups</h1>
+      <h1 className="page-title">Gaps & follow-ups</h1>
       <p className="muted">Shared working list. Never enter participant names or private details here.</p>
       {[
         ["gap", "Known service gaps"],

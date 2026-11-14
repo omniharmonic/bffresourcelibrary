@@ -5,7 +5,7 @@ import { getPlanByToken } from "@/lib/plans";
 import { getCatalog } from "@/lib/catalog";
 import { getCurrentUser } from "@/lib/session";
 import { scheduleSummary } from "@/lib/hours";
-import { TIER_LABEL } from "@/lib/fields";
+import { TierHead } from "@/components/TierHead";
 import type { ScheduleSpan } from "@/lib/db/schema";
 import { PlanActions } from "@/components/PlanActions";
 
@@ -60,12 +60,8 @@ export default async function SharedPlan({ params, searchParams }: { params: Pro
           const items = rows.filter((r) => r.it.tier === t);
           if (!items.length) return null;
           return (
-            <section key={t} style={{ marginTop: 18 }}>
-              <div className={`tier-head tier-${t}`}>
-                <span className="tier-num">{t}</span>
-                <h2>{TIER_LABEL[t].title}</h2>
-                <span style={{ color: "#555" }}>{TIER_LABEL[t].blurb}</span>
-              </div>
+            <section key={t} style={{ marginTop: 18 }} className={`tier-${t}`}>
+              <TierHead tier={t} />
               {items.map(({ it, s }) => {
                 const sched = scheduleSummary(s!.schedule as ScheduleSpan[] | null);
                 return (

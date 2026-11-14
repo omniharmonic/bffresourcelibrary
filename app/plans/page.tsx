@@ -13,7 +13,7 @@ export default async function Plans({ searchParams }: { searchParams: Promise<{ 
   const plans = needle ? all.filter((p) => [p.forLabel, ...(p.tags ?? []), p.note].join(" ").toLowerCase().includes(needle)) : all;
   return (
     <>
-      <h1 style={{ fontSize: "clamp(28px,6vw,42px)" }}>My plans</h1>
+      <h1 className="page-title">My plans</h1>
       <form className="btn-row" style={{ marginBottom: 16 }}>
         <input type="search" name="q" defaultValue={q} placeholder="Search by nickname or tag" style={{ maxWidth: 360 }} />
         <button className="btn">Search</button>

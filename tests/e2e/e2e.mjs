@@ -227,7 +227,7 @@ async function main() {
   });
   await step("Quick chip alone returns results", async () => {
     await admin.goto(BASE + "/navigator");
-    await admin.click('.chip:has-text("Laundry")');
+    await admin.click('.need:has-text("Laundry")');
     await admin.click('button:has-text("Find help")');
     await admin.waitForSelector(".tier .svc", { timeout: 20000 });
     return (await admin.$$(".svc")).length > 0;
@@ -235,7 +235,7 @@ async function main() {
   await step("Filter 'Pets OK' narrows results to pet-friendly", async () => {
     await admin.goto(BASE + "/navigator");
     const all = await find(admin, "hungry and need a shower and somewhere to sleep");
-    await admin.check('input[type=checkbox] >> nth=1');
+    await admin.click('.toggle:has-text("Pets OK")');
     await sleep(2500);
     const n = (await admin.$$(".svc")).length;
     return n <= all.names.length ? `${all.names.length} → ${n}` : false;
@@ -247,7 +247,8 @@ async function main() {
   });
   await step("Wellness rubric: 8 dimensions, browsing a category lists services", async () => {
     await admin.goto(BASE + "/navigator");
-    const dims = await admin.$$eval(".dim-head", (e) => e.map((x) => x.textContent));
+    const dims = await admin.$$eval(".dim > summary", (e) => e.map((x) => x.textContent));
+    await admin.$$eval("details.dim", (els) => els.forEach((d) => (d.open = true)));
     await admin.click('.dim .chip:has-text("Showers")');
     await admin.waitForSelector(".tier .svc", { timeout: 20000 });
     return dims.length === 8 ? `${dims.length} dimensions` : false;
@@ -291,16 +292,16 @@ async function main() {
     const adds = await admin.$$('button:has-text("+ Add")');
     for (const b of adds.slice(0, 3)) await b.click();
     await admin.waitForSelector(".planbar");
-    return (await admin.textContent(".planbar")).includes("3 services");
+    return (await admin.textContent(".planbar-num")).trim() === "3";
   });
   await step("Toggle remove from results updates count", async () => {
     await admin.click('button:has-text("✓ In plan") >> nth=0');
-    const t = await admin.textContent(".planbar");
+    const t = (await admin.textContent(".planbar-num")).trim();
     await admin.click('button:has-text("+ Add") >> nth=0');
-    return t.includes("2 services");
+    return t === "2";
   });
   await step("Plan editor: per-item note + move tier + nickname", async () => {
-    await admin.click("text=Review plan");
+    await admin.click('.planbar a:has-text("Review")');
     await admin.waitForURL("**/plan");
     await admin.waitForSelector("#forLabel");
     const noteInputs = await admin.$$('input[id^="note-"]');
@@ -388,7 +389,7 @@ async function main() {
   sec("Decision trees");
   await step("All 9 trees listed", async () => {
     await admin.goto(BASE + "/trees");
-    const n = (await admin.$$(".door")).length;
+    const n = (await admin.$$(".tile")).length;
     return n === 9 ? "9 trees" : `${n} trees`;
   });
   await step("Walk 'Had Your Stuff Taken?' and go back", async () => {
@@ -620,7 +621,7 @@ async function main() {
     await part.goto(BASE + "/help");
     await find(part, "need a shower");
     await part.click('button:has-text("+ Add") >> nth=0');
-    await part.click("text=Review plan");
+    await part.click('.planbar a:has-text("Review")');
     await part.waitForURL("**/plan");
     await part.click('button:has-text("Make my plan")');
     await part.waitForURL("**/p/**", { timeout: 30000 });
@@ -634,7 +635,7 @@ async function main() {
     await login(pp, PART, "/help");
     await find(pp, "need laundry");
     await pp.click('button:has-text("+ Add") >> nth=0');
-    await pp.click("text=Review plan");
+    await pp.click('.planbar a:has-text("Review")');
     await pp.waitForURL("**/plan");
     await pp.click('button:has-text("Save plan")');
     await pp.waitForURL("**/p/**", { timeout: 30000 });

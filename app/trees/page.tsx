@@ -10,12 +10,12 @@ export default async function Trees() {
   const trees = await getDb().select().from(schema.decisionTrees).orderBy(asc(schema.decisionTrees.position));
   return (
     <>
-      <h1 style={{ fontSize: "clamp(28px,6vw,42px)" }}>Decision trees</h1>
+      <h1 className="page-title">Decision trees</h1>
       <p className="muted">Step-by-step prompts for when the next step isn’t clear. These are conversation guides, not clinical screening.</p>
-      <div className="grid2">
+      <div className="tile-grid">
         {trees.map((t) => (
-          <Link key={t.slug} href={`/trees/${t.slug}`} className="door" style={{ padding: 18 }}>
-            <h3 style={{ margin: 0 }}>{t.title}</h3>
+          <Link key={t.slug} href={`/trees/${t.slug}`} className="tile">
+            <h3>{t.title}</h3>
             <span className="small muted">{t.nodes.start?.q}</span>
           </Link>
         ))}
