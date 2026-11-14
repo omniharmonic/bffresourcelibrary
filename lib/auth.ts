@@ -4,6 +4,21 @@ import { emailOTP } from "better-auth/plugins";
 import { nextCookies } from "better-auth/next-js";
 import { getDb, schema } from "./db";
 import { sendLoginCode } from "./email";
+import { createHash } from "node:crypto";
+
+/**
+ * BETTER_AUTH_SECRET should always be set. If it is missing in production we derive a
+ * private secret from DATABASE_URL (which contains the DB password) rather than ever
+ * falling back to a value that is visible in this public repository.
+ */
+function authSecret() {
+  if (process.env.BETTER_AUTH_SECRET) return process.env.BETTER_AUTH_SECRET;
+  if (process.env.NODE_ENV === "production" && process.env.DATABASE_URL) {
+    console.warn("[auth] BETTER_AUTH_SECRET is not set; using a secret derived from DATABASE_URL. Set it in your hosting settings.");
+    return createHash("sha256").update("bff-navigator-auth:" + process.env.DATABASE_URL).digest("base64");
+  }
+  return "dev-only-secret-change-me-dev-only-secret";
+}
 
 export function isBootstrapAdmin(email: string) {
   return (process.env.ADMIN_EMAILS ?? "")
@@ -15,7 +30,7 @@ export function isBootstrapAdmin(email: string) {
 
 export const auth = betterAuth({
   appName: "BFF Navigator",
-  secret: process.env.BETTER_AUTH_SECRET ?? "dev-only-secret-change-me-dev-only-secret",
+  secret: authSecret(),
   baseURL:
     process.env.BETTER_AUTH_URL ??
     (process.env.VERCEL_PROJECT_PRODUCTION_URL

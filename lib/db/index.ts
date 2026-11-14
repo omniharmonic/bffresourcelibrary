@@ -31,6 +31,7 @@ function create(): DB {
     holder.kind = "neon";
     return drizzle(new Pool({ connectionString: url }), { schema }) as unknown as DB;
   }
+  if (process.env.VERCEL) throw new Error("DATABASE_URL is not set. Add the Neon connection string in Vercel → Settings → Environment Variables.");
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   const { PGlite } = require("@electric-sql/pglite") as typeof import("@electric-sql/pglite");
   // eslint-disable-next-line @typescript-eslint/no-require-imports

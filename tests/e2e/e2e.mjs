@@ -121,6 +121,10 @@ async function main() {
   const settingsRows = await sql(`select key, value from settings`);
   for (const r of settingsRows) original[r.key] = r.value;
   await sql(`update settings set value = 'false'::jsonb where key in ('participant_mode','ai_assist')`);
+  if (process.env.E2E_PROMOTE) {
+    // When the server's ADMIN_EMAILS doesn't include the test admin, pre-create it as admin.
+    await sql(`insert into "user"(id, name, email, email_verified, role, volunteer_status) values ('e2e-admin', 'E2E Admin', $1, true, 'admin', 'approved') on conflict (email) do update set role='admin'`, [ADMIN]);
+  }
 
   // ───────────────────────── Public / anonymous
   sec("Public pages & access control (anonymous)");
@@ -167,7 +171,8 @@ async function main() {
   });
   await step("Admin role assigned from ADMIN_EMAILS", async () => {
     const [u] = await sql(`select role from "user" where email=$1`, [ADMIN]);
-    return u?.role === "admin" || `role=${u?.role}`;
+    if (u?.role !== "admin") throw new Error(`role=${u?.role}`);
+    return process.env.E2E_PROMOTE ? "pre-promoted (ADMIN_EMAILS not set on server)" : true;
   });
   await step("Nav shows admin links + pending badge", async () => {
     const t = await admin.textContent(".nav");
