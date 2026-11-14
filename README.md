@@ -10,6 +10,7 @@ Plans print (full-page or receipt width), save as PDF, and share as an anonymous
 
 *Built by Benjamin Life ([@omniharmonic](https://github.com/omniharmonic)) with Boulder Feet Forward.*
 
+- **Ops:** [Secrets & keys runbook](docs/RUNBOOK-SECRETS.md)
 - **Planning docs:** [PRD](docs/PRD.md) · [Architecture](docs/ARCHITECTURE.md) · [Implementation plan](docs/IMPLEMENTATION-PLAN.md) · [Research](docs/research/README.md) · [211 data request draft](docs/outreach/mhuw-211-data-request.md)
 
 ## What's in v1
