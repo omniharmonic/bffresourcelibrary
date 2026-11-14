@@ -4,9 +4,10 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePlan } from "./PlanProvider";
 
-export function PlanActions({ url, layout, token, editable, planId, items }: {
+export function PlanActions({ url, layout, token, editable, planId, items, meta }: {
   url: string; layout: string; token: string; editable: boolean; planId: string;
   items: { serviceId: string; name: string; tier: number; note?: string }[];
+  meta?: { forLabel?: string; note?: string; navigatorName?: string; tags?: string; showLabel?: boolean };
 }) {
   const plan = usePlan();
   const [copied, setCopied] = useState(false);
@@ -36,7 +37,7 @@ export function PlanActions({ url, layout, token, editable, planId, items }: {
         <button
           className="btn"
           onClick={() => {
-            plan.replace({ planId, items });
+            plan.replace({ planId, items, ...meta });
             window.location.href = "/plan";
           }}
         >

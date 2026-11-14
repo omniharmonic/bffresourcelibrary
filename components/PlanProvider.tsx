@@ -3,7 +3,16 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 
 export type BasketItem = { serviceId: string; name: string; tier: number; note?: string };
-export type Basket = { planId?: string | null; items: BasketItem[]; forLabel?: string; intakeText?: string };
+export type Basket = {
+  planId?: string | null;
+  items: BasketItem[];
+  forLabel?: string;
+  intakeText?: string;
+  note?: string;
+  navigatorName?: string;
+  tags?: string;
+  showLabel?: boolean;
+};
 
 type Ctx = {
   basket: Basket;

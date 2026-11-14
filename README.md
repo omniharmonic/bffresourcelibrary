@@ -65,6 +65,12 @@ Open http://localhost:3000 and sign in with your admin email. Without `RESEND_AP
 npm test
 ```
 
+**End-to-end suite** (103 checks: access control, auth, matching, crisis, plans, trees, wiki, volunteer lifecycle, review queue, imports, participant mode, gaps, responsive layout). It reads sign-in codes straight from the database, only touches records prefixed `E2E`, and cleans up after itself. The server must have `e2e-admin@example.org` in `ADMIN_EMAILS`.
+
+```bash
+BASE_URL=https://your-deployment DATABASE_URL=postgres://... node tests/e2e/e2e.mjs
+```
+
 ## Deploy (Vercel + Neon)
 
 1. Create a Neon project and copy its pooled connection string.

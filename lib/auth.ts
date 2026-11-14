@@ -59,6 +59,8 @@ export const auth = betterAuth({
       otpLength: 6,
       expiresIn: 600,
       allowedAttempts: 5,
+      // Volunteers at a park often share one hotspot IP; 3/min (default) locks them out.
+      rateLimit: { window: 60, max: 20 },
       async sendVerificationOTP({ email, otp }) {
         await sendLoginCode(email, otp);
       },

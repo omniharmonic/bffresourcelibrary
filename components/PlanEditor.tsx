@@ -12,10 +12,15 @@ export function PlanEditor({ signedIn, volunteer, navigatorName }: { signedIn: b
   const plan = usePlan();
   const router = useRouter();
   const [cards, setCards] = useState<Record<string, ServiceCard>>({});
-  const [tags, setTags] = useState("");
-  const [showLabel, setShowLabel] = useState(false);
-  const [navName, setNavName] = useState(navigatorName ?? "");
-  const [note, setNote] = useState("");
+  // Plan details live in the (localStorage-backed) basket so a reload or a dropped connection doesn't lose them.
+  const tags = plan.basket.tags ?? "";
+  const showLabel = !!plan.basket.showLabel;
+  const navName = plan.basket.navigatorName ?? navigatorName ?? "";
+  const note = plan.basket.note ?? "";
+  const setTags = (v: string) => plan.setMeta({ tags: v });
+  const setShowLabel = (v: boolean) => plan.setMeta({ showLabel: v });
+  const setNavName = (v: string) => plan.setMeta({ navigatorName: v });
+  const setNote = (v: string) => plan.setMeta({ note: v });
   const [err, setErr] = useState<string | null>(null);
   const [pending, start] = useTransition();
   const ids = plan.basket.items.map((i) => i.serviceId).join(",");

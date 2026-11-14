@@ -38,6 +38,11 @@ export default async function SharedPlan({ params, searchParams }: { params: Pro
         editable={isOwner || !plan.ownerId}
         planId={isOwner ? plan.id : ""}
         items={rows.map(({ it, s }) => ({ serviceId: it.serviceId, name: s!.name, tier: it.tier, note: it.note ?? undefined }))}
+        meta={
+          isOwner
+            ? { forLabel: plan.forLabel ?? undefined, note: plan.note ?? undefined, navigatorName: plan.navigatorName ?? undefined, tags: (plan.tags ?? []).join(", "), showLabel: plan.showLabel }
+            : { note: plan.note ?? undefined }
+        }
       />
       <article className={`plan-doc${layout === "receipt" ? " receipt" : ""}`}>
         <div className="eyebrow" style={{ color: "#444" }}>
