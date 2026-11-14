@@ -1,0 +1,57 @@
+name: Weekly website enrichment
+
+# Reads each service's own web page, extracts facts with evidence, verifies them,
+# and queues suggestions in Admin → Review. Nothing is published without approval.
+# See docs/ENRICHMENT.md.
+
+on:
+  schedule:
+    # Sundays 03:43 America/Denver in winter (MST, UTC-7) = 10:43 UTC.
+    # GitHub cron is UTC-only, so during daylight time (MDT) this runs at 04:43 local.
+    - cron: "43 10 * * 0"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "How many services to check (most-used and least-recently-checked first)"
+        required: false
+        default: "60"
+      service:
+        description: "Check one service id only (optional)"
+        required: false
+      dry_run:
+        description: "Dry run: log what would be proposed, write nothing"
+        type: boolean
+        required: false
+        default: false
+
+concurrency:
+  group: enrich
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run db:migrate
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      - name: Enrich
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          # Optional. Without it only deterministic (no-AI) extraction runs.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LIMIT: ${{ github.event.inputs.limit || '60' }}
+          SERVICE: ${{ github.event.inputs.service }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+        run: |
+          args=(--limit "$LIMIT")
+          if [ -n "$SERVICE" ]; then args+=(--service "$SERVICE"); fi
+          if [ "$DRY_RUN" = "true" ]; then args+=(--dry-run); fi
+          npx tsx scripts/enrich.ts "${args[@]}"

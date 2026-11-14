@@ -236,6 +236,29 @@ gh run watch --repo omniharmonic/bffresourcelibrary
 
 Expect green. In the app, **Admin → Data sources** shows a new row per source.
 
+## 7a. Optional: GitHub secret `ANTHROPIC_API_KEY` (weekly website enrichment)
+
+The workflow `.github/workflows/enrich.yml` runs every Sunday morning. It reads each service's own website and queues suggestions in **Admin → Review** (see `docs/ENRICHMENT.md`). It uses the same `DATABASE_URL` secret as step 7.
+
+Without `ANTHROPIC_API_KEY` it still runs, using deterministic (no-AI) extraction only. With the key it also asks a small, fast Claude model to read each page. Every AI answer must quote the page word for word and passes the same verification gate, so the key adds coverage, not risk. Expect about $1–3 a month for ~200 services.
+
+1. **A human** creates a key in the Anthropic Console (Settings → API keys), ideally in a workspace with a low monthly spend limit (for example $10). It needs Benjamin's account, so an agent cannot do this.
+2. Store it as a repository secret. It is never needed on Vercel:
+
+   ```bash
+   gh secret set ANTHROPIC_API_KEY --repo omniharmonic/bffresourcelibrary < "$TMPDIR/anthropic_key" && rm -f "$TMPDIR/anthropic_key"
+   ```
+
+3. Try a dry run (logs what it would propose, writes nothing):
+
+   ```bash
+   gh workflow run "Weekly website enrichment" --repo omniharmonic/bffresourcelibrary -f limit=5 -f dry_run=true
+   ```
+
+   The log's first line says `with LLM extraction` when the key is picked up.
+
+To turn the AI part off again, delete the secret: `gh secret delete ANTHROPIC_API_KEY --repo omniharmonic/bffresourcelibrary`.
+
 ## 8. Later: custom domain `navigator.boulderfeetforward.org`
 
 1. Add the domain in Vercel (dashboard, or `vercel domains add navigator.boulderfeetforward.org bffresourcelibrary`), then add the CNAME record Vercel asks for at Squarespace DNS.
