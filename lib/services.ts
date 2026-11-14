@@ -5,6 +5,7 @@ import { FIELD_KEYS } from "./fields";
 import { parseHours } from "./hours";
 import { stampSources } from "./provenance";
 import { invalidateCatalog } from "./catalog";
+import { mergeDetails } from "./details";
 
 export type ChangePayload = {
   fields?: Record<string, string | number | null>;
@@ -13,6 +14,8 @@ export type ChangePayload = {
   preferred?: boolean;
   startsAt?: string | null;
   endsAt?: string | null;
+  /** Structured facts (lib/details.ts), merged into services.details; null clears a key. */
+  details?: Record<string, unknown>;
 };
 
 export const newServiceId = () => "s_" + randomBytes(5).toString("hex");
@@ -43,6 +46,8 @@ export async function applyServiceChange(opts: {
   let id = opts.serviceId ?? null;
   let existing: Svc | undefined;
   if (id) [existing] = await db.select().from(schema.services).where(eq(schema.services.id, id));
+  const merged = opts.payload.details ? mergeDetails(existing?.details, opts.payload.details) : null;
+  const detailKeys = (merged?.changed ?? []).map((k) => `details.${k}`);
 
   if (opts.kind === "create" || !existing) {
     id = id ?? newServiceId();
@@ -56,7 +61,8 @@ export async function applyServiceChange(opts: {
       preferred: opts.payload.preferred ?? false,
       startsAt: opts.payload.startsAt ? new Date(opts.payload.startsAt) : null,
       endsAt: opts.payload.endsAt ? new Date(opts.payload.endsAt) : null,
-      fieldSources: stampSources({}, Object.keys(fields), opts.actor, now),
+      ...(merged ? { details: merged.details } : {}),
+      fieldSources: stampSources({}, [...Object.keys(fields), ...detailKeys], opts.actor, now),
       externalIds: opts.externalIds ?? {},
       lastSeenAt: opts.actor.startsWith("feed:") ? now : null,
     });
@@ -71,7 +77,8 @@ export async function applyServiceChange(opts: {
     if (opts.payload.preferred !== undefined) patch.preferred = opts.payload.preferred;
     if (opts.payload.startsAt !== undefined) patch.startsAt = opts.payload.startsAt ? new Date(opts.payload.startsAt) : null;
     if (opts.payload.endsAt !== undefined) patch.endsAt = opts.payload.endsAt ? new Date(opts.payload.endsAt) : null;
-    patch.fieldSources = stampSources(existing.fieldSources ?? {}, Object.keys(fields), opts.actor, now);
+    if (merged) patch.details = merged.details;
+    patch.fieldSources = stampSources(existing.fieldSources ?? {}, [...Object.keys(fields), ...detailKeys], opts.actor, now);
     if (opts.externalIds) patch.externalIds = { ...(existing.externalIds ?? {}), ...opts.externalIds };
     await db.update(schema.services).set(patch).where(eq(schema.services.id, id!));
   }

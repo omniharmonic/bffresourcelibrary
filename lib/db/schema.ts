@@ -103,6 +103,28 @@ export const needTerms = pgTable(
 
 export type FieldSource = { source: string; at: string };
 
+/**
+ * Rich, structured facts about a service (what someone on the street needs to
+ * know before going). Keys and labels live in lib/details.ts (DETAIL_FIELDS).
+ * Provenance for each key is kept in field_sources under "details.<key>".
+ */
+export type ServiceDetails = Partial<{
+  walkIn: boolean;
+  appointmentRequired: boolean;
+  cost: string;
+  idRequired: boolean;
+  documentsToBring: string[];
+  languages: string[];
+  ageRange: string;
+  genderServed: string;
+  accessibility: string;
+  whatToExpect: string;
+  intakeProcess: string;
+  capacityNotes: string;
+  transit: string;
+  lastHoursChange: string;
+}>;
+
 export const services = pgTable(
   "services",
   {
@@ -137,6 +159,10 @@ export const services = pgTable(
     lockedFields: jsonb("locked_fields").$type<string[]>().notNull().default([]),
     externalIds: jsonb("external_ids").$type<Record<string, string>>().notNull().default({}),
     lastSeenAt: timestamp("last_seen_at"),
+    details: jsonb("details").$type<ServiceDetails>().notNull().default({}),
+    /** sha256 of the provider page's main text at the last enrichment check. */
+    sourcePageHash: text("source_page_hash"),
+    sourceCheckedAt: timestamp("source_checked_at"),
     createdAt: timestamp("created_at").notNull().defaultNow(),
     updatedAt: timestamp("updated_at").notNull().defaultNow(),
   },
