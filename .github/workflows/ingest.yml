@@ -1,0 +1,28 @@
+name: Nightly data ingest
+
+on:
+  schedule:
+    - cron: "17 9 * * *" # 02:17 America/Denver (MST)
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "Run a single connector (optional), e.g. findtreatment"
+        required: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run db:migrate
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      - run: npm run ingest -- ${{ github.event.inputs.source }}
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}

@@ -6,6 +6,9 @@ async function main() {
   if (dbKind() === "neon") {
     const { migrate } = await import("drizzle-orm/neon-serverless/migrator");
     await migrate(db as never, { migrationsFolder });
+  } else if (dbKind() === "pg") {
+    const { migrate } = await import("drizzle-orm/node-postgres/migrator");
+    await migrate(db as never, { migrationsFolder });
   } else {
     const { migrate } = await import("drizzle-orm/pglite/migrator");
     await migrate(db as never, { migrationsFolder });

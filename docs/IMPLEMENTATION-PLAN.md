@@ -3,39 +3,41 @@
 *v1.0 · 2026-11-14 · Benjamin Life ([@omniharmonic](https://github.com/omniharmonic))*
 *See [PRD.md](PRD.md) and [ARCHITECTURE.md](ARCHITECTURE.md).*
 
+> **Status 2026-11-14:** Phases 0–4 are built and tested (unit tests, end-to-end browser flows on PGlite and Postgres 16, production build). Phase 5 (deploy) is next.
+
 ## Phase 0: Foundations (today)
-- [ ] Scaffold Next.js 16 + TypeScript, BFF design tokens, layout, and nav
-- [ ] Drizzle schema (§3 of the architecture doc), with the PGlite/Neon switch and migrations
-- [ ] Seed: 8 dimensions, 72 categories with tiers, Libby's 111 resources, 9 decision trees, gaps/follow-ups
-- [ ] Needs lexicon (English, slang, starter Spanish) for every category
-- [ ] Unit tests for the matcher, crisis detector, provenance resolver, and redaction
+- [x] Scaffold Next.js 16 + TypeScript, BFF design tokens, layout, and nav
+- [x] Drizzle schema (§3 of the architecture doc), with the PGlite/Neon switch and migrations
+- [x] Seed: 8 dimensions, 72 categories with tiers, Libby's 111 resources, 9 decision trees, gaps/follow-ups
+- [x] Needs lexicon (English, slang, starter Spanish) for every category
+- [x] Unit tests for the matcher, crisis detector, provenance resolver, and redaction
 
 ## Phase 1: Navigator MVP (today)
-- [ ] Email-code auth (Better Auth + Resend/console), roles, admin bootstrap
-- [ ] `/navigator`: intake with mic hint → tiered results → add-to-plan; chips; dimension browser
-- [ ] Decision-tree walker
-- [ ] Plan basket → `/plan` → save (volunteer: nickname and tags) → `/p/[token]` with QR, Letter and Receipt print layouts
-- [ ] `/plans` list
-- [ ] Service directory and detail (open-now, pets, police, rules, verification badge)
+- [x] Email-code auth (Better Auth + Resend/console), roles, admin bootstrap
+- [x] `/navigator`: intake with mic hint → tiered results → add-to-plan; chips; dimension browser
+- [x] Decision-tree walker
+- [x] Plan basket → `/plan` → save (volunteer: nickname and tags) → `/p/[token]` with QR, Letter and Receipt print layouts
+- [x] `/plans` list
+- [x] Service directory and detail (open-now, pets, police, rules, verification badge)
 
 ## Phase 2: Wiki & governance (today)
-- [ ] Propose create/update/archive forms → `change_requests`
-- [ ] `/admin` review queue with diff → approve (writes a revision and field sources) or reject
-- [ ] Volunteer access requests and approvals; role management
-- [ ] Settings: `participant_mode`, `ai_assist`
-- [ ] Field locks
-- [ ] Gaps & follow-ups board
+- [x] Propose create/update/archive forms → `change_requests`
+- [x] `/admin` review queue with diff → approve (writes a revision and field sources) or reject
+- [x] Volunteer access requests and approvals; role management
+- [x] Settings: `participant_mode`, `ai_assist`
+- [x] Field locks
+- [x] Gaps & follow-ups board
 
 ## Phase 3: Participant mode & AI (today)
-- [ ] `/help`: gated by setting; simple intake, chips, tiered plan, share/print, optional sign-in to save
-- [ ] Crisis panel (always on)
-- [ ] Jev connector with redaction, timeout and cache; merges with the lexicon; admin toggle
+- [x] `/help`: gated by setting; simple intake, chips, tiered plan, share/print, optional sign-in to save
+- [x] Crisis panel (always on)
+- [x] Jev connector with redaction, timeout and cache; merges with the lexicon; admin toggle
 
 ## Phase 4: Pipeline (today → this week)
-- [ ] Ingest runner, provenance rule, `ingest_runs` log
-- [ ] Connectors: Boulder County drop boxes and naloxone, City Wi-Fi, FindTreatment.gov, All Roads guide watcher
-- [ ] GitHub Actions nightly workflow
-- [ ] Seed additions from research memo 03 (about 20 missing providers) entered as **unverified** change requests for Libby's review
+- [x] Ingest runner, provenance rule, `ingest_runs` log
+- [x] Connectors: Boulder County drop boxes and naloxone, City Wi-Fi, FindTreatment.gov, All Roads guide watcher
+- [x] GitHub Actions nightly workflow
+- [x] Seed additions from research memo 03 (about 20 missing providers) entered as **unverified** change requests for Libby's review
 
 ## Phase 5: Launch (this week)
 - [ ] Provision Neon project and Vercel project; set env vars; connect `navigator.boulderfeetforward.org` (DNS CNAME at Squarespace)

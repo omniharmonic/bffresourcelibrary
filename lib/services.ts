@@ -141,7 +141,14 @@ export async function approveChangeRequest(id: number, reviewerId: string, note?
 }
 
 export async function rejectChangeRequest(id: number, reviewerId: string, note?: string) {
-  await getDb()
+  const db = getDb();
+  const [cr] = await db.select().from(schema.changeRequests).where(eq(schema.changeRequests.id, id));
+  // Rejecting an imported, never-reviewed place hides it for good (the feed won't resurrect it: matched by external id).
+  if (cr?.serviceId && cr.source.startsWith("feed:") && (cr.payload as ChangePayload).status === "active") {
+    await db.update(schema.services).set({ status: "inactive" }).where(and(eq(schema.services.id, cr.serviceId), eq(schema.services.status, "unverified")));
+    invalidateCatalog();
+  }
+  await db
     .update(schema.changeRequests)
     .set({ status: "rejected", reviewerId, reviewNote: note ?? null, reviewedAt: new Date() })
     .where(eq(schema.changeRequests.id, id));

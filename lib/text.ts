@@ -16,11 +16,11 @@ export function stem(w: string): string {
   if (w.endsWith("ies") && w.length > 4) return w.slice(0, -3) + "y";
   if (w.endsWith("ing") && w.length > 5) {
     const b = w.slice(0, -3);
-    return /(.)\1$/.test(b) ? b.slice(0, -1) : b;
+    return /([^slz])\1$/.test(b) ? b.slice(0, -1) : b;
   }
   if (w.endsWith("ed") && w.length > 4) {
     const b = w.slice(0, -2);
-    return /(.)\1$/.test(b) ? b.slice(0, -1) : b;
+    return /([^slz])\1$/.test(b) ? b.slice(0, -1) : b;
   }
   if (w.endsWith("es") && /(sh|ch|x|ss)es$/.test(w)) return w.slice(0, -2);
   if (w.endsWith("s") && !w.endsWith("ss") && !w.endsWith("us")) return w.slice(0, -1);
