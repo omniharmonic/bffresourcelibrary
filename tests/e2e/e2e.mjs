@@ -440,7 +440,8 @@ async function main() {
     return !!s.verified_at;
   });
   await step("Lock 'Phone' field", async () => {
-    await admin.click("text=🔒 Lock fields");
+    await admin.waitForLoadState("networkidle");
+    await admin.locator("summary", { hasText: "Lock fields" }).click();
     await admin.check('input[name=locked][value="phone"]');
     await admin.click('button:has-text("Save locks")');
     await admin.waitForURL("**msg=locks**");
@@ -519,7 +520,8 @@ async function main() {
     const card = admin.locator("article.card", { hasText: `${RUN} Test Pantry` });
     const t = await card.textContent();
     await shot(admin, "08-review");
-    return t.includes("303-555-0100") && t.includes("303-555-0199");
+    if (!(t.includes("303-555-0100") && t.includes("303-555-0199"))) throw new Error("card text: " + t.replace(/\s+/g, " ").slice(0, 300));
+    return true;
   });
   await step("Admin approves edit → goes live, phone change applied", async () => {
     const card = admin.locator("article.card", { hasText: `${RUN} Test Pantry` });

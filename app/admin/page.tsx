@@ -46,7 +46,7 @@ export default async function Admin({ searchParams }: { searchParams: Promise<{ 
   );
 
   async function Review({ src }: { src: string }) {
-    const c = await getCatalog();
+    const c = await getCatalog({ fresh: true });
     const all = await db.select().from(schema.changeRequests).where(eq(schema.changeRequests.status, "pending")).orderBy(desc(schema.changeRequests.createdAt));
     const users = await db.select({ id: schema.user.id, name: schema.user.name, displayName: schema.user.displayName }).from(schema.user);
     const who = new Map(users.map((u) => [u.id, u.displayName || u.name]));

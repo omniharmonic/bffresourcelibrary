@@ -30,7 +30,7 @@ export default async function ServicePage({ params, searchParams }: { params: Pr
   const { id } = await params;
   const { msg } = await searchParams;
   const u = await requireRole("volunteer", `/services/${id}`);
-  const c = await getCatalog();
+  const c = await getCatalog({ fresh: true });
   const s = c.serviceMap.get(id);
   if (!s) notFound();
   const db = getDb();

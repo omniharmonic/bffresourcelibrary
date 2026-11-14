@@ -40,7 +40,7 @@ const isEmpty = (p: ChangePayload) =>
 export async function proposeService(fd: FormData) {
   const u = await requireRole("volunteer");
   const serviceId = String(fd.get("serviceId") ?? "") || null;
-  const c = await getCatalog();
+  const c = await getCatalog({ fresh: true });
   const current = serviceId ? c.serviceMap.get(serviceId) : undefined;
   const payload = readPayload(fd, current as never);
   const why = String(fd.get("why") ?? "").slice(0, 500);

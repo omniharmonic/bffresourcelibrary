@@ -20,7 +20,7 @@ export type Catalog = {
 
 const g = globalThis as unknown as { __bffCatalog?: { value?: Catalog; promise?: Promise<Catalog>; version: number } };
 const state = (g.__bffCatalog ??= { version: 0 });
-const TTL_MS = 60_000;
+const TTL_MS = 30_000;
 
 async function load(): Promise<Catalog> {
   const db = getDb();
@@ -49,7 +49,17 @@ async function load(): Promise<Catalog> {
   };
 }
 
-export async function getCatalog(): Promise<Catalog> {
+/**
+ * Cached per server instance for speed (search). On serverless hosts each instance has its own
+ * cache, so pages where staleness would confuse an editor (admin, service detail/edit) pass
+ * { fresh: true } to read straight from the database.
+ */
+export async function getCatalog(opts: { fresh?: boolean } = {}): Promise<Catalog> {
+  if (opts.fresh) {
+    const c = await load();
+    state.value = c;
+    return c;
+  }
   if (state.value && Date.now() - state.value.loadedAt < TTL_MS) return state.value;
   if (!state.promise) {
     const v = state.version;

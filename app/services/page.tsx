@@ -8,7 +8,7 @@ export const metadata = { title: "Services" };
 export default async function Services({ searchParams }: { searchParams: Promise<{ q?: string; cat?: string; status?: string; msg?: string }> }) {
   await requireRole("volunteer", "/services");
   const { q = "", cat = "", status = "", msg } = await searchParams;
-  const c = await getCatalog();
+  const c = await getCatalog({ fresh: true });
   const nq = normalize(q);
   const list = c.services.filter(
     (s) =>

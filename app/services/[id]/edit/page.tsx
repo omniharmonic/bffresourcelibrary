@@ -7,7 +7,7 @@ import { ServiceForm } from "@/components/ServiceForm";
 export default async function EditService({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const u = await requireRole("volunteer", `/services/${id}/edit`);
-  const c = await getCatalog();
+  const c = await getCatalog({ fresh: true });
   const s = c.serviceMap.get(id);
   if (!s) notFound();
   return (
