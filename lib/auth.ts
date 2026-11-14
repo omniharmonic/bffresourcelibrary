@@ -16,7 +16,18 @@ export function isBootstrapAdmin(email: string) {
 export const auth = betterAuth({
   appName: "BFF Navigator",
   secret: process.env.BETTER_AUTH_SECRET ?? "dev-only-secret-change-me-dev-only-secret",
-  baseURL: process.env.BETTER_AUTH_URL ?? (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined),
+  baseURL:
+    process.env.BETTER_AUTH_URL ??
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : undefined),
+  // Allow the production domain plus this deployment's own Vercel URLs (previews, branch aliases).
+  trustedOrigins: [process.env.VERCEL_URL, process.env.VERCEL_BRANCH_URL, process.env.VERCEL_PROJECT_PRODUCTION_URL, ...(process.env.EXTRA_ORIGINS ?? "").split(",")]
+    .map((h) => h?.trim())
+    .filter(Boolean)
+    .map((h) => (h!.startsWith("http") ? h! : `https://${h}`)),
   database: drizzleAdapter(getDb(), {
     provider: "pg",
     schema: { user: schema.user, session: schema.session, account: schema.account, verification: schema.verification },
